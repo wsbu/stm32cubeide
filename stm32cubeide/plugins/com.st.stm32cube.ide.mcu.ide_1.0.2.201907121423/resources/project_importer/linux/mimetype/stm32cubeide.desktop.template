@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=STM32CubeIDE
+Exec="__LAUNCHER_PATH__" %U
+MimeType=application/x-mcuproject
+Icon=stm32cubeide
+Terminal=false
+Type=Application
+Categories=
+Comment=
+	

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.st.stm32cube.ide.mcu.projecttree" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.st.stm32cube.ide.mcu.projecttree" id="com.st.stm32cube.ide.mcu.projecttree" name="STM32CubeIDE project tree extension"/>
+      </appinfo>
+      <documentation>
+         This extension point used to contribute to project tree setup.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="0" maxOccurs="1">
+            <element ref="ProjectTree" minOccurs="0" maxOccurs="1"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="ProjectTree">
+      <complexType>
+         <attribute name="provider" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Provides method allowing to get add-on project tree generator
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn="com.st.stm32cube.ide.mcu.projecttree.core.MxUProjectTreeGeneratorAbstract:"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         2.2.0
+      </documentation>
+   </annotation>
+
+
+
+
+
+</schema>

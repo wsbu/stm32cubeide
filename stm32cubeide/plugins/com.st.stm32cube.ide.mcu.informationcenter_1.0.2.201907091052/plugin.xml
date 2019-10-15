@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.st.stm32cube.ide.mcu.informationcenter.docs" name="Document" schema="schema/com.st.stm32cube.ide.mcu.informationcenter.docs.exsd"/>
+   <extension
+         point="org.eclipse.ui.intro">
+         <intro
+               class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+               contentDetector="com.st.stm32cube.ide.mcu.informationcenter.NewWelcomeInfoDetector"
+               icon="icons/informationcenter.png"
+               id="com.st.stm32cube.ide.mcu.platform.intro"
+               label="Information Center">
+      </intro>
+      <introProductBinding
+            introId="com.st.stm32cube.ide.mcu.platform.intro"
+            productId="com.st.stm32cube.ide.mcu.rcp.product">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.config">
+      <config
+            content="introContent.xml"
+            id="com.st.stm32cube.ide.mcu.platform.config"
+            introId="com.st.stm32cube.ide.mcu.platform.intro">
+         <presentation
+               home-page-id="root">
+            <implementation
+                  kind="html">
+            </implementation>
+         </presentation>
+      </config>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="com.st.stm32cube.ide.mcu.informationcenter.actionSet3"
+            label="label"
+            visible="true">
+         <action
+               class="com.st.stm32cube.ide.mcu.informationcenter.InformationCenterActionDelegate"
+               enablesFor="*"
+               icon="icons/informationcenter.png"
+               id="com.st.stm32cube.ide.mcu.informationcenter.action1"
+               label="Information Center"
+               retarget="false"
+               style="push"
+               toolbarPath="org.eclipse.ui.workbench.navigate/additions"
+               tooltip="Information Center">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

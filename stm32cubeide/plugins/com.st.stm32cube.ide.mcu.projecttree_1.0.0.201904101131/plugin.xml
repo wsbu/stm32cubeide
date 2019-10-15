@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension-point id="com.st.stm32cube.ide.mcu.projecttree" name="com.st.stm32cube.ide.mcu.projecttree" schema="schema/com.st.stm32cube.ide.mcu.projecttree.exsd"/>
+</plugin>

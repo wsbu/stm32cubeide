@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.st.stm32cube.common.mx;singleton:=true
+Built-By: safin
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.sw
+ t,org.eclipse.ui.workbench,org.eclipse.ui.navigator,org.eclipse.core.
+ net,org.eclipse.ui.console,com.st.stm32cube.common.logger,com.st.stm3
+ 2cube.common.ecosystemintegration,com.st.stm32cube.common.preferences
+ ,org.eclipse.cdt.core,com.st.stm32cube.common.ecosystemintegration.ui
+ ,com.st.stm32cube.common.mx.oss,org.eclipse.ui.net
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Eclipse-ExtensibleAPI: true
+Export-Package: com.st.components.util,com.st.microxplorer.maingui,com
+ .st.microxplorer.plugins.updater.engine,com.st.stm32cube.common.mx.fi
+ rmawreupdater,com.st.stm32cube.common.mx.iocgenerator,com.st.stm32cub
+ e.common.mx.registry,com.st.stm32cube.common.mx.targetselector
+Bundle-Name: %pluginName
+Bundle-Version: 5.3.0.201907110903
+Bundle-Localization: plugin
+Bundle-ClassPath: .,STM32CubeMX.jar,plugins/ddr.jar,plugins/filemanage
+ r.jar,plugins/projectmanager.jar,plugins/updater.jar,plugins/ipmanage
+ r.jar
+Bundle-Activator: com.st.stm32cube.common.mx.MxActivator
+Created-By: Apache Maven 3.5.3
+Build-Jdk: 1.8.0_201
+Eclipse-BundleShape: dir
+

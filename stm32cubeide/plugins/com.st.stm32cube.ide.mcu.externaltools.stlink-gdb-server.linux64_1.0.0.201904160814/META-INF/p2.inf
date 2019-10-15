@@ -1,0 +1,19 @@
+instructions.install.import = \
+  org.eclipse.equinox.p2.touchpoint.natives.chmod
+instructions.install = chmod(targetDir:${artifact.location},targetFile:META-INF/MANIFEST.MF,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.html,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.ini,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.mappings,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:fragment.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:fragment.xml,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:icons/STM32CubeIDE_icon_32px.png,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/49-stlinkv2-1.rules,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/49-stlinkv2.rules,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/49-stlinkv3.rules,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/ST-LINK_gdbserver,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/ST-LINK_gdbserver.sh,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/STLinkUpgrade.jar,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/config.txt,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/native/linux_x64/libSTLinkUSBDriver.so,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/DM00613038.pdf,permissions:664);

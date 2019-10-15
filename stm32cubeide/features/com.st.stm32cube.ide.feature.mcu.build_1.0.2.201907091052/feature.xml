@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.build"
+      label="%pluginName"
+      version="1.0.2.201907091052"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.cdt.build.crossgcc"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.build"
+         download-size="45"
+         install-size="115"
+         version="1.0.2.201907091052"
+         unpack="false"/>
+
+</feature>

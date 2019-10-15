@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="4.7"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension-point id="com.st.stm32cube.common.ecosystemintegration" name="com.st.stm32cube.common.ecosystemintegration" schema="schema/com.st.stm32cube.common.ecosystemintegration.exsd"/>
+   <extension-point id="com.st.stm32cube.common.ecosystemintegration.ide.descriptor" name="com.st.stm32cube.common.ecosystemintegration.ide.descriptor" schema="schema/com.st.stm32cube.common.ecosystemintegration.ide.descriptor.exsd"/>
+</plugin>

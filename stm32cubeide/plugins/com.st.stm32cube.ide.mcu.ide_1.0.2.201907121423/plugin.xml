@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension-point id="com.st.stm32cube.ide.mcu.ide.extensiondescriptor" name="com.st.stm32cube.ide.mcu.ide.extensiondescriptor" schema="schema/com.st.stm32cube.ide.mcu.ide.extensiondescriptor.exsd"/>
+   <extension-point id="com.st.stm32cube.ide.mcu.ide.projectimporter.converters" name="STM32 Project Importer Registered Converters" schema="schema/com.st.stm32cube.ide.mcu.ide.projectimporter.converters.exsd"/>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporterStartup">
+      </startup>
+      <startup
+            class="com.st.stm32cube.ide.mcu.ide.startup.LoadBuildRef">
+      </startup>
+      <startup
+            class="com.st.stm32cube.ide.mcu.ide.startup.ProductDbLoad">
+      </startup>
+   </extension>
+ 	
+<!-- =================================================================================== -->
+<!-- MCU CDT Project Template                                                            -->
+<!-- =================================================================================== -->	
+
+<!-- =================================================================================== -->
+<!-- MCU Build definition                                                                -->
+<!-- =================================================================================== -->
+
+<!-- =================================================================================== -->
+<!-- MCU Template Associations                                                           -->
+<!-- =================================================================================== -->
+
+<!-- =================================================================================== -->
+<!-- MCU Project Wizard	                                                                 -->
+<!-- =================================================================================== -->
+
+<!-- =================================================================================== -->
+<!-- MCU Commands			                                                             -->
+<!-- =================================================================================== -->    
+   
+<!-- =================================================================================== -->
+<!-- MCU Startup			                                                             -->
+<!-- =================================================================================== -->    
+   <!--extension
+         point="org.eclipse.ui.startup"-->
+      <!--startup class="com.st.stm32cube.ide.mcu.ide.startup.LoadResourcesStartup"/-->
+      <!--startup class="com.st.stm32cube.ide.mcu.ide.startup.DownloadLibrariesStartup"/-->
+   <!--/extension-->  
+   
+<!-- ESSAI pour l'import automatique sur double-clic des .project    
+ <extension
+       point="org.eclipse.ui.startup">
+    <startup
+          class="com.st.stm32cube.ide.mcu.ide.startup.ImportProjectStartup">
+    </startup>
+ </extension>
+--> 
+<!-- =================================================================================== -->
+<!-- MCU Menu   	                                                             		 -->
+<!-- =================================================================================== -->    
+       
+
+<!-- =================================================================================== -->
+<!-- MCU Project Property                                                                -->
+<!-- =================================================================================== --> 
+    <!--extension
+   		point="org.eclipse.ui.propertyPages">
+   		<page
+   			class="com.st.stm32cube.ide.mcu.ide.ui.properties.PeriphProperties"
+   			name="C/C++ Chip config"
+   			id="com.st.stm32cube.ide.mcu.ide.ui.properties.periphProperties"
+   			>
+   			<enabledWhen>
+   				<adapt type="org.eclipse.core.resources.IProject">
+					<test property="org.eclipse.core.resources.projectNature" value="com.st.stm32cube.ide.platform.stplatformNature"/>
+				</adapt>         
+			</enabledWhen>
+   		</page>
+   	 </extension-->
+
+ <!-- =================================================================================== -->
+<!-- MCU Language Settings Provider	                                                     -->
+<!-- =================================================================================== -->    
+	
+<!-- =================================================================================== -->
+<!-- MCU Board selection tab			                                                 -->
+<!-- =================================================================================== -->
+    
+<!-- =================================================================================== -->
+<!-- MCU Preference page				                                                 -->
+<!-- =================================================================================== -->
+	<extension
+			point="org.eclipse.ui.preferencePages">
+  <page
+        category="com.st.stm32cube.common.preferences.properties.preferenceCategoryPage"
+        class="com.st.stm32cube.ide.mcu.ide.ui.properties.MCUFilesAssociationPreferencePage"
+        id="com.st.stm32cube.ide.mcu.ide.ui.properties.filesAssociationPreferencePage"
+        name="%preferencePage.filesAssociation.name">
+  </page>
+	</extension>
+ <extension
+       point="com.st.stm32cube.common.preferences.page">
+    <PreferencePageProvider
+          provider="com.st.stm32cube.ide.mcu.ide.ui.properties.MCUFilesAssociationPreferencePage">
+    </PreferencePageProvider>
+ </extension>
+ <extension
+       point="com.st.stm32cube.common.projectcreation.ui.optiongroup">
+    <ProjectSetupOptionGroupProvider
+          provider="com.st.stm32cube.ide.mcu.ide.ui.wizard.MCUProjectCreationWizardOptionGroupProvider">
+    </ProjectSetupOptionGroupProvider>
+ </extension>
+ <extension
+       point="com.st.stm32cube.common.projectcreation.ui.processoperation">
+    <ProjectCreationProcessOperationProvider
+          provider="com.st.stm32cube.ide.mcu.ide.process.MCUProjectCreationProcessOperationProvider">
+    </ProjectCreationProcessOperationProvider>
+ </extension>
+    <extension
+          point="com.st.stm32cube.ide.mcu.startup.startupgenerator">
+       <StartupGenerator
+             provider="com.st.stm32cube.ide.mcu.ide.engine.MCUIdeStartupProvider">
+       </StartupGenerator>
+    </extension>
+    <extension
+          point="com.st.stm32cube.common.mx.externaltools">
+       <ExternalTools
+             provider="com.st.stm32cube.ide.mcu.ide.core.ExternalToolsProvider">
+       </ExternalTools>
+    </extension>
+ !-- =================================================================================== -->
+<!-- Project Importer				                                                 -->
+<!-- =================================================================================== -->
+  <extension
+        point="org.eclipse.ui.menus">
+     <menuContribution
+			locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu?after=additions">
+  <command
+        commandId="com.st.stm32cube.ide.mcu.ide.command.generatecode"
+        icon="icons/generatecode.gif"
+        id="com.st.stm32cube.ide.mcu.ide.menu.command.generatecode"
+        label="Generate Code"
+        style="push">
+     <visibleWhen
+           checkEnabled="false">
+        <with
+              variable="activeMenuSelection">
+           <or>
+              <iterate
+                    ifEmpty="false"
+                    operator="or">
+                 <adapt
+                       type="org.eclipse.core.resources.IProject">
+                    <test
+                          property="org.eclipse.core.resources.projectNature"
+                          value="com.st.stm32cube.ide.mcu.MCUCubeProjectNature">
+                    </test>
+                 </adapt>
+              </iterate>
+              <iterate>
+                 <adapt
+                       type="org.eclipse.core.resources.IResource">
+                    <test
+                          property="org.eclipse.core.resources.extension"
+                          value="ioc">
+                    </test>
+                 </adapt>
+              </iterate>
+           </or>
+        </with>
+     </visibleWhen>
+  </command>
+	 </menuContribution>
+
+     <menuContribution							
+			locationURI="popup:org.eclipse.ui.views.ResourceNavigator?after=additions">
+        <command
+              commandId="com.st.stm32cube.ide.mcu.ide.command.generatecode"
+              icon="icons/generatecode.gif"
+              id="com.st.stm32cube.ide.mcu.ide.menu.command.generatecode"
+              label="Generate Code"
+              style="push">
+           <visibleWhen
+                 checkEnabled="false">
+              <with
+                    variable="activeMenuSelection">
+                 <or>
+                    <iterate
+                          ifEmpty="false"
+                          operator="or">
+                       <adapt
+                             type="org.eclipse.core.resources.IProject">
+                          <test
+                                property="org.eclipse.core.resources.projectNature"
+                                value="com.st.stm32cube.ide.mcu.MCUCubeProjectNature">
+                          </test>
+                       </adapt>
+                    </iterate>
+                    <iterate>
+                       <adapt
+                             type="org.eclipse.core.resources.IResource">
+                          <test
+                                property="org.eclipse.core.resources.extension"
+                                value="ioc">
+                          </test>
+                       </adapt>
+                    </iterate>
+                 </or>
+              </with>
+           </visibleWhen>
+        </command>
+	 </menuContribution>
+
+     <menuContribution							
+			locationURI="popup:org.eclipse.cdt.ui.CView?after=additions">
+        <command
+              commandId="com.st.stm32cube.ide.mcu.ide.command.generatecode"
+              icon="icons/generatecode.gif"
+              id="com.st.stm32cube.ide.mcu.ide.menu.command.generatecode"
+              label="Generate Code"
+              style="push">
+           <visibleWhen
+                 checkEnabled="false">
+              <with
+                    variable="activeMenuSelection">
+                 <or>
+                    <iterate
+                          ifEmpty="false"
+                          operator="or">
+                       <adapt
+                             type="org.eclipse.core.resources.IProject">
+                          <test
+                                property="org.eclipse.core.resources.projectNature"
+                                value="com.st.stm32cube.ide.mcu.MCUCubeProjectNature">
+                          </test>
+                       </adapt>
+                    </iterate>
+                    <iterate>
+                       <adapt
+                             type="org.eclipse.core.resources.IResource">
+                          <test
+                                property="org.eclipse.core.resources.extension"
+                                value="ioc">
+                          </test>
+                       </adapt>
+                    </iterate>
+                 </or>
+              </with>
+           </visibleWhen>
+        </command>
+	 </menuContribution>
+
+   </extension>
+  <extension
+        point="org.eclipse.ui.commands">
+     <command
+           defaultHandler="com.st.stm32cube.ide.mcu.ide.handlers.ioc.GenerateCodeHandler"
+           description="Generate Code (based on .ioc file content)"
+           id="com.st.stm32cube.ide.mcu.ide.command.generatecode"
+           name="Generate Code">
+     </command>
+  </extension>
+  <extension
+        point="com.st.stm32cube.common.ecosystemintegration.ide.descriptor">
+     <IdeDescriptor
+           provider="com.st.stm32cube.ide.mcu.ide.process.MCUIdeDescriptorProvider">
+     </IdeDescriptor>
+  </extension>
+  <extension
+        point="com.st.stm32cube.common.mx.idedescriptor">
+     <IdeDescriptor
+           provider="com.st.stm32cube.ide.mcu.ide.process.MxIdeDescriptorProvider">
+     </IdeDescriptor>
+  </extension>
+  <extension
+        point="org.eclipse.ui.activities">
+     <activity
+           id="com.st.stm32cube.ide.mcu.rcp.hideActivity.mcuProject"
+           name="Eclipse UI-Elems Hide Activity For MCU Project">
+        <enabledWhen>
+           <with
+                 variable="selection">
+              <iterate
+                    operator="or">
+                 <adapt
+                       type="org.eclipse.core.resources.IProject">
+                    <not>
+                       <test
+                             property="org.eclipse.core.resources.projectNature"
+                             value="com.st.stm32cube.ide.mcu.MCUProjectNature">
+                       </test>
+                    </not>
+                 </adapt>
+              </iterate>
+           </with>
+        </enabledWhen>
+     </activity>
+     <activityPatternBinding
+           activityId="com.st.stm32cube.ide.mcu.rcp.hideActivity.mcuProject"
+           pattern=".*/org.eclipse.cdt.managedbuilder.ui.properties.Page_ToolChain">
+     </activityPatternBinding>
+  </extension>
+</plugin>

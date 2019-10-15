@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="4.7"?>
+<!DOCTYPE fragment>
+<fragment>
+   <extension
+         point="com.st.stm32cube.common.logger">
+      <LoggerDialog
+            provider="com.st.stm32cube.common.logger.ui.core.MCUUiLoggerDialogProvider">
+      </LoggerDialog>
+   </extension>
+</fragment>

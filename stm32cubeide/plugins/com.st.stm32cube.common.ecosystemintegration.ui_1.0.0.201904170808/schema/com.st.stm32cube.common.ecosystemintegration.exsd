@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.st.stm32cube.common.ecosystemintegration.ui" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.st.stm32cube.common.ecosystemintegration.ui" id="com.st.stm32cube.common.ecosystemintegration" name="STM32 EcoSystem Integration"/>
+      </appinfo>
+      <documentation>
+         This extension point used to contribute to STM32CubeIDE providing STM32 EcoSystem features.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence>
+            <element ref="IocEditor" minOccurs="0" maxOccurs="1"/>
+            <element ref="IocGenerator" minOccurs="0" maxOccurs="1"/>
+            <element ref="TargetSelector" minOccurs="0" maxOccurs="1"/>
+            <element ref="FirmwareDescriptor" minOccurs="0" maxOccurs="1"/>
+            <element ref="FirmwareUpdater" minOccurs="0" maxOccurs="1"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="IocEditor">
+      <complexType>
+         <attribute name="provider" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Provides .ioc (STM32CubeMx db) editor
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.st.stm32cube.common.ecosystemintegration.registry.IIocEditorProvider"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="IocGenerator">
+      <complexType>
+         <attribute name="provider" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Provides .ioc (STM32CubeMx db) generator
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.st.stm32cube.common.ecosystemintegration.registry.IIocGeneratorProvider"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="TargetSelector">
+      <complexType>
+         <attribute name="provider" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Provides target selector (STM32CubeMcuFinder)
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.st.stm32cube.common.ecosystemintegration.registry.ITargetSelectorProvider"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="FirmwareDescriptor">
+      <complexType>
+         <attribute name="provider" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Provides firmware descriptor (STM32CubeUpdater)
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.st.stm32cube.common.ecosystemintegration.registry.IFirmwareDescriptorProvider"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="FirmwareUpdater">
+      <complexType>
+         <attribute name="provider" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Provides firmware updater (STM32CubeUpdater)
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.st.stm32cube.common.ecosystemintegration.registry.IFirmwareUpdaterProvider"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         1.0.0
+      </documentation>
+   </annotation>
+
+
+
+
+
+</schema>

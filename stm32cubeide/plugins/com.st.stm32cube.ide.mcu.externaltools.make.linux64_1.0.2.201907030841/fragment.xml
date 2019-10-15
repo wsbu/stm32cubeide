@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE fragment>
+<fragment>
+
+   <extension
+         point="com.st.stm32cube.ide.mcu.externaltools.tools">
+      <Tool_Make
+            binary-name="make"
+            name="Make tool for Linux"
+            resource="tools/">
+      </Tool_Make>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.mcu.informationcenter.docs">
+      <DocumentGroup
+            prio="2000"
+            title="BUILD TOOLS">
+         <Document
+               description="GNU Make"
+               filetype="PDF"
+               path="tools/share/doc/make/make.pdf"
+               prio="100"
+               title="Make">
+         </Document>
+      </DocumentGroup>
+   </extension>
+</fragment>

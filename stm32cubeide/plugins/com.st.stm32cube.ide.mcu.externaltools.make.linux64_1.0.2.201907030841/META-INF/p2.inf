@@ -1,0 +1,17 @@
+instructions.install.import = \
+  org.eclipse.equinox.p2.touchpoint.natives.chmod
+instructions.install = chmod(targetDir:${artifact.location},targetFile:META-INF/MANIFEST.MF,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.html,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.ini,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.mappings,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:fragment.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:fragment.xml,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/make,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/include/gnumake.h,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/share/doc/make/COPYING,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/share/doc/make/make.pdf,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/share/info/make.info,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/share/info/make.info-1,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/share/info/make.info-2,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/share/man/man1/make.1,permissions:664);

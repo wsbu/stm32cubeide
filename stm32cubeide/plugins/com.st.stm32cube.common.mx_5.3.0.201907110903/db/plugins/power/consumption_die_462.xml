@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Consumption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../../../../doc/V4/Development/Specifications/db/plugins/power/consumption.xsd">
+    <Vdd Value="3.0">
+        <Temperature Value="25">
+            <Fetch FetchType="FLASH">
+                <Vcore Range="Range1-High">
+                    <Mode Name="RUN">
+                        <Oscillator Value="HSE BYP PLL ART">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="80000000">
+                                    <Consumption>8450000</Consumption>
+                                    <!-- Key: 8 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL ART">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="72000000">
+                                    <Consumption>7650000</Consumption>
+                                    <!-- Key: 9 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL ART">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="64000000">
+                                    <Consumption>6800000</Consumption>
+                                    <!-- Key: 10 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="48000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>5100000</Consumption>
+                                    <!-- Key: 11 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="32000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>3500000</Consumption>
+                                    <!-- Key: 12 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="24000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>2600000</Consumption>
+                                    <!-- Key: 13 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1800000</Consumption>
+                                    <!-- Key: 14 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="80000000">
+                                    <Consumption>8850000</Consumption>
+                                    <!-- Key: 26 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="72000000">
+                                    <Consumption>8000000</Consumption>
+                                    <!-- Key: 27 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="64000000">
+                                    <Consumption>7900000</Consumption>
+                                    <!-- Key: 28 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="48000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>6600000</Consumption>
+                                    <!-- Key: 29 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="32000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>4750000</Consumption>
+                                    <!-- Key: 30 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="24000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>3600000</Consumption>
+                                    <!-- Key: 31 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>2600000</Consumption>
+                                    <!-- Key: 32 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+                <Vcore Range="Range2-Medium">
+                    <Mode Name="RUN">
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="26000000">
+                                <FCPU Value="26000000">
+                                    <Consumption>2350000</Consumption>
+                                    <!-- Key: 1 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1500000</Consumption>
+                                    <!-- Key: 2 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>815000</Consumption>
+                                    <!-- Key: 3 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>465000</Consumption>
+                                    <!-- Key: 4 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>295000</Consumption>
+                                    <!-- Key: 5 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>205000</Consumption>
+                                    <!-- Key: 6 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP ART">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>130000</Consumption>
+                                    <!-- Key: 7 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="26000000">
+                                <FCPU Value="26000000">
+                                    <Consumption>2750000</Consumption>
+                                    <!-- Key: 19 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1950000</Consumption>
+                                    <!-- Key: 20 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>1100000</Consumption>
+                                    <!-- Key: 21 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>640000</Consumption>
+                                    <!-- Key: 22 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>380000</Consumption>
+                                    <!-- Key: 23 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>250000</Consumption>
+                                    <!-- Key: 24 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>135000</Consumption>
+                                    <!-- Key: 25 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+                <Vcore Range="NoRange">
+                    <Mode Name="LOWPOWER_RUN">
+                        <Oscillator Value="MSI ART">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>225000</Consumption>
+                                    <!-- Key: 15 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI ART">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>130000</Consumption>
+                                    <!-- Key: 16 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI ART">
+                            <Foscillator Value="400000">
+                                <FCPU Value="400000">
+                                    <Consumption>73000</Consumption>
+                                    <!-- Key: 17 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI ART">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>38000</Consumption>
+                                    <!-- Key: 18 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>340000</Consumption>
+                                    <!-- Key: 33 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>175000</Consumption>
+                                    <!-- Key: 34 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="400000">
+                                <FCPU Value="400000">
+                                    <Consumption>89500</Consumption>
+                                    <!-- Key: 35 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>42500</Consumption>
+                                    <!-- Key: 36 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+            </Fetch>
+            <Fetch FetchType="SRAM1">
+                <Vcore Range="Range1-High">
+                    <Mode Name="RUN">
+                        <Oscillator Value="HSE BYP PLL">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="80000000">
+                                    <Consumption>8550000</Consumption>
+                                    <!-- Key: 44 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="72000000">
+                                    <Consumption>7700000</Consumption>
+                                    <!-- Key: 45 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="64000000">
+                                    <Consumption>6900000</Consumption>
+                                    <!-- Key: 46 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="48000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>5150000</Consumption>
+                                    <!-- Key: 47 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="32000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>3450000</Consumption>
+                                    <!-- Key: 48 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="24000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>2650000</Consumption>
+                                    <!-- Key: 49 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1800000</Consumption>
+                                    <!-- Key: 50 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+                <Vcore Range="Range2-Medium">
+                    <Mode Name="RUN">
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="26000000">
+                                <FCPU Value="26000000">
+                                    <Consumption>2400000</Consumption>
+                                    <!-- Key: 37 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1500000</Consumption>
+                                    <!-- Key: 38 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>820000</Consumption>
+                                    <!-- Key: 39 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>470000</Consumption>
+                                    <!-- Key: 40 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>295000</Consumption>
+                                    <!-- Key: 41 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>210000</Consumption>
+                                    <!-- Key: 42 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>130000</Consumption>
+                                    <!-- Key: 43 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+                <Vcore Range="NoRange">
+                    <Mode Name="LOWPOWER_RUN">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>220000</Consumption>
+                                    <!-- Key: 51 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>120000</Consumption>
+                                    <!-- Key: 52 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="400000">
+                                <FCPU Value="400000">
+                                    <Consumption>60000</Consumption>
+                                    <!-- Key: 53 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>36000</Consumption>
+                                    <!-- Key: 54 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+            </Fetch>
+            <Fetch FetchType="n/a">
+                <Vcore Range="Range1-High">
+                    <Mode Name="SLEEP">
+                        <Oscillator Value="HSE BYP PLL Flash-ON">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="80000000">
+                                    <Consumption>2300000</Consumption>
+                                    <!-- Key: 62 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL Flash-ON">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="72000000">
+                                    <Consumption>2100000</Consumption>
+                                    <!-- Key: 63 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP PLL Flash-ON">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="64000000">
+                                    <Consumption>1900000</Consumption>
+                                    <!-- Key: 64 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="48000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>1400000</Consumption>
+                                    <!-- Key: 65 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="32000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>970000</Consumption>
+                                    <!-- Key: 66 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="24000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>765000</Consumption>
+                                    <!-- Key: 67 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>555000</Consumption>
+                                    <!-- Key: 68 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_STOP0">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="48000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>1150000</Consumption>
+                                    <!-- Key: 101 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI16">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1200000</Consumption>
+                                    <!-- Key: 103 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_STOP1">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="48000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>1150000</Consumption>
+                                    <!-- Key: 101 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI16">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1200000</Consumption>
+                                    <!-- Key: 103 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_STOP2">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="48000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>1850000</Consumption>
+                                    <!-- Key: 98 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI16">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1550000</Consumption>
+                                    <!-- Key: 100 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_SHUTDOWN">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>1000000</Consumption>
+                                    <!-- Key: 105 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_STANDBY">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>2000000</Consumption>
+                                    <!-- Key: 104 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+                <Vcore Range="Range2-Medium">
+                    <Mode Name="SLEEP">
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="26000000">
+                                <FCPU Value="26000000">
+                                    <Consumption>700000</Consumption>
+                                    <!-- Key: 55 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="16000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>475000</Consumption>
+                                    <!-- Key: 56 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>300000</Consumption>
+                                    <!-- Key: 57 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>210000</Consumption>
+                                    <!-- Key: 58 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>165000</Consumption>
+                                    <!-- Key: 59 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>145000</Consumption>
+                                    <!-- Key: 60 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE BYP Flash-ON">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>125000</Consumption>
+                                    <!-- Key: 61 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_STOP0">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>1200000</Consumption>
+                                    <!-- Key: 102 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_STOP1">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>1200000</Consumption>
+                                    <!-- Key: 102 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="WU_FROM_STOP2">
+                        <Oscillator Value="MSI">
+                            <Foscillator Value="4000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>1500000</Consumption>
+                                    <!-- Key: 99 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+                <Vcore Range="NoRange">
+                    <Mode Name="LOWPOWER_SLEEP">
+                        <Oscillator Value="MSI Flash-ON">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>76000</Consumption>
+                                    <!-- Key: 69 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI Flash-ON">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>54000</Consumption>
+                                    <!-- Key: 70 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI Flash-ON">
+                            <Foscillator Value="400000">
+                                <FCPU Value="400000">
+                                    <Consumption>39000</Consumption>
+                                    <!-- Key: 71 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI Flash-ON">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>35500</Consumption>
+                                    <!-- Key: 72 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI Flash-PowerDown">
+                            <Foscillator Value="2000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>76500</Consumption>
+                                    <!-- Key: 73 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI Flash-PowerDown">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>54000</Consumption>
+                                    <!-- Key: 74 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI Flash-PowerDown">
+                            <Foscillator Value="400000">
+                                <FCPU Value="400000">
+                                    <Consumption>28000</Consumption>
+                                    <!-- Key: 75 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="MSI Flash-PowerDown">
+                            <Foscillator Value="100000">
+                                <FCPU Value="100000">
+                                    <Consumption>21500</Consumption>
+                                    <!-- Key: 76 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="STANDBY">
+                        <Oscillator Value="ALL CLOCKS OFF">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>125</Consumption>
+                                    <!-- Key: 86 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSI IWDG">
+                            <Foscillator Value="32000">
+                                <FCPU Value="0">
+                                    <Consumption>420</Consumption>
+                                    <!-- Key: 87 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSI RTC">
+                            <Foscillator Value="32000">
+                                <FCPU Value="0">
+                                    <Consumption>510</Consumption>
+                                    <!-- Key: 88 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSI RTC IWDG">
+                            <Foscillator Value="32000">
+                                <FCPU Value="0">
+                                    <Consumption>620</Consumption>
+                                    <!-- Key: 89 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE BYP RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>625</Consumption>
+                                    <!-- Key: 90 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE LowDrive RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>565</Consumption>
+                                    <!-- Key: 91 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="SHUTDOWN">
+                        <Oscillator Value="ALL CLOCKS OFF">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>37</Consumption>
+                                    <!-- Key: 93 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE BYP RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>255</Consumption>
+                                    <!-- Key: 94 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="STOP0">
+                        <Oscillator Value="ALL CLOCKS OFF">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>125000</Consumption>
+                                    <!-- Key: 85 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="STOP1">
+                        <Oscillator Value="ALL CLOCKS OFF">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>9900</Consumption>
+                                    <!-- Key: 81 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSI RTC">
+                            <Foscillator Value="32000">
+                                <FCPU Value="0">
+                                    <Consumption>10500</Consumption>
+                                    <!-- Key: 82 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE BYP RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>10500</Consumption>
+                                    <!-- Key: 83 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE LowDrive RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>10000</Consumption>
+                                    <!-- Key: 84 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="STOP2">
+                        <Oscillator Value="ALL CLOCKS OFF">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>2050</Consumption>
+                                    <!-- Key: 77 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSI RTC">
+                            <Foscillator Value="25000">
+                                <FCPU Value="0">
+                                    <Consumption>2500</Consumption>
+                                    <!-- Key: 78 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE BYP RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>2800</Consumption>
+                                    <!-- Key: 79 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE LowDrive RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>2600</Consumption>
+                                    <!-- Key: 80 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="VBAT">
+                        <Oscillator Value="ALL CLOCKS OFF">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>5</Consumption>
+                                    <!-- Key: 95 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE BYP RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="32768">
+                                    <Consumption>285</Consumption>
+                                    <!-- Key: 96 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE RTC">
+                            <Foscillator Value="32768">
+                                <FCPU Value="32768">
+                                    <Consumption>455</Consumption>
+                                    <!-- Key: 97 -->
+                                    <Category Name="DatasheetAndPCC"/>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+            </Fetch>
+        </Temperature>
+    </Vdd>
+</Consumption>

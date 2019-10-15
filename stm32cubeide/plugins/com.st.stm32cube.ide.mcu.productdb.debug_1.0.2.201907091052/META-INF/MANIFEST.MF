@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.productdb.debug
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.productdb.debug;singleto
+ n:=true
+Built-By: acitlsqa
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Fragment-Host: com.st.stm32cube.ide.mcu.productdb
+Export-Package: com.st.stm32cube.ide.mcu.productdb.debug,com.st.stm32c
+ ube.ide.mcu.productdb.debug.registry,com.st.stm32cube.ide.mcu.product
+ db.debug.svd.core
+Bundle-Name: %pluginName
+Bundle-Version: 1.0.2.201907091052
+Bundle-Localization: fragment
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

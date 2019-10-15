@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.debug"
+      label="%pluginName"
+      version="1.0.2.201907120816"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.cdt.debug.gdbjtag"/>
+      <import feature="org.eclipse.cdt.gdb"/>
+      <import feature="org.eclipse.cdt.launch.remote"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.debug"
+         download-size="644"
+         install-size="1447"
+         version="1.0.2.201907120816"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.debug.dsf"
+         download-size="31"
+         install-size="60"
+         version="1.0.0.201904080651"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.debug.dsf.oss"
+         download-size="11"
+         install-size="18"
+         version="1.0.2.201907091052"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.debug.launch"
+         download-size="188"
+         install-size="401"
+         version="1.0.2.201907092029"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.debug.launch.oss"
+         download-size="60"
+         install-size="112"
+         version="1.0.2.201907091052"
+         unpack="false"/>
+
+</feature>

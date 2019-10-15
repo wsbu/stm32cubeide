@@ -1,0 +1,10 @@
+/ {
+	aliases {
+		serial1 = &usart2;
+	};
+};
+
+&usbotg_hs {
+	usb1600;
+	hnp-srp-disable;
+};
