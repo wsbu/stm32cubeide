@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.productdb
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.productdb;singleton:=tru
+ e
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.ui.workbench,org.eclipse.core.runtime,com.
+ st.stm32cube.ide.mcu.productdb,com.st.stm32cube.common.logger
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: STMicroelectronics
+Eclipse-ExtensibleAPI: true
+Export-Package: com.st.stm32cube.ide.mpu.productdb
+Bundle-Name: STM32CubeIDE MPU Product Database
+Bundle-Version: 1.0.0.201903292002
+Bundle-Activator: com.st.stm32cube.ide.mpu.productdb.MPUProductDbPlugi
+ n
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.toolchain.arm_none"
+      label="%pluginName"
+      version="1.0.2.201907121423"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.toolchain.arm-none"
+         download-size="43"
+         install-size="229"
+         version="1.0.2.201907121423"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.toolchain.arm-none.oss"
+         download-size="82"
+         install-size="191"
+         version="1.0.2.201907092029"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Consumption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../../../../doc/V4/Development/Specifications/db/plugins/power/consumption.xsd">
+    <Vdd Value="3.6">
+        <Temperature Value="25">
+            <Fetch FetchType="FLASH">
+                <Vcore Range="No Scale">
+                    <Mode Name="RUN">
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>12300000</Consumption>
+                                    <!-- 11.4 or 11.5 ? -->
+                                    <IddaConsumption Vdda="3.3">155000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="36000000">
+                                    <Consumption>9500000</Consumption>
+                                    <IddaConsumption Vdda="3.3">117000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>8600000</Consumption>
+                                    <IddaConsumption Vdda="3.3">105000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>6700000</Consumption>
+                                    <IddaConsumption Vdda="3.3">83000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>4700000</Consumption>
+                                    <IddaConsumption Vdda="3.3">60000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>2700000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>1800000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>1300000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>1100000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="500000">
+                                    <Consumption>1000000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>11400000</Consumption>
+                                    <IddaConsumption Vdda="3.6">164000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>7900000</Consumption>
+                                    <IddaConsumption Vdda="3.6">113000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>6200000</Consumption>
+                                    <IddaConsumption Vdda="3.6">88000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>2200000</Consumption>
+                                    <IddaConsumption Vdda="3.6">3500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>700000</Consumption>
+                                    <IddaConsumption Vdda="3.6">3500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>11700000</Consumption>
+                                    <IddaConsumption Vdda="3.6">244000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>8000000</Consumption>
+                                    <IddaConsumption Vdda="3.6">193000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>6100000</Consumption>
+                                    <IddaConsumption Vdda="3.6">168000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>2400000</Consumption>
+                                    <IddaConsumption Vdda="3.6">83500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+            </Fetch>
+            <Fetch FetchType="RAM">
+                <Vcore Range="No Scale">
+                    <Mode Name="RUN">
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>10300000</Consumption>
+                                    <IddaConsumption Vdda="3.6">164000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>6700000</Consumption>
+                                    <IddaConsumption Vdda="3.6">113000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>5100000</Consumption>
+                                    <IddaConsumption Vdda="3.6">88000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>1700000</Consumption>
+                                    <IddaConsumption Vdda="3.6">3500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>200000</Consumption>
+                                    <IddaConsumption Vdda="3.6">3500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>10400000</Consumption>
+                                    <IddaConsumption Vdda="3.6">244000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>6800000</Consumption>
+                                    <IddaConsumption Vdda="3.6">193000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>5200000</Consumption>
+                                    <IddaConsumption Vdda="3.6">168000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>1800000</Consumption>
+                                    <IddaConsumption Vdda="3.6">83500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+            </Fetch>
+            <Fetch FetchType="RAM/FLASH">
+                <Vcore Range="No Scale">
+                    <Mode Name="SLEEP">
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>2900000</Consumption>
+                                    <IddaConsumption Vdda="3.3">155000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="36000000">
+                                    <Consumption>2400000</Consumption>
+                                    <IddaConsumption Vdda="3.3">117000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>2200000</Consumption>
+                                    <IddaConsumption Vdda="3.3">105000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>1800000</Consumption>
+                                    <IddaConsumption Vdda="3.3">83000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="16000000">
+                                    <Consumption>1400000</Consumption>
+                                    <IddaConsumption Vdda="3.3">60000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>900000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="4000000">
+                                    <Consumption>900000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="2000000">
+                                    <Consumption>800000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>800000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSE">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="500000">
+                                    <Consumption>800000</Consumption>
+                                    <IddaConsumption Vdda="3.3">2200</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>2400000</Consumption>
+                                    <IddaConsumption Vdda="3.6">164000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>1600000</Consumption>
+                                    <IddaConsumption Vdda="3.6">113000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>1300000</Consumption>
+                                    <IddaConsumption Vdda="3.6">88000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>400000</Consumption>
+                                    <IddaConsumption Vdda="3.6">3500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSEBYP">
+                            <Foscillator Value="1000000">
+                                <FCPU Value="1000000">
+                                    <Consumption>100000</Consumption>
+                                    <IddaConsumption Vdda="3.6">3500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="48000000">
+                                    <Consumption>2400000</Consumption>
+                                    <IddaConsumption Vdda="3.6">244000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="32000000">
+                                    <Consumption>1700000</Consumption>
+                                    <IddaConsumption Vdda="3.6">193000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI PLL">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="24000000">
+                                    <Consumption>1300000</Consumption>
+                                    <IddaConsumption Vdda="3.6">168000</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="HSI">
+                            <Foscillator Value="8000000">
+                                <FCPU Value="8000000">
+                                    <Consumption>500000</Consumption>
+                                    <IddaConsumption Vdda="3.6">83500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+            </Fetch>
+            <Fetch FetchType="n/a">
+                <Vcore Range="No Scale">
+                    <Mode Name="STOP">
+                        <Oscillator Value="Regulator_ON">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>16000</Consumption>
+                                    <IddaConsumption Vdda="3.6">2600</IddaConsumption>
+                                    <!-- Take only VDDA monitoring ON -->
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="Regulator_LP">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>4000</Consumption>
+                                    <IddaConsumption Vdda="3.6">2600</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="STANDBY">
+                        <Oscillator Value="LSI IWDG">
+                            <Foscillator Value="37000">
+                                <FCPU Value="0">
+                                    <Consumption>1500</Consumption>
+                                    <IddaConsumption Vdda="3.6">3300</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="ALL CLOCKS OFF">
+                            <Foscillator Value="0">
+                                <FCPU Value="0">
+                                    <Consumption>1300</Consumption>
+                                    <IddaConsumption Vdda="3.6">2500</IddaConsumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                    <Mode Name="VBAT">
+                        <Oscillator Value="LSE RTC LowDriving">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>900</Consumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                        <Oscillator Value="LSE RTC HighDriving">
+                            <Foscillator Value="32768">
+                                <FCPU Value="0">
+                                    <Consumption>1200</Consumption>
+                                </FCPU>
+                            </Foscillator>
+                        </Oscillator>
+                    </Mode>
+                </Vcore>
+            </Fetch>
+        </Temperature>
+    </Vdd>
+</Consumption>

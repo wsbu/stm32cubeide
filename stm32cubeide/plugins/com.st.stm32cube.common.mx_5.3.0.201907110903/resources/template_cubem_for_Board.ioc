@@ -1,0 +1,17 @@
+File.Version=6
+KeepUserPlacement=false
+Mcu.Name=$(mcu)
+board=$(board)
+ProjectManager.ProjectFileName=$(projectName).ioc
+ProjectManager.ProjectName=$(projectName)
+ProjectManager.PreviousToolchain=
+ProjectManager.TargetToolchain=$(ideName)
+ProjectManager.DeletePrevious=true
+ProjectManager.UnderRoot=$(isUnderRoot)
+ProjectManager.ToolChainLocation=
+ProjectManager.LibraryCopy=$(libraryCopyMode)
+ProjectManager.DeviceId=$(mcu)
+ProjectManager.isStatic=$(mxCubeStaticGeneration)
+ProjectManager.isCPP=$(mxCubeCPP)
+isbadioc=$(isbadioc)
+$(boardConfigFile)

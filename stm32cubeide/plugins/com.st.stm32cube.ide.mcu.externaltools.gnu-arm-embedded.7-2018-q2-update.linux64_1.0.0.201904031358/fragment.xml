@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE fragment>
+
+<fragment>
+
+   <extension
+         point="com.st.stm32cube.ide.mcu.externaltools.tools">
+      <Tool_Compiler
+            identifier="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-arm-embedded.7-2018-q2-update"
+            install="false"
+            name="GNU Arm Embedded Toolchain (Linux 64bit)"
+            prefix="arm-none-eabi-"
+            resource="tools">
+      </Tool_Compiler>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.mcu.informationcenter.docs">
+      <DocumentGroup
+            prio="3000"
+            title="TOOLCHAIN MANUALS (gnu-arm-embedded.7-2018-q2-update)">
+         <Document
+               description="The GNU Assembler"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/as.pdf"
+               prio="100"
+               title="Assembler">
+         </Document>
+         <Document
+               description="GNU Compiler Collection"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/gcc/gcc.pdf"
+               prio="100"
+               title="C/C++ Compiler">
+         </Document>
+         <Document
+               description="The GNU Linker"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/ld.pdf"
+               prio="100"
+               title="C/C++ Linker">
+         </Document>
+         <Document
+               description="The GNU C Preprocessor"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/gcc/cpp.pdf"
+               prio="100"
+               title="C Preprocessor">
+         </Document>
+         <Document
+               description="Debugging with GDB"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/gdb.pdf"
+               prio="100"
+               title="Debugger">
+         </Document>
+         <Document
+               description="The GNU GDB Reference Card"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/refcard.pdf"
+               prio="100"
+               title="GDB Quick Reference Card">
+         </Document>
+         <Document
+               description="The GNU Binary Utilities"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/binutils.pdf"
+               prio="100"
+               title="Binary Utilities">
+         </Document>
+         <Document
+               description="The Red hat newlib C Library"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/libc.pdf"
+               prio="100"
+               title="C Runtime Library">
+         </Document>
+         <Document
+               description="The GNU C++ Library Manual"
+               filetype="HTML"
+               path="https://gcc.gnu.org/onlinedocs/libstdc%2b%2b/index.html"
+               prio="100"
+               title="C++ Library Manual">
+         </Document>
+         <Document
+               description="The Red Hat newlib C Math Library"
+               filetype="PDF"
+               path="tools/share/doc/gcc-arm-none-eabi/pdf/libm.pdf"
+               prio="100"
+               title="C Math Library">
+         </Document>
+         <Document
+               description="Newlib-nano C runtime library readme"
+               filetype="TXT"
+               path="tools/share/doc/gcc-arm-none-eabi/readme.txt"
+               prio="100"
+               title="Newlib-nano readme">
+         </Document>
+      </DocumentGroup>
+   </extension>
+</fragment>

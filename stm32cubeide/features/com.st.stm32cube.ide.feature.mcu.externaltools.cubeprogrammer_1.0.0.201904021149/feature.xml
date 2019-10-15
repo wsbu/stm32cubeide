@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.externaltools.cubeprogrammer"
+      label="%pluginName"
+      version="1.0.0.201904021149"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64"
+         os="linux"
+         arch="x86_64"
+         download-size="39306"
+         install-size="106607"
+         version="1.0.0.201904021149"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.macos64"
+         os="macosx"
+         ws="cocoa"
+         arch="x86_64"
+         download-size="22581"
+         install-size="72024"
+         version="1.0.0.201904021149"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32"
+         os="win32"
+         download-size="78634"
+         install-size="172348"
+         version="1.0.0.201904021149"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer"
+         download-size="7"
+         install-size="11"
+         version="1.0.0.201904021149"
+         unpack="false"/>
+
+</feature>
