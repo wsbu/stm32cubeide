@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.resources.common"
+      label="%pluginName"
+      version="1.3.0.202002181050"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.resources"
+         download-size="19"
+         install-size="39"
+         version="1.3.0.202002181050"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.resources.common"
+         download-size="16"
+         install-size="30"
+         version="1.3.0.202002181050"/>
+
+</feature>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:stm32="http://openstm32.org/openOcdTraceReferences" 
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		   targetNamespace="http://openstm32.org/openOcdTraceReferences" 
+		   xsi:schemaLocation="http://www.w3.org/2001/XMLSchema XMLSchema.xsd"
+		   elementFormDefault="qualified" 
+		   attributeFormDefault="unqualified" 
+		   version="1.0">
+
+	<xs:simpleType name="severityType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Info"/>
+			<xs:enumeration value="Warning"/>
+			<xs:enumeration value="Error"/>
+			<xs:enumeration value="Debug"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="keyString">
+		<xs:sequence>
+			<xs:element name="keyString" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:complexType name="trace">
+    	<xs:sequence>
+    		<xs:element name="keyStrings" type="stm32:keyString"  minOccurs="1" maxOccurs="1"></xs:element>
+    	</xs:sequence>
+    		<xs:attribute name="isEndUserVisible" type="xs:boolean"  use="required"/>
+    		<xs:attribute name="severity" type="stm32:severityType"  use="required"/>
+    		<xs:attribute name="shortComment" type="xs:string"  use="required"/>
+    </xs:complexType>
+	
+    <xs:element name="openOcdTraceReferences">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="trace" type="stm32:trace" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		</xs:element>	
+</xs:schema>

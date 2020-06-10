@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="com.st.stm32cube.ide.mcu.debug.openocd" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="com.st.stm32cube.ide.mcu.debug.openocd" id="com.st.stm32cube.ide.mcu.debug.openocd.cfg.resources" name="STM32CubeIDE OpenOCD debug cfg resources extension"/>
+      </appinfo>
+      <documentation>
+         This extension point used to contribute to OpenOCD .cfg file(s) resources (interface(s), target(s), board(s), ...).
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="0" maxOccurs="1">
+            <element ref="OpenOCDCfgResources" minOccurs="0" maxOccurs="1"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="OpenOCDCfgResources">
+      <complexType>
+         <attribute name="provider" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Provides method allowing to promote OpenOCD debug cfg file(s) resources.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":com.st.stm32cube.ide.mcu.debug.openocd.registry.IMCUOpenOCDCfgResourcesProvider"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         2.2.0
+      </documentation>
+   </annotation>
+
+
+
+
+
+</schema>

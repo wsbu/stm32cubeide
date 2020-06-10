@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.cdt.platform"
+      label="%featureName"
+      version="9.9.0.201909091956"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.cdt.native"
+         version="9.9.0.201909051303"/>
+
+   <plugin
+         id="org.eclipse.cdt"
+         download-size="37"
+         install-size="48"
+         version="9.9.0.201906111633"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.core"
+         download-size="5943"
+         install-size="13791"
+         version="6.9.0.201909091953"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.codan.core"
+         download-size="146"
+         install-size="295"
+         version="4.0.100.201908101428"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.codan.ui"
+         download-size="127"
+         install-size="271"
+         version="3.3.300.201908121111"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.codan.core.cxx"
+         download-size="74"
+         install-size="151"
+         version="3.4.200.201908101428"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.codan.ui.cxx"
+         download-size="28"
+         install-size="50"
+         version="3.5.100.201908121111"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.codan.checkers"
+         download-size="118"
+         install-size="279"
+         version="3.3.200.201908101428"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.codan.checkers.ui"
+         download-size="64"
+         install-size="134"
+         version="3.2.100.201905301541"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.debug.core"
+         download-size="323"
+         install-size="673"
+         version="8.4.0.201908101428"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.debug.ui"
+         download-size="1053"
+         install-size="2219"
+         version="8.3.200.201908121111"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.make.core"
+         download-size="453"
+         install-size="993"
+         version="7.4.100.201905311644"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.make.ui"
+         download-size="507"
+         install-size="1038"
+         version="7.3.100.201908121431"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.managedbuilder.core"
+         download-size="1335"
+         install-size="3261"
+         version="8.7.200.201909091956"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.managedbuilder.ui"
+         download-size="495"
+         install-size="1065"
+         version="9.1.300.201908090550"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.ui"
+         download-size="6182"
+         install-size="13910"
+         version="6.6.0.201909091956"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.doc.user"
+         download-size="15280"
+         install-size="16929"
+         version="5.4.200.201909091956"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.dsf"
+         download-size="335"
+         install-size="689"
+         version="2.8.100.201908121111"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.dsf.ui"
+         download-size="1434"
+         install-size="3304"
+         version="2.5.200.201908121111"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.native.serial"
+         download-size="72"
+         install-size="193"
+         version="1.1.200.201909051303"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.tools.templates.freemarker.java11"
+         download-size="8"
+         install-size="10"
+         version="1.0.0.201812111206"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.cdt.debug.gdbjtag"
+      label="%featureName"
+      version="9.9.0.201908231443"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.cdt.debug.gdbjtag.core"
+         download-size="59"
+         install-size="120"
+         version="9.3.0.201908231443"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.debug.gdbjtag.ui"
+         download-size="65"
+         install-size="118"
+         version="8.1.1.201811241055"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.debug.gdbjtag"
+         download-size="12"
+         install-size="16"
+         version="7.0.1.201811241055"
+         unpack="false"/>
+
+</feature>

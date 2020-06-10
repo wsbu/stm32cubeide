@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="4.7"?>
-<!DOCTYPE fragment>
-<fragment>
-   <extension-point id="com.st.stm32cube.ide.mcu.productdb.svd" name="com.st.stm32cube.ide.mcu.productdb.svd" schema="schema/com.st.stm32cube.ide.mcu.productdb.svd.exsd"/>
-</fragment>

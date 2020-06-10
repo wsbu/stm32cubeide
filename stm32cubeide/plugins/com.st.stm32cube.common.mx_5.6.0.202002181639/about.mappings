@@ -1,0 +1,10 @@
+# about.mappings
+# contains fill-ins for about.properties
+# java.io.Properties file (ISO 8859-1 with "\" escapes)
+# This file does not need to be translated.
+
+# The following should contain the build version.
+# e.g. "0=20020612"
+# This value will be added automatically via the build scripts
+0=5.6.0-RC6
+1=20200218-1639 (UTC)

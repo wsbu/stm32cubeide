@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension
+         point="com.st.stm32cube.ide.mcu.debug.openocd.cfg.management">
+      <OpenOCDCfgManagement
+            provider="com.st.stm32cube.ide.mpu.debug.openocd.MPUOpenOCDCfgManagementProvider">
+      </OpenOCDCfgManagement>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.mcu.debug.openocd.cfg.resources">
+      <OpenOCDCfgResources
+            provider="com.st.stm32cube.ide.mpu.debug.openocd.MPUOpenOCDCfgResourcesProvider">
+      </OpenOCDCfgResources>
+   </extension>
+</plugin>
