@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.common.feature.ecosystemintegration.ui"
+      label="%pluginName"
+      version="1.3.0.202002181050"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.common.ecosystemintegration.ui"
+         download-size="23"
+         install-size="43"
+         version="1.3.0.202002181050"/>
+
+</feature>

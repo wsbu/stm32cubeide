@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+repositories/http\:__download.eclipse.org_tools_cdt_releases_9.9/count=1
+repositories/http\:__download.eclipse.org_tools_cdt_releases_9.9/enabled=false
+repositories/http\:__download.eclipse.org_tools_cdt_releases_9.9/nickname=CDT
+repositories/http\:__download.eclipse.org_tools_cdt_releases_9.9/uri=http\://download.eclipse.org/tools/cdt/releases/9.9
+repositories/http\:__sw-center.st.com_stm32cubeide_updatesite1/count=1
+repositories/http\:__sw-center.st.com_stm32cubeide_updatesite1/enabled=true
+repositories/http\:__sw-center.st.com_stm32cubeide_updatesite1/uri=http\://sw-center.st.com/stm32cubeide/updatesite1
+repositories/https\:__download.eclipse.org_releases_2019-09/count=1
+repositories/https\:__download.eclipse.org_releases_2019-09/enabled=true
+repositories/https\:__download.eclipse.org_releases_2019-09/uri=https\://download.eclipse.org/releases/2019-09

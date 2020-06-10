@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension
+         point="com.st.stm32cube.ide.mcu.resources.resourcesgenerator">
+      <ResourcesGenerator
+            provider="com.st.stm32cube.ide.mpu.resources.extended.core.MPUExtendedResourcesGeneratorProvider">
+      </ResourcesGenerator>
+   </extension>
+</plugin>

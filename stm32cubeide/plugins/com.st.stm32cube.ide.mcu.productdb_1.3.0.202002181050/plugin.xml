@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="4.7"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension-point id="com.st.stm32cube.ide.mcu.productdb" name="com.st.stm32cube.ide.mcu.productdb" schema="schema/com.st.stm32cube.ide.mcu.productdb.exsd"/>
+   <extension
+         point="com.st.stm32cube.ide.mcu.productdb">
+      <TargetRepository
+            path="resources/board_def/">
+      </TargetRepository>
+   </extension>
+</plugin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension
+         point="com.st.stm32cube.ide.mcu.startup.startupgenerator">
+      <StartupGenerator
+            provider="com.st.stm32cube.ide.mpu.startup.engine.MPUIdeStartupProvider">
+      </StartupGenerator>
+   </extension>
+</plugin>

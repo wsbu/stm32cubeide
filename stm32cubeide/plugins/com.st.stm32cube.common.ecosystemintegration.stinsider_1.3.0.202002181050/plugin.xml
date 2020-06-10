@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="4.7"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension
+         point="com.st.stm32cube.common.mx.stinsider.targetselector">
+      <TargetsInjector
+            provider="com.st.stm32cube.common.ecosystemintegration.stinsider.core.TargetsInjector">
+      </TargetsInjector>
+   </extension>
+</plugin>

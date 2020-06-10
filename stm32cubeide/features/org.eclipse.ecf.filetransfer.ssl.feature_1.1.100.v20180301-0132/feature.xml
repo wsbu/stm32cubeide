@@ -32,7 +32,7 @@ Contributors: Composent, Inc. - initial API and implementation
    <plugin
          id="org.eclipse.ecf.provider.filetransfer.ssl"
          download-size="9"
-         install-size="13"
+         install-size="12"
          version="1.0.100.v20180301-0132"
          fragment="true"
          unpack="false"/>
