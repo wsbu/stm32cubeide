@@ -1,0 +1,3994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<targetParts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://st.com/stm32TargetDefinitions" xsi:schemaLocation="http://st.com/stm32TargetDefinitions stm32TargetDefinitions.xsd">
+  <!--version = v4.21-->
+  <board>
+    <name>STM32MP157C-EV1</name>
+    <status>Active</status>
+    <parent>stm32mp157caax</parent>
+    <dbgDEV>st-linkv2-1</dbgDEV>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx_EVAL</CDefine>
+      <CDefine>-DSTM32MP157C_EV1</CDefine>
+    </CDefines>
+  </board>
+  <board>
+    <name>STM32MP157A-EV1</name>
+    <status>Active</status>
+    <parent>stm32mp157aaax</parent>
+    <dbgDEV>st-linkv2-1</dbgDEV>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx_EVAL</CDefine>
+      <CDefine>-DSTM32MP157A_EV1</CDefine>
+    </CDefines>
+  </board>
+  <board>
+    <name>STM32MP157C-DK2</name>
+    <status>Active</status>
+    <parent>stm32mp157cacx</parent>
+    <dbgDEV>st-linkv2-1</dbgDEV>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx_DISCO</CDefine>
+      <CDefine>-DSTM32MP157C_DK2</CDefine>
+    </CDefines>
+  </board>
+  <board>
+    <name>STM32MP157A-DK1</name>
+    <status>Active</status>
+    <parent>stm32mp157aacx</parent>
+    <dbgDEV>st-linkv2-1</dbgDEV>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx_DISCO</CDefine>
+      <CDefine>-DSTM32MP157A_DK1</CDefine>
+    </CDefines>
+  </board>
+  <board>
+    <name>STM32MP157F-EV1</name>
+    <status>Active</status>
+    <parent>stm32mp157faax</parent>
+    <dbgDEV>st-linkv2-1</dbgDEV>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx_EVAL</CDefine>
+      <CDefine>-DSTM32MP157F_EV1</CDefine>
+    </CDefines>
+  </board>
+  <board>
+    <name>STM32MP157F-DK2</name>
+    <status>Active</status>
+    <parent>stm32mp157facx</parent>
+    <dbgDEV>st-linkv2-1</dbgDEV>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx_DISCO</CDefine>
+      <CDefine>-DSTM32MP157F_DK2</CDefine>
+    </CDefines>
+  </board>
+  <mcu>
+    <name>STM32MP151AAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151AAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151AABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151AABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151AACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151AACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151AADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151AADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151CAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151CAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151CABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151CABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151CACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151CACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151CADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151CADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151DAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151DAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151DABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151DABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151DACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151DACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151DADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151DADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151FAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151FAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151FABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151FABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151FACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151FACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP151FADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP151x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP151FADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153AAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153AAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153AABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153AABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153AACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153AACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153AADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153AADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153CAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153CAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153CABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153CABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153CACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153CACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153CADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153CADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153DAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153DAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153DABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153DABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153DACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153DACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153DADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153DADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153FAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153FAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153FABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153FABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153FACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153FACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP153FADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP153x.svd</name>
+      <version>v1r3</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP153FADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157AAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157AAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157AABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <package>LFBGA354</package>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157AABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157AACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157AACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157AADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157AADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157CAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157CAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157CABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157CABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157CACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157CACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157CADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157CADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157DAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157DAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157DABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <package>LFBGA354</package>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157DABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157DACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157DACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157DADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157DADx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157FAAx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157FAAx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157FABx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157FABx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157FACx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157FACx</CDefine>
+    </CDefines>
+  </mcu>
+  <mcu>
+    <name>STM32MP157FADx</name>
+    <status>Active</status>
+    <parent>stm32mp1</parent>
+    <cpus>
+      <cpu>
+        <name>Co-Pro ARM Cortex-M4</name>
+        <shortname>CM4</shortname>
+        <id>0</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-m4</type>
+            <fpu>fpv4-sp-d16</fpu>
+            <maxFrequency>216000</maxFrequency>
+            <apnum>2</apnum>
+          </core>
+        </cores>
+      </cpu>
+      <cpu>
+        <name>Main-Pro dual ARM Cortex-A7</name>
+        <shortname>CA7</shortname>
+        <id>1</id>
+        <cores>
+          <core>
+            <id>0</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+          <core>
+            <id>1</id>
+            <type>arm cortex-a7</type>
+            <fpu>vfpv4-d16</fpu>
+            <maxFrequency>1000000</maxFrequency>
+            <apnum>0</apnum>
+          </core>
+        </cores>
+      </cpu>
+    </cpus>
+    <memories>
+      <memory>
+        <type>ram</type>
+        <name>RETRAM</name>
+        <address>0x00000000</address>
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM1</name>
+        <address>0x10000000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM2</name>
+        <address>0x10020000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+      <memory>
+        <type>ram</type>
+        <name>SRAM3</name>
+        <address>0x10040000</address>
+        <!--size from xml = 0x0-->
+        <size>0x20000</size>
+        <!--end = 0x0-->
+      </memory>
+    </memories>
+    <svd>
+      <name>STM32MP157x.svd</name>
+      <version>v1r6</version>
+      <url/>
+    </svd>
+    <CDefines>
+      <CDefine>-DSTM32MP15xx</CDefine>
+      <CDefine>-DSTM32MP157FADx</CDefine>
+    </CDefines>
+  </mcu>
+  <serie>
+    <name>STM32MP1</name>
+    <status>Active</status>
+    <parent>stm32</parent>
+    <CDefines>
+      <CDefine>-DSTM32MP1</CDefine>
+    </CDefines>
+  </serie>
+</targetParts>

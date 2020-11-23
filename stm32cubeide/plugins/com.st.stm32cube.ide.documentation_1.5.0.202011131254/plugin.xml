@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="4.7"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension
+         point="com.st.stm32cube.ide.mcu.informationcenter.docs">
+      <DocumentGroup
+            prio="1000"
+            title="IDE DOCUMENTATION">
+         <Document
+               description="STM32CubeIDE Release Notes"
+               filetype="PDF"
+               path="docs/DM00603738.pdf"
+               prio="1000"
+               title="Release Notes">
+         </Document>
+         <Document
+               description="STM32CubeIDE Installation guide"
+               filetype="PDF"
+               path="docs/DM00603964.pdf"
+               prio="2000"
+               title="Installation Guide">
+         </Document>
+         <Document
+               description="STM32CubeIDE Quick Start Guide - how to quickly get started"
+               filetype="PDF"
+               path="docs/DM00598966.pdf"
+               prio="3000"
+               title="STM32CubeIDE Quick Start Guide">
+         </Document>
+         <Document
+               description="STM32CubeIDE User Guide - STM32CubeIDE integrated development environment for STM32 product"
+               filetype="PDF"
+               path="docs/DM00629856.pdf"
+               prio="4000"
+               title="STM32CubeIDE User Guide">
+         </Document>
+         <Document
+               description="Migrate from System Workbench for STM32 to STM32CubeIDE"
+               filetype="PDF"
+               path="docs/DM00613836.pdf"
+               prio="5000"
+               title="SW4STM32 Migration Guide">
+         </Document>
+         <Document
+               description="Migrate from TrueSTUDIO to STM32CubeIDE"
+               filetype="PDF"
+               path="docs/DM00613834.pdf"
+               prio="6000"
+               title="TrueSTUDIO Migration Guide">
+         </Document>
+         <Document
+               description="Software License Agreement (SLA0048)"
+               filetype="PDF"
+               path="/docs/DM00218346.pdf"
+               prio="8000"
+               title="STM32CubeIDE License Agreement">
+         </Document>
+      </DocumentGroup>
+   </extension>
+ </plugin>

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.productdb.debug
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.productdb.debug;singleto
+ n:=true
+Built-By: acitlsqa
+Require-Bundle: com.st.stm32cube.ide.mcu.productdb,org.eclipse.ui.work
+ bench,org.eclipse.osgi,org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

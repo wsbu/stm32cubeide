@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.common.feature.mx.stinsider"
+      label="%pluginName"
+      version="6.1.0.202011121557"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.common.mx">
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.common.mx.stinsider"
+         download-size="6"
+         install-size="11"
+         version="6.1.0.202011121557"
+         fragment="true"/>
+
+</feature>

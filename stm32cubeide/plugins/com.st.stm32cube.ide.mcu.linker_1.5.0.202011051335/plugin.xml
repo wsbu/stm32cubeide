@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension-point id="com.st.stm32cube.ide.mcu.linker.db" name="com.st.stm32cube.ide.mcu.linker.db" schema="schema/com.st.stm32cube.ide.mcu.linker.db.exsd"/>
+   <extension-point id="com.st.stm32cube.ide.mcu.linker.linkscriptgenerator" name="com.st.stm32cube.ide.mcu.linker.linkscriptgenerator" schema="schema/com.st.stm32cube.ide.mcu.linker.linkscriptgenerator.exsd"/>
+   <extension-point id="com.st.stm32cube.ide.mcu.linker.linkscriptanalyzer" name="com.st.stm32cube.ide.mcu.linker.linkscriptanalyzer" schema="schema/com.st.stm32cube.ide.mcu.linker.linkscriptanalyzer.exsd"/>
+</plugin>

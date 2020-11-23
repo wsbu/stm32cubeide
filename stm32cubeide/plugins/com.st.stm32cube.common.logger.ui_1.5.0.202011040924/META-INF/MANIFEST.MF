@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.common.logger.ui
+Bundle-SymbolicName: com.st.stm32cube.common.logger.ui;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.swt,org.eclipse.jface,org.eclipse.ui.workb
+ ench
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Fragment-Host: com.st.stm32cube.common.logger
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: fragment
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.projectnatures
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.projectnatures;singleton
+ :=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.resources,org.eclipse.core.runtime,co
+ m.st.stm32cube.ide.mcu.productdb,com.st.stm32cube.common.projectcreat
+ ion,org.eclipse.core.expressions,com.st.stm32cube.common.logger,org.e
+ clipse.cdt.core,org.eclipse.cdt.managedbuilder.core
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.ide.mcu.projectnatures,com.st.stm32cu
+ be.ide.mcu.projectnatures.converters,com.st.stm32cube.ide.mcu.project
+ natures.core
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mcu.projectnatures.MCUProjectNa
+ turesPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

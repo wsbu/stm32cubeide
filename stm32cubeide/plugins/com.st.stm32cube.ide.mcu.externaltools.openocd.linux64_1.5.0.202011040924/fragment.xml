@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE fragment>
+<fragment>
+
+<!-- =================================================================================== -->
+<!-- Startup			                                                             	 -->
+<!-- =================================================================================== -->
+
+   <extension
+         point="com.st.stm32cube.ide.mcu.externaltools.tools">
+      <Tool_GdbServer
+            binary-name="openocd"
+            identifier="MCU_OPENOCD_KEY"
+            install="false"
+            name="MCU OpenOCD (Linux 64bit)"
+            resource="tools">
+            <!-- Resource resolved at build time		-->
+            <!-- Such folder is created during build	-->
+      </Tool_GdbServer>
+      <Local_Env
+            resolver="com.st.stm32cube.ide.mcu.externaltools.openocd.linux64.MCUOpenOcdLocalEnvResolver">
+      </Local_Env>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.mcu.informationcenter.docs">
+      <DocumentGroup
+            prio="2000"
+            title="DEBUGGER DOCUMENTATION">
+         <Document
+               description="Manual for the OPENOCD GDB server"
+               filetype="PDF"
+               path="tools/doc/st-openocd.pdf"
+               prio="100"
+               title="OPENOCD manual">
+         </Document>
+      </DocumentGroup>
+   </extension>
+
+</fragment>

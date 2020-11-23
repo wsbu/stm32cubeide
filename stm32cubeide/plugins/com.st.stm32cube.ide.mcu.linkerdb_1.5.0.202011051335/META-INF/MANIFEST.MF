@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.linkerdb
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.linkerdb;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,co
+ m.st.stm32cube.ide.mcu.linker,com.st.stm32cube.common.logger
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011051335
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mcu.linkerdb.MCULinkerDbPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

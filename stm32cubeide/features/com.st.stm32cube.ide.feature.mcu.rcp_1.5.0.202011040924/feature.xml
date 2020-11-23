@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.rcp"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.cdt.debug.ui.memory" version="9.11.1.202004012021" match="equivalent"/>
+      <import feature="org.eclipse.cdt" version="9.11.1.202006011430" match="equivalent"/>
+      <import feature="org.eclipse.cdt.build.crossgcc" version="9.11.1.202004012021" match="equivalent"/>
+      <import feature="org.eclipse.cdt.debug.gdbjtag" version="9.11.1.202005131504" match="equivalent"/>
+      <import feature="org.eclipse.cdt.gdb" version="9.11.1.202004012021" match="equivalent"/>
+      <import feature="org.eclipse.cdt.gnu.build" version="9.11.1.202004012021" match="equivalent"/>
+      <import feature="org.eclipse.cdt.gnu.debug" version="9.11.1.202004012021" match="equivalent"/>
+      <import feature="org.eclipse.cdt.gnu.dsf" version="9.11.1.202004012021" match="equivalent"/>
+      <import feature="org.eclipse.cdt.native" version="9.11.1.202005051837" match="equivalent"/>
+      <import feature="org.eclipse.cdt.launch.remote" version="9.11.1.202004012021" match="equivalent"/>
+      <import feature="org.eclipse.cdt.platform" version="9.11.1.202006011430" match="equivalent"/>
+      <import feature="org.eclipse.e4.rcp" version="4.16.0.v20200604-0951" match="equivalent"/>
+      <import feature="org.eclipse.ecf.core.feature" version="1.5.600.v20200317-1602" match="equivalent"/>
+      <import feature="org.eclipse.ecf.core.ssl.feature" version="1.1.400.v20200317-1602" match="equivalent"/>
+      <import feature="org.eclipse.ecf.filetransfer.feature" version="3.14.800.v20200317-1602" match="equivalent"/>
+      <import feature="org.eclipse.ecf.filetransfer.ssl.feature" version="1.1.300.v20200317-1602" match="equivalent"/>
+      <import feature="org.eclipse.equinox.p2.core.feature" version="1.6.600.v20200511-1530" match="equivalent"/>
+      <import feature="org.eclipse.equinox.p2.discovery.feature" version="1.2.600.v20200521-1852" match="equivalent"/>
+      <import feature="org.eclipse.equinox.p2.extras.feature" version="1.4.800.v20200511-1530" match="equivalent"/>
+      <import feature="org.eclipse.equinox.p2.rcp.feature" version="1.4.800.v20200602-1138" match="equivalent"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="2.4.800.v20200602-1138" match="equivalent"/>
+      <import feature="org.eclipse.help" version="2.3.200.v20200604-0540" match="equivalent"/>
+      <import feature="org.eclipse.remote" version="3.0.1.201909031456" match="equivalent"/>
+      <import feature="org.eclipse.rcp" version="4.16.0.v20200604-0951" match="equivalent"/>
+      <import feature="org.eclipse.platform" version="4.16.0.v20200604-0951" match="equivalent"/>
+      <import feature="org.eclipse.epp.mpc" version="1.8.3.v20200526-1554"/>
+      <import feature="org.eclipse.emf.ecore" version="2.22.0.v20200519-1135"/>
+      <import feature="org.eclipse.emf.common" version="2.19.0.v20200324-0932" match="equivalent"/>
+      <import feature="org.eclipse.ecf.filetransfer.httpclient45.feature" version="1.0.400.v20200522-1203"/>
+      <import feature="org.eclipse.tm.terminal.control.feature" version="4.6.1.202005200056" match="equivalent"/>
+      <import plugin="org.apache.httpcomponents.httpclient"/>
+      <import plugin="org.apache.httpcomponents.httpcore"/>
+      <import plugin="org.eclipse.swtchart" version="0.12.0.202003130409" match="perfect"/>
+      <import plugin="org.eclipse.swtchart.extensions" version="0.12.0.202003130409" match="perfect"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.rcp"
+         download-size="34"
+         install-size="839"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

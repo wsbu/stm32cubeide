@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE fragment>
+<fragment>
+
+<!-- =================================================================================== -->
+<!-- Startup			                                                             	 -->
+<!-- =================================================================================== -->
+
+   <extension
+         point="com.st.stm32cube.ide.mcu.externaltools.tools">
+      <Tool_GdbServer
+            binary-name="ST-LINK_gdbserver"
+            identifier="com.st.stm32cube.ide.mcu.externaltools.stlinkgdbserver.EXECUTABLE"
+            install="false"
+            name="STLink GDB Server (Linux 64bit)"
+            resource="tools">
+            <!-- Resource resolved at build time		-->
+            <!-- Such folder is created during build	-->
+      </Tool_GdbServer>
+      <Local_Env
+            resolver="com.st.stm32cube.ide.mcu.externaltools.stlinkgdbserver.linux64.MCUStLinkGdbServerLocalEnvResolver">
+      </Local_Env>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.mcu.informationcenter.docs">
+      <DocumentGroup
+            prio="2000"
+            title="DEBUGGER DOCUMENTATION">
+         <Document
+               description="Manual for the ST-LINK GDB server"
+               filetype="PDF"
+               path="tools/doc/DM00613038.pdf"
+               prio="100"
+               title="ST-LINK GDB server manual">
+         </Document>
+      </DocumentGroup>
+   </extension>
+
+</fragment>

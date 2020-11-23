@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.st.stm32cube.common.mx.externaltools" name="com.st.stm32cube.common.mx.externaltools" schema="schema/com.st.stm32cube.common.mx.externaltools.exsd"/>
+   <extension-point id="com.st.stm32cube.common.mx.idedescriptor" name="com.st.stm32cube.common.mx.idedescriptor" schema="schema/com.st.stm32cube.common.mx.idedescriptor.exsd"/>
+   <extension-point id="com.st.stm32cube.common.mx.analytics.idedescriptor" name="com.st.stm32cube.common.mx.analytics.idedescriptor" schema="schema/com.st.stm32cube.common.mx.analytics.idedescriptor.exsd"/>
+   <extension-point id="com.st.stm32cube.common.mx.idehelper" name="com.st.stm32cube.common.mx.idehelper" schema="schema/com.st.stm32cube.common.mx.idehelper.exsd"/>
+   <extension-point id="com.st.stm32cube.common.mx.cperspective.idedescriptor" name="com.st.stm32cube.common.mx.cperspective.idedescriptor" schema="schema/com.st.stm32cube.common.mx.cperspective.idedescriptor.exsd"/>
+
+    <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.st.stm32cube.common.mx.editor.CubeMxEditor"
+            default="false"
+            extensions="ioc"
+            id="com.st.stm32cube.common.mx.startCubeMx"
+            icon="icons/MicroXplorer.png"
+            name="Device Configuration Tool">
+      </editor>
+   </extension>
+
+<extension
+      point="org.eclipse.ui.console.consoleFactories">
+   <consoleFactory
+         class="com.st.stm32cube.common.mx.editor.ConsoleFactory"
+         icon="icons/MicroXplorer.png"
+         label="Device Configuration Tool Console">
+   </consoleFactory>
+</extension>
+<extension
+      point="org.eclipse.ui.preferencePages">
+   <page
+         category="com.st.stm32cube.common.preferences.properties.preferenceCategoryPage"
+         class="com.st.stm32cube.common.mx.preferences.UpdaterPreferencePage"
+         id="com.st.stm32cube.common.mx.preferences.UpdaterPreferencePage"
+         name="Firmware Updater">
+   </page>
+   <page
+         category="com.st.stm32cube.common.preferences.properties.preferenceCategoryPage"
+         class="com.st.stm32cube.common.mx.preferences.MxPreferencePage"
+         id="com.st.stm32cube.common.mx.preferences.MxPreferencePage"
+         name="Device Configuration Tool">
+   </page>
+</extension>
+<extension
+      point="com.st.stm32cube.common.preferences.page">
+   <PreferencePageProvider
+         provider="com.st.stm32cube.common.mx.preferences.UpdaterPreferencePage">
+   </PreferencePageProvider>
+   <PreferencePageProvider
+         provider="com.st.stm32cube.common.mx.preferences.MxPreferencePage">
+   </PreferencePageProvider>
+</extension>
+<extension
+      point="com.st.stm32cube.common.ecosystemintegration">
+   <IocEditor
+         provider="com.st.stm32cube.common.mx.editor.IocEditorProvider">
+   </IocEditor>
+   <TargetSelector
+         provider="com.st.stm32cube.common.mx.targetselector.TargetSelectorProvider">
+   </TargetSelector>
+   <IocGenerator
+         provider="com.st.stm32cube.common.mx.iocgenerator.IocGeneratorProvider">
+   </IocGenerator>
+   <FirmwareUpdater
+         provider="com.st.stm32cube.common.mx.firmawreupdater.UpdaterProvider">
+   </FirmwareUpdater>
+</extension>
+ <extension
+      point="org.eclipse.ui.startup">
+    <startup
+          class="com.st.stm32cube.common.mx.core.SwtAwtBridgeSetup">
+    </startup>
+   <startup
+         class="com.st.stm32cube.common.mx.core.ProjectRenamingHandler">
+   </startup>
+   <startup
+         class="com.st.stm32cube.common.mx.core.IocFileRenamingHandler">
+   </startup>
+   <startup
+         class="com.st.stm32cube.common.mx.core.IocFileContentUpdateHandler">
+   </startup>
+</extension>
+ <extension
+       point="org.eclipse.ui.decorators">
+    <decorator
+          adaptable="true"
+          class="com.st.stm32cube.common.mx.core.IocFileDecorator"
+          id="com.st.stm32cube.common.mx.core.iocdecorator"
+          label="Device Configuration Tool Decorator"
+          lightweight="true"
+          location="BOTTOM_LEFT"
+          state="true">
+       <enablement>
+          <and>
+             <objectClass
+                   name="org.eclipse.core.resources.IFile">
+             </objectClass>
+          </and>
+       </enablement>
+    </decorator>
+ </extension>
+ <extension
+       point="org.eclipse.ui.perspectives">
+    <perspective
+          class="com.st.stm32cube.common.mx.perspective.STM32CubeMxPerspective"
+          icon="icons/MicroXplorer.png"
+          id="com.st.stm32cube.common.mx.perspective"
+          name="Device Configuration Tool">
+    </perspective>
+ </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.st.stm32cube.common.mx.toolbar"
+               label="Device Configuration Tool Toolbar">
+            <command
+                  commandId="com.st.stm32cube.common.mx.toolbar.generatecode"
+                  icon="icons/generatecode.gif"
+                  label="Generate Code"
+                  style="push"
+                  tooltip="Device Configuration Tool Code Generation">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:help">
+         <command
+               commandId="com.st.stm32cube.common.mx.datarefresh"
+               icon="MicroXplorer.png"
+               label="Check for Target Selector Device Database Updates"
+               style="push"
+               tooltip="Check for Target Selector Device Database Updates">
+         </command>
+         <command
+               commandId="com.st.stm32cube.common.mx.checkforupdates"
+               icon="MicroXplorer.png"
+               label="Check for Embedded Software Packages Updates"
+               style="push"
+               tooltip="Check for Embedded Software Packages Updates">
+         </command>
+         <command
+               commandId="com.st.stm32cube.common.mx.manageembeddedsoftwarepackages"
+               icon="MicroXplorer.png"
+               label="Manage Embedded Software Packages"
+               style="push"
+               tooltip="Manage Embedded Software Packages">
+         </command>
+         <command
+               commandId="com.st.stm32cube.common.mx.docsandresources"
+               icon="MicroXplorer.png"
+               label="Target Device Docs and Resources"
+               style="push"
+               tooltip="Target Device Docs and Resources">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:project">
+         <command
+               commandId="com.st.stm32cube.common.mx.generatereport"
+               icon="MicroXplorer.png"
+               label="Generate Report"
+               style="push"
+               tooltip="Device Configuration Tool Report Generation">
+         </command>
+         <command
+               commandId="com.st.stm32cube.common.mx.menu.generatecode"
+               icon="icons/generatecode.gif"
+               label="Generate Code"
+			   style="push"
+               tooltip="Device Configuration Tool Code Generation">
+         </command>
+      </menuContribution>
+   </extension>
+    <extension
+          point="org.eclipse.ui.commands">
+       <command
+             defaultHandler="com.st.stm32cube.common.mx.menu.GenerateCodeMenuHandler"
+             description="Generate Code"
+             id="com.st.stm32cube.common.mx.menu.generatecode"
+             name="Generate Code">
+       </command>
+       <command
+             defaultHandler="com.st.stm32cube.common.mx.menu.GenerateCodeToolbarHandler"
+             description="Generate Code"
+             id="com.st.stm32cube.common.mx.toolbar.generatecode"
+             name="Generate Code">
+       </command>
+       <command
+             defaultHandler="com.st.stm32cube.common.mx.menu.DataRefreshHandler"
+             description="Data Refresh"
+             id="com.st.stm32cube.common.mx.datarefresh"
+             name="Data Refresh">
+       </command>
+       <command
+             defaultHandler="com.st.stm32cube.common.mx.menu.CheckUpdatesHandler"
+             description="Check For Embedded Software Packages Updates"
+             id="com.st.stm32cube.common.mx.checkforupdates"
+             name="Check For Embedded Software Packages Updates">
+       </command>
+       <command
+             defaultHandler="com.st.stm32cube.common.mx.menu.ManageSoftPackagesHandler"
+             description="Manage Embedded Software Packages"
+             id="com.st.stm32cube.common.mx.manageembeddedsoftwarepackages"
+             name="Manage Embedded Software Packages">
+       </command>
+       <command
+             defaultHandler="com.st.stm32cube.common.mx.menu.GenerateReportHandler"
+             description="Generate Report"
+             id="com.st.stm32cube.common.mx.generatereport"
+             name="Generate Report">
+       </command>
+       <command
+             defaultHandler="com.st.stm32cube.common.mx.menu.DocsAndResourcesHandler"
+             description="Docs And Resources"
+             id="com.st.stm32cube.common.mx.docsandresources"
+             name="Docs And Resources">
+       </command>
+    </extension>
+<extension point="org.eclipse.ui.bindings">
+    <key
+          commandId="com.st.stm32cube.common.mx.menu.generatecode"
+          contextId="com.st.stm32cube.common.mx.context"
+          schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+          sequence="M3+K"/>
+</extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.st.stm32cube.common.mx.perspective">
+         <actionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+         <actionSet
+               id="org.eclipse.debug.ui.launchActionSet">
+         </actionSet>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            category="com.st.stm32cube.common.mx.views.category"
+            class="com.st.stm32cube.common.mx.views.OutPutMxView"
+            icon="icons/MicroXplorer.png"
+            id="com.st.stm32cube.common.mx.views.OutputsView"
+            name="Outputs"
+            restorable="true">
+      </view>
+      <category
+            id="com.st.stm32cube.common.mx.views.category"
+            name="Device Configuration Tool">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.contexts">
+      <context
+            description="Device Configuration Tool  Context"
+            id="com.st.stm32cube.common.mx.context"
+            name="Device Configuration Tool Context">
+      </context>
+   </extension>
+</plugin>

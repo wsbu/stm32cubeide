@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.targetadapter
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.targetadapter;singleton:
+ =true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.resources,com.st.stm32cube.ide.mpu.pr
+ oductdb,org.eclipse.core.runtime,com.st.stm32cube.common.logger,com.s
+ t.stm32cube.common.ecosystemintegration,com.st.stm32cube.ide.mcu.targ
+ etadapter,com.st.stm32cube.ide.mcu.productdb
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.ide.mpu.targetadapter.core
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.targetadapter.MPUTargetAdap
+ terPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

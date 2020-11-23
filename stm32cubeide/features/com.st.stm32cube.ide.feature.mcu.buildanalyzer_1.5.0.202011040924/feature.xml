@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.buildanalyzer"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.cdt.core"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.editors"/>
+      <import plugin="org.eclipse.jface.text"/>
+      <import plugin="org.eclipse.cdt.managedbuilder.core" version="8.2.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.cdt.ui"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.core.filesystem" version="1.6.0" match="greaterOrEqual"/>
+      <import plugin="com.google.guava" version="15.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.common.utils" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.common.ui.oss" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools.oss" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.common.ui" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools"/>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.buildanalyzer"
+         download-size="138"
+         install-size="270"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<package xmlns="http://mcd.rou.st.com/modules.php?name=mcu" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance"
+    ns0:schemaLocation="http://mcd.rou.st.com/modules.php?name=mcu ../../../../../../../doc/V4/Development/Specifications/Boards/ST_Boards.xsd">
+	<vendor>ST</vendor>
+	<name>STM32EVAL_BOARDS_BSP</name>
+	<description>BSP for STMicroelectronics Eval Boards</description>
+	<boards>
+		<!-- Evaluation Board List -->
+		<board name="STM32072B-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32072b-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32072B Evaluation Board Support and Examples</description>
+			<image large="images/stm32072Beval_large.jpg" small="images/stm32072beval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32072b-eval.html" title="Evaluation board with STM32F072VB MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00104135.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F072VBTx" Dvendor="STMicroelectronics:13" Dfamily="STM32F0" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F072" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="4" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+
+			<feature n="1" name="2 GByte (or more) SPI interface MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="Full-Speed USB with type-B connector" type="USB"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="RS-485 serial interface" type="RS485"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+
+			<feature n="1" name="TFT LCD 2.4&quot; QVGA (240 x 320) connected to SPI interface" type="GLCD"/>
+			<feature n="1" name="Stereo audio Jack for headset connected to MCU DAC" type="LineOut"/>
+			<feature n="1" name="Audio Jack for microphone connected to MCU ADC" type="LineIn"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" name="Two Touch-sensing buttons" type="Touch"/>
+
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Temperature sensor with I2C serial interface (STLM75M2F)" type="TempSens"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Two Push-buttons: User/Tamper and Reset" type="Button"/>
+			<feature n="6" u="4" name="Six LEDs: MCU Low-Power alarm (Red/Orange), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="104" u="82" name="Extension header: (2 x 52) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM32091C-EVAL" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32091C Evaluation Board Support and Examples</description>
+			<image large="images/stm32091Ceval_large.jpg" small="images/stm32091ceval_small.jpg"/>
+
+			<mountedDevice Dname="STM32F091VCTx" Dvendor="STMicroelectronics:13" Dfamily="STM32F0" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F091" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="3" name="Three 5V power supply options : power jack, ST-Link USB or daughterboard" type="PWR"/>
+
+			<feature n="1" name="2 GByte (or more) SPI interface MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="RS-485 serial interface" type="RS485"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+
+			<feature n="1" name="TFT LCD 2.4&quot; QVGA (240 x 320) connected to SPI interface" type="GLCD"/>
+			<feature n="1" name="Stereo audio Jack for headset connected to MCU DAC" type="LineOut"/>
+			<feature n="1" name="Audio Jack for microphone connected to MCU ADC" type="LineIn"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" name="Two Touch-sensing buttons" type="Touch"/>
+
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Temperature sensor with I2C serial interface (STLM75M2F)" type="TempSens"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Two Push-buttons: User/Tamper and Reset" type="Button"/>
+			<feature n="6" u="4" name="Six LEDs: MCU Low-Power alarm (Red/Orange), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="104" u="82" name="Extension header: (2 x 52) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM3210C-EVAL" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM3210C Evaluation Board Support and Examples</description>
+			<image large="images/stm3210Ceval_large.jpg" small="images/stm3210ceval_small.jpg"/>
+
+			<mountedDevice Dname="STM32F107VCTx" Dvendor="STMicroelectronics:13" Dfamily="STM32F1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F107" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="3" name="Three 5V power supply options : power jack, ST-Link USB or daughterboard" type="PWR"/>
+
+			<feature n="1" name="64 Kbit EEPROM" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (DP83848CVV)" type="ETH"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="2" name="Two CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) with Touch Screen" type="GLCD"/>
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS43L22)" type="LineOut"/>
+			<feature n="1" name="Speaker (KSS-1508 or KSSG1708) connected on speaker driver" type="Speaker"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="4" u="3" name="Four Push-buttons: User, Anti-Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="100" u="82" name="Extension header: (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM3210E-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm3210e-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM3210E Evaluation Board Support and Examples</description>
+			<image large="images/stm3210Eeval_large.jpg" small="images/stm3210eeval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm3210e-eval.html" title="Evaluation board with STM32F103Zx MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00065728.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F103ZGTx" Dvendor="STMicroelectronics:13" Dfamily="STM32F1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F103" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="3" name="Three 5V power supply options : power jack, ST-Link USB or daughterboard" type="PWR"/>
+
+			<feature n="2" name="512 Mbit (or 1Gbit) NAND Flash and 128 Mbit NOR Flash" type="ROM"/>
+			<feature n="1" name="8 Mbit SRAM (512K x 16-bit)" type="RAM"/>
+			<feature n="1" name="64 Mbit (or 128 Mbit) Serial Flash connected to SPI" type="ROM"/>
+			<feature n="1" name="128 MByte MicroSD card" type="MemCard"/>
+
+			<feature n="2" name="Two RS-232 serial interface (only one support RTS/CTS handshake)" type="RS232"/>
+			<feature n="1" name="RS-485 serial interface" type="RS485"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="1" name="USB Full Speed with type B Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 2.4&quot; QVGA (240 x 320)" type="GLCD"/>
+			<feature n="1" name="Audio DAC with integrated speaker driver (AK4343)" type="LineOut"/>
+			<feature n="1" name="Audio ADC for microphone (AK4343)" type="LineIn"/>
+			<feature n="1" name="Speaker (KSS-1508) connected on speaker driver" type="Speaker"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Temperature sensor with I2C serial interface (STLM75M2E)" type="TempSens"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="4" u="3" name="Four Push-buttons: User, Anti-Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="140" u="116" name="Extension header: (2 x 70) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM32100E-EVAL" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32100 Evaluation Board Support and Examples</description>
+			<image large="images/stm32100Eeval_large.jpg" small="images/stm32f100eeval_small.jpg"/>
+
+			<mountedDevice Dname="STM32F100ZETx" Dvendor="STMicroelectronics:13" Dfamily="STM32F1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F100" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="3" name="Three 5V power supply options : power jack, ST-Link USB or daughterboard" type="PWR"/>
+
+			<feature n="1" name="2 Mbyte SRAM" type="RAM"/>
+			<feature n="1" name="16 MByte Serial Flash" type="ROM"/>
+			<feature n="1" name="1 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="2" name="Two RS-232 serial interface (only one support RTS/CTS handshake)" type="RS232"/>
+			<feature n="1" name="RS-485 serial interface" type="RS485"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot;" type="GLCD"/>
+			<feature n="1" name="Audio DAC with integrated speaker driver (TS4956)" type="LineOut"/>
+			<feature n="1" name="Audio ADC for microphone (TS4956)" type="LineIn"/>
+			<feature n="1" name="Speaker (KDMG15008) connected on speaker driver" type="Speaker"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Temperature sensor with I2C serial interface (STLM75M2E)" type="TempSens"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="4" u="3" name="Four Push-buttons: User, Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="140" u="115" name="Extension header: (2 x 70) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM3220G-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm3220g-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM3220G Evaluation Board Support and Examples</description>
+			<image large="images/stm3220Geval_large.jpg" small="images/stm3220geval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm3220g-eval.html" title="Evaluation board with STM32F207IG MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00022972.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F207IGHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F2" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F207" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F217" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="5" name="Five 5V power supply options : power jack, ST-Link USB, user USB-FS or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="16 Mbit SRAM" type="RAM"/>
+			<feature n="1" name="64 Kbit EEPROM" type="Memory"/>
+			<feature n="1" name="1 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (DP83848CVV)" type="ETH"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="2" name="Two CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="2" name="Two (OTG-HS + FS) USB with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) with Touch Screen" type="GLCD"/>
+			<feature n="1" name="Camera module : 1.3 MPixel (CN01302H1045) or 2 MPixel (CN020VAH2554)" type="Camera"/>
+			<feature n="1" name="ST MEMS 3-axis accelerometer (LIS302DL)" type="Accelerometer"/>
+
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS43L22)" type="LineOut"/>
+			<feature n="1" name="Audio Jack for microphone connected to MCU ADC" type="LineIn"/>
+			<feature n="1" name="Speaker (KSS-1508 or KSSG1708) connected on speaker driver" type="Speaker"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="4" u="3" name="Four Push-buttons: User, Anti-Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="6" u="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="180" u="140" name="Extension header: (2 x 40) + (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM3221G-EVAL" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM3221G Evaluation Board Support and Examples</description>
+			<image large="images/stm3221Geval_large.jpg" small="images/stm3221geval_small.jpg"/>
+
+			<mountedDevice Dname="STM32F217IGHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F2" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F217" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F207" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="5" name="Five 5V power supply options : power jack, ST-Link USB, user USB-FS or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="16 Mbit SRAM" type="RAM"/>
+			<feature n="1" name="64 Kbit EEPROM" type="Memory"/>
+			<feature n="1" name="1 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (DP83848CVV)" type="ETH"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="2" name="Two CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="2" name="Two (OTG-HS + FS) USB with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) with touch screen" type="GLCD"/>
+			<feature n="1" name="Camera module : 1.3 MPixel (CN01302H1045) or 2 MPixel (CN020VAH2554)" type="Camera"/>
+			<feature n="1" name="ST MEMS 3-axis accelerometer (LIS302DL)" type="Accelerometer"/>
+
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS43L22)" type="LineOut"/>
+			<feature n="1" name="Audio Jack for microphone connected to MCU ADC" type="LineIn"/>
+			<feature n="1" name="Speaker (KSS-1508 or KSSG1708) connected on speaker driver" type="Speaker"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="4" u="3" name="Four Push-buttons: User, Anti-Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="6" u="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="180" u="140" name="Extension header: (2 x 40) + (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM32303C-EVAL" orderForm="" revision="Rev.B"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32F3 Evaluation Board Support and Examples</description>
+			<image large="images/stm32303Ceval_large.jpg" small="images/stm32303ceval_small.jpg"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00063243.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F303VCTx" Dvendor="STMicroelectronics:13" Dfamily="STM32F3" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F303" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="4" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+
+			<feature n="1" name="1 Mbit Flash on SPI (M95M01-R)" type="ROM"/>
+			<feature n="1" name="1 Mbit EEPROM (M24M01-HR)" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card on SPI" type="MemCard"/>
+
+			<feature n="1" name="Full-Speed USB with type B Connector" type="USB"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="RS-485 serial interface" type="RS485"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) on SPI" type="GLCD"/>
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS42L52)" type="LineOut"/>
+			<feature n="1" name="Audio ADC for microphone (CS42L52)" type="LineIn"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Temperature sensor with I2C serial interface (STTS751)" type="TempSens"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" name="Two Touch-sensing buttons" type="Touch"/>
+			<feature n="2" u="1" name="Two Push-buttons: User/Tamper and Reset" type="Button"/>
+			<feature n="7" u="5" name="4-color LEDs for user (Orange/Green/Red/Blue) and high brightness LED" type="LED"/>
+
+			<feature n="100" name="Extension header: (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32303E-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32303e-eval.html#sample-buy" revision="Rev.B"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32F3 Evaluation Board Support and Examples</description>
+			<image large="images/stm32303Eeval_large.jpg" small="images/stm32303ceval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32303e-eval.html" title="Evaluation board with STM32F303VE MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00127343.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F303VETx" Dvendor="STMicroelectronics:13" Dfamily="STM32F3" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F303" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="4" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+
+			<feature n="1" name="1 Mbit Flash on SPI (M95M01-R)" type="ROM"/>
+			<feature n="1" name="1 Mbit EEPROM (M24M01-HR)" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card on SPI" type="MemCard"/>
+
+			<feature n="1" name="Full-Speed USB with type B Connector" type="USB"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="RS-485 serial interface" type="RS485"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) on SPI" type="GLCD"/>
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS42L52)" type="LineOut"/>
+			<feature n="1" name="Audio ADC for microphone (CS42L52)" type="LineIn"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Temperature sensor with I2C serial interface (STTS751)" type="TempSens"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" name="Two Touch-sensing buttons" type="Touch"/>
+			<feature n="2" u="1" name="Two Push-buttons: User/Tamper and Reset" type="Button"/>
+			<feature n="7" u="5" name="4-color LEDs for user (Orange/Green/Red/Blue) and high brightness LED" type="LED"/>
+
+			<feature n="100" name="Extension header: (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32373C-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32373c-eval.html#sample-buy" revision="Rev.B"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32F3 Evaluation Board Support and Examples</description>
+			<image large="images/stm32373Ceval_large.jpg" small="images/stm32373ceval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32373c-eval.html" title="Evaluation board with STM32F373VC MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00062928.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F373VCTx" Dvendor="STMicroelectronics:13" Dfamily="STM32F3" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F373" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="4" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+
+			<feature n="1" name="2 GByte (or more) MicroSD card on SPI" type="MemCard"/>
+			<feature n="1" name="1 Mbit EEPROM (M24M01-HR)" type="Memory"/>
+
+			<feature n="1" name="Full-Speed USB with type B Connector" type="USB"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) on SPI" type="GLCD"/>
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS43L22)" type="LineOut"/>
+			<feature n="1" name="Microphone connected to MCU ADC" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Temperature sensor connected to MCU SD-ADC (PT100)" type="TempSens"/>
+			<feature n="1" name="Pressure sensor connected to MCU SD-ADC (MPX2102)" type="PressSens"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+
+			<feature n="1" name="One Linear Touch Sensor" type="Touch"/>
+			<feature n="3" u="2" name="Two Push-buttons: User, Wake-Up and Reset" type="Button"/>
+			<feature n="6" u="4" name="Six LEDs: MCU Power range (Red/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="100" u="71" name="Extension header: (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature n="3" name="Analog header: (3 x 2) with 2.54 mm Pitch" type="AIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM3240G-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm3240g-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM3240G Evaluation Board Support and Examples</description>
+			<image large="images/stm3240Geval_large.jpg" small="images/stm3240geval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm3240g-eval.html" title="Evaluation board with STM32F407IG MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00036746.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F407IGHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F407" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F417" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="5" name="Five 5V power supply options : power jack, ST-Link USB, user USB-FS or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="16 Mbit SRAM" type="RAM"/>
+			<feature n="1" name="64 Kbit EEPROM" type="Memory"/>
+			<feature n="1" name="1 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (DP83848CVV)" type="ETH"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="2" name="Two CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="2" name="Two (OTG-HS + FS) USB with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) with touch screen" type="GLCD"/>
+			<feature n="1" name="Camera module : 1.3 MPixel (CN01302H1045) or 2 MPixel (CN020VAH2554)" type="Camera"/>
+			<feature n="1" name="ST MEMS 3-axis accelerometer (LIS302DL)" type="Accelerometer"/>
+
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS43L22)" type="LineOut"/>
+			<feature n="1" name="Audio Jack for microphone connected to MCU ADC" type="LineIn"/>
+			<feature n="1" name="Speaker (KSS-1508 or KSSG1708) connected on speaker driver" type="Speaker"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="4" u="3" name="Four Push-buttons: User, Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="6" u="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="180" u="140" name="Extension header: (2 x 40) + (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM3241G-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm3241g-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM3241G Evaluation Board Support and Examples</description>
+			<image large="images/stm3241Geval_large.jpg" small="images/stm3241geval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm3241g-eval.html" title="Evaluation board with STM32F417IG MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00036744.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F417IGHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F417" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F407" Dvendor="STMicroelectronics:13" deviceIndex="1"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="5" name="Five 5V power supply options : power jack, ST-Link USB, user USB-FS or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="16 Mbit SRAM" type="RAM"/>
+			<feature n="1" name="64 Kbit EEPROM" type="Memory"/>
+			<feature n="1" name="1 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (DP83848CVV)" type="ETH"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="2" name="Two CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="2" name="Two (OTG-HS + FS) USB with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 3.2&quot; QVGA (240 x 320) with touch screen" type="GLCD"/>
+			<feature n="1" name="Camera module : 1.3 MPixel (CN01302H1045) or 2 MPixel (CN020VAH2554)" type="Camera"/>
+			<feature n="1" name="ST MEMS 3-axis accelerometer (LIS302DL)" type="Accelerometer"/>
+
+			<feature n="1" name="Audio DAC with integrated class D speaker driver (CS43L22)" type="LineOut"/>
+			<feature n="1" name="Audio Jack for microphone connected to MCU ADC" type="LineIn"/>
+			<feature n="1" name="Speaker (KSS-1508 or KSSG1708) connected on speaker driver" type="Speaker"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="4" u="3" name="Four Push-buttons: User, Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="4" u="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="180" u="140" name="Extension header: (2 x 40) + (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32429I-EVAL1" orderForm="https://www.st.com/en/evaluation-tools/stm32429i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32429I Evaluation Board Support and Examples</description>
+			<image large="images/stm32429Ieval_large.jpg" small="images/stm32429ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32429i-eval.html" title="Evaluation board with STM32F429NI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00093451.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F429NIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F429" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="128 Mbit (8M x 16-bit) NOR Flash" type="ROM"/>
+			<feature n="2" name="256 Mbit (8M x 32-bit) SDRAM and 16 Mbit SRAM (1M x 16-bit)" type="RAM"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (DP83848CVV)" type="ETH"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="3" name="Three (1 x OTG-HS + 2 x FS) USB with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 4.3&quot; (480 x 272) with resistive touchscreen" type="GLCD"/>
+			<feature n="1" name="Camera module : 1.3 MPixel (CN01302H1045) or 2 MPixel (CN020VAH2554)" type="Camera"/>
+			<feature n="1" name="Audio DAC with integrated class D/AB speaker driver (WM8994ECS/R)" type="LineOut"/>
+			<feature n="2" name="Two digital microphone for stereo record (MP34DT01)" type="MIC"/>
+
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="3" u="2" name="Three Push-buttons: User/Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="4" u="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="180" u="140" name="Extension header: (2 x 40) + (2 x 50) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32439I-EVAL2" orderForm="https://www.st.com/en/evaluation-tools/stm32439i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32439I Evaluation Board Support and Examples</description>
+			<image large="images/stm32439Ieval_large.jpg" small="images/stm32439ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32439i-eval.html" title="Evaluation board with STM32F439NI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00093454.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F439NIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F439" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="128 Mbit (8M x 16-bit) NOR Flash" type="ROM"/>
+			<feature n="2" name="256 Mbit (8M x 32-bit) SDRAM and 16 Mbit SRAM (1M x 16-bit)" type="RAM"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (DP83848CVV)" type="ETH"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="CAN 2.0 A/B compliant interface" type="CAN"/>
+			<feature n="3" name="Three (1 x OTG-HS + 2 x FS) USB with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT LCD 5.7&quot; (480 x 272) with capacitive touchscreen" type="GLCD"/>
+			<feature n="1" name="Camera module : 1.3 MPixel (CN01302H1045) or 2 MPixel (CN020VAH2554)" type="Camera"/>
+			<feature n="1" name="Audio DAC with integrated class D/AB speaker driver (WM8994ECS/R)" type="LineOut"/>
+			<feature n="2" name="Two digital microphone for stereo record (MP34DT01)" type="MIC"/>
+
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="3" u="2" name="Three Push-buttons: User/Tamper, Wake-Up and Reset" type="Button"/>
+			<feature n="4" u="4" name="Four LEDs for user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="200" u="172" name="Extension header: (2 x 40) + (2 x 60) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="157" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM32L152D-EVAL" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32L152D Evaluation Board Support and Examples</description>
+			<image large="images/stm32l152Deval_large.jpg" small="images/stm32l152deval_small.jpg"/>
+
+			<mountedDevice Dname="STM32L152ZDTx" Dvendor="STMicroelectronics:13" Dfamily="STM32L1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32L152" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="4" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+
+			<feature n="1" name="128 Mbit (8M x 16-bit) NOR Flash" type="ROM"/>
+			<feature n="1" name="8 Mbit SRAM (512K x 16-bit)" type="RAM"/>
+			<feature n="1" name="4 Kbit Serial EEPROM" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="Full-Speed USB with mini B Connector" type="USB"/>
+
+			<feature n="1" name="TFT color LCD 3.2&quot; (240 x 320)" type="GLCD"/>
+			<feature n="1" name="Audio DAC with integrated class D/AB speaker driver (CS43L22)" type="LineOut"/>
+			<feature n="1" name="One microphone connected to MCU ADC" type="MIC"/>
+			<feature n="1" name="Temperature sensor with I2C serial interface (STLM75M2E)" type="TempSens"/>
+
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="One Linear Touch Sensor or four Touch Keys" type="Touch"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="3" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="84" u="68" name="Extension header: (2 x 42) with 2.54 mm Pitch" type="DIO"/>
+			<feature m="172" n="114" name="Eval Board Formfactor" type="CustomFF"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32446E-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32446e-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32446E Evaluation Board Support and Examples</description>
+			<image large="images/stm32446Eeval_large.jpg" small="images/stm32446eeval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32446e-eval.html" title="Evaluation board with STM32F446ZE MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00167852.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F446ZETx" Dvendor="STMicroelectronics:13" Dfamily="STM32F4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F446" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="5" name="Five 5V power supply options : power jack, ST-Link USB, user USB connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="8 Mbit SDRAM (512K x 16-bit)" type="SDRAM"/>
+			<feature n="1" name="RF Serial EEPROM" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="32 Mbit QuadSPI Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG HS + FS (High/Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="TFT color LCD 3.2&quot; (240 x 320) with resistive touch screen" type="GLCD"/>
+			<feature n="1" name="5 Mpixel Camera module" type="Camera"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="3" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="Camera connector" type="Camera"/>
+			<feature n="1" name="FMC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM32746G-EVAL2" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32746G Evaluation Board Support and Examples</description>
+			<image large="images/stm32746neval_large.jpg" small="images/stm32746neval_small.jpg"/>
+
+			<mountedDevice Dname="STM32F746NGHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F746" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="256 Mbit SDRAM (8M x 32-bit)" type="SDRAM"/>
+			<feature n="1" name="RF Serial EEPROM" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="64 MByte QuadSPI Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG HS + FS (High/Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="TFT color LCD 5.7&quot; (640 x 480) with resistive touch screen" type="GLCD"/>
+			<feature n="1" name="5 Mpixel Camera module" type="Camera"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="Camera connector" type="Camera"/>
+			<feature n="1" name="FMC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32756G-EVAL2" orderForm="https://www.st.com/en/evaluation-tools/stm32756g-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32756G Evaluation Board Support and Examples</description>
+			<image large="images/stm32756neval_large.jpg" small="images/stm32756neval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32756g-eval.html" title="Evaluation board with STM32F756NG MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00188617.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F756NGHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F756" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="256 Mbit SDRAM (8M x 32-bit)" type="SDRAM"/>
+			<feature n="1" name="RF Serial EEPROM" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="64 MByte QuadSPI Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG HS + FS (High/Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="TFT color LCD 5.7&quot; (640 x 480) with resistive touch screen" type="GLCD"/>
+			<feature n="1" name="5 Mpixel Camera module" type="Camera"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="Camera connector" type="Camera"/>
+			<feature n="1" name="FMC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32F769I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32f769i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32F769I Evaluation Board Support and Examples</description>
+			<image large="images/stm32f769ieval_large.jpg" small="images/stm32f769ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32f769i-eval.html" title="Evaluation board with STM32F769NI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00276567.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F769NIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F769" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="256 Mbit SDRAM (8M x 32-bit)" type="SDRAM"/>
+			<feature n="1" name="RF Serial EEPROM" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="64 MByte QuadSPI Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG HS + FS (High/Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="4&quot; DSI LCD with capacitive touch panel" type="GLCD"/>
+			<feature n="1" name="5 Mpixel Camera module" type="Camera"/> <!-- size not known fF7x9-->
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="4" u="4" name="Four user LEDs (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="Camera connector" type="Camera"/>
+			<feature n="1" name="FMC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM32F779I-EVAL" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32F779I Evaluation Board Support and Examples</description>
+			<image large="images/stm32f779ieval_large.jpg" small="images/stm32f779ieval_small.jpg"/>
+
+			<mountedDevice Dname="STM32F779NIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F779" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="256 Mbit SDRAM (8M x 32-bit)" type="SDRAM"/>
+			<feature n="1" name="RF Serial EEPROM" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="64 MByte QuadSPI Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG HS + FS (High/Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="4&quot; DSI LCD with capacitive touch panel" type="GLCD"/>
+			<feature n="1" name="5 Mpixel Camera module" type="Camera"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="4" u="4" name="Four user LEDs (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="Camera connector" type="Camera"/>
+			<feature n="1" name="FMC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32L476G-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32l476g-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32L476G Evaluation Board Support and Examples</description>
+			<image large="images/stm32l476Geval_large.jpg" small="images/stm32L476Geval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32l476g-eval.html" title="Evaluation board with STM32L476ZG MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00155732.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32L476ZGTx" Dvendor="STMicroelectronics:13" Dfamily="STM32L4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32L476" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="4" name="Four 5V power supply options : power jack, ST-Link USB, user USB connectors, daughterboard" type="PWR"/>
+			<feature n="1" name="MCU voltage choice 3.3V or adjustable from 1.71V to 3.6V" type="PWR"/>
+
+			<feature n="1" name="128 Mbit (8M x 16-bit) NOR Flash" type="ROM"/>
+			<feature n="1" name="16 Mbit SDAM (1M x 16-bit)" type="SDRAM"/>
+			<feature n="1" name="RF EEPROM over I2C" type="Memory"/>
+			<feature n="1" name="I2C EEPROM at 1MHz speed" type="Memory"/>
+			<feature n="1" name="4 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="256 MByte QuadSPI Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="2.8&quot; TFT color LCD (640 x 480) with resistive touch screen" type="GLCD"/>
+			<feature n="1" name="LCD glass 40x8 segments" type="LCD"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="1" name="Temperature sensor with I2C serial interface (STLM75M2E)" type="TempSens"/>
+
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="One Linear Touch Sensor or four Touch Keys" type="Touch"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="1" name="Sigma-delta interface with power metering demo" type="SensOther"/>
+			<feature n="1" name="PT100 thermal sensor with a dedicated sigma-delta modulator" type="TempSens"/>
+			<feature n="1" name="MCU consumption measurement circuit" type="SensOther"/>
+
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="NFC transceiver connector" type="ConnOther"/>
+			<feature n="1" name="SmartCard connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32469I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32469i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32469I Evaluation Board Support and Examples</description>
+			<image large="images/stm32469ieval_large.jpg" small="images/stm32469ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32469i-eval.html" title="Evaluation board with STM32F469NI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00219329.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32F469NIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F469" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="256 Mbit SDRAM (8M x 32-bit)" type="SDRAM"/>
+			<feature n="1" name="16 Mbit SRAM (1M x 16-bit)" type="SRAM"/>
+			<feature n="1" name="RF Serial EEPROM on I2C interface" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="64 MByte QuadSPI NOR Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG HS + FS (High/Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="TFT color LCD 4&quot; (800 x 480) with MIPI DSI interface and resistive touch screen" type="GLCD"/>
+			<feature n="1" name="5 Mpixel Camera module" type="Camera"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="Camera connector" type="Camera"/>
+			<feature n="1" name="FMC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!-- obsolete -->
+		<board name="STM32479I-EVAL" orderForm="" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32479I Evaluation Board Support and Examples</description>
+			<image large="images/stm32479ieval_large.jpg" small="images/stm32479ieval_small.jpg"/>
+
+			<mountedDevice Dname="STM32F479NIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32F4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32F479" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+
+			<feature n="6" name="Six 5V power supply options : power jack, ST-Link USB, user USB-FS1/2 or USB-HS connectors, daughterboard" type="PWR"/>
+
+			<feature n="1" name="256 Mbit SDRAM (8M x 32-bit)" type="SDRAM"/>
+			<feature n="1" name="16 Mbit SRAM (1M x 16-bit)" type="SRAM"/>
+			<feature n="1" name="RF Serial EEPROM on I2C interface" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="64 MByte QuadSPI NOR Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB OTG HS + FS (High/Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="USB OTG FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="CAN 2.0A/B compliant communication" type="CAN"/>
+
+			<feature n="1" name="TFT color LCD 4&quot; (800 x 480) with MIPI DSI interface and resistive touch screen" type="GLCD"/>
+			<feature n="1" name="5 Mpixel Camera module" type="Camera"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="1" name="Supported headset with microphone connected to the Multi-channel Audio Codec (WM8994)" type="MIC"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<feature n="1" name="Camera connector" type="Camera"/>
+			<feature n="1" name="FMC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32L073Z-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32l073z-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32L073Z Evaluation Board Support and Examples</description>
+			<image large="images/stm32l073zeval_large.jpg" small="images/stm32l073zeval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32l073z-eval.html" title="Evaluation board with STM32L073VZ MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00171429.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32L073VZTx" Dvendor="STMicroelectronics:13" Dfamily="STM32L0" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32L073" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+
+			<feature n="4" name="Four 5V power supply options : power jack, ST-Link USB, user USB FS connector, daughterboard" type="PWR"/>
+			<feature n="1" name="MCU voltage selectable: 3.3V or adjustable from 1.71V to 3.6V" type="PWR"/>
+
+			<feature n="1" name="RF Serial EEPROM on I2C interface" type="Memory"/>
+			<feature n="1" name="2 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="64 MByte QuadSPI NOR Flash" type="ROM"/>
+
+			<feature n="1" name="RS-232 serial interface for communication or Flashloader" type="RS232"/>
+			<feature n="1" name="Low-Power RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB FS (Full speed) with micro-AB Connector" type="USB"/>
+
+			<feature n="1" name="TFT color LCD 2&quot;4 resistive touch screen" type="GLCD"/>
+
+			<feature n="1" name="Barometric pressure sensor" type="PressSens"/>
+			<feature n="1" name="Metal Detection" type="SensOther"/>
+			<feature n="1" name="One Linear Touch Sensor or four Touch Keys" type="Touch"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+
+			<feature n="2" u="1" name="Push-buttons: Wake-Up and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+
+			<feature n="1" name="ADC, DAC connector" type="ConnOther"/>
+			<feature n="1" name="RF connector" type="ConnOther"/>
+			<feature n="2" name="Daughter board connector" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32H743I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32h743i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32H743I Evaluation Board Support and Examples</description>
+			<image large="images/stm32h743ieval_big.jpg" small="images/stm32h743ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h743i-eval.html" title="Evaluation board with STM32H743XI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00385071.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H743XIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32H743" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB, user USB (HS,FS1,FS2) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (LAN8742A-CZ-TR)" type="ETH"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="1 Gbit twin QuadSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="TFT color LCD 5&quot;7 (640 x 480 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32H743I-EVAL2" orderForm="https://www.st.com/en/evaluation-tools/stm32h743i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32H743I Evaluation Board Support and Examples</description>
+			<image large="images/stm32h743ieval_big.jpg" small="images/stm32h743ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h743i-eval.html" title="Evaluation board with STM32H743XI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00385071.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H743XIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32H743" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB, user USB (HS,FS1,FS2) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V3" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (LAN8742A-CZ-TR)" type="ETH"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="1 Gbit twin QuadSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="TFT color LCD 5&quot;7 (640 x 480 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32H753I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32h753i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32H753I Evaluation Board Support and Examples</description>
+			<image large="images/stm32h753ieval_big.jpg" small="images/stm32h753ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h753i-eval.html" title="Evaluation board with STM32H753XI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00385071.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H753XIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32H753" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB, user USB (HS,FS1,FS2) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (LAN8742A-CZ-TR)" type="ETH"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="1 Gbit twin QuadSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="TFT color LCD 5&quot;7 (640 x 480 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32H7B3I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32h7b3i-eval.html#sample-buy" revision="Rev.D"
+            salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+            ARMmbed=""
+            type="Evaluation Board">
+            <description>STMicroelectronics STM32H7B3I Evaluation Board Support and Examples</description>
+            <image large="images/stm32h7b3ieval_big.jpg" small="images/stm32h7b3I-eval_small.jpg"/>
+            <book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h7b3i-eval.html" title="Evaluation board with STM32H7B3LIHxQ MCU"/>
+            <book category="manual" name="https://www.st.com/resource/en/user_manual/dm00671017-evaluation-board-with-stm32h7b3li-mcu-stmicroelectronics.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H7B3LIHxQ" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+            <compatibleDevice DsubFamily="STM32H7B3" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB (PC, Charger), user USB (HS,FS) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (CS42L51-CNZ)" type="Audio"/>
+			<feature n="1" name="Two 8 GByte (or more) MicroSD cards" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="CAN FD interface" type="CAN"/>
+			<feature n="1" name="On-board ST-LINK/V3-0" type="ODbg"/>
+			<feature n="24000000" type="XTAL"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="512Mb OctoSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="LCD WVGA color 7&quot; (800 x 480 pixels) with capacitive touch screen" type="GLCD"/>
+			<feature n="1" name="Camera CMOS QSXGA (5 Mpixel)" type="Camera"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="4 user LEDs (Green/Red/Yellow/Orange)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed external PHY) with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="1" name="Power-metering and Temperature-monitoring with sigma-delta modulators" type="Meter"/>
+			<feature n="1" name="Wi-Fi 802.11 a/b/g/n" type="Other"/>
+			<feature n="1" name="Motor Control" type="Motor"/>
+			<debugInterface adapter="ST-Link" connector="Micro-USB"/>
+		</board>
+
+		<board name="STM32G081B-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32g081b-eval.html#sample-buy" revision="Rev.A"
+            salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+            ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32G081B Evaluation Board Support and Examples</description>
+			<image large="images/stm32g081b-eval_large.jpg" small="images/stm32g081b-eval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32g081b-eval.html" title="Evaluation board with STM32G081RB MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00496637.pdf" title="User Manual"/>
+
+            <mountedDevice Dname="STM32G081RBTx" Dvendor="STMicroelectronics:13" Dfamily="STM32G0" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32G081" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+			<feature n="5" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+			<feature n="1" name="TFT color LCD 240 x 320 pixels resistive touch screen" type="GLCD"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Temperature sensor" type="TempSens"/>
+			<feature n="5" u="4" name="Five LEDs: MCU Low-Power alarm, user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="3" u="1" name="Push-buttons: Wake-Up/Tamper, Reset and User" type="Button"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="Stereo audio jack including analog microphone input" type="LineIn"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB  with USB Type C Connector" type="USB"/>
+			<feature n="34" u="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+		
+		<board name="STM32G0C1E-EV" orderForm="https://www.st.com/en/evaluation-tools/stm32g0c1e-eval.html#sample-buy" revision="Rev.A"
+            salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+            ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32G0C1E Evaluation Board Support and Examples</description>
+			<image large="images/stm32g0c1e-ev_large.jpg" small="images/stm32g0c1e-eval_small.jpg"/>
+<!--
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32g0c1e-ev.html" title="Evaluation board with STM32G0C1VE MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00496637.pdf" title="User Manual"/>
+-->
+            <mountedDevice Dname="STM32G0C1VETx" Dvendor="STMicroelectronics:13" Dfamily="STM32G0" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32G0C1" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+			<feature n="5" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+			<feature n="1" name="TFT color LCD 240 x 320 pixels resistive touch screen" type="GLCD"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+<!--
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Temperature sensor" type="TempSens"/>
+-->
+			<feature n="5" u="4" name="Five LEDs: MCU Low-Power alarm, user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="3" u="1" name="Push-buttons: Wake-Up/Tamper, Reset and User" type="Button"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="Stereo audio jack including analog microphone input" type="LineIn"/>
+<!--
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+-->
+			<feature n="1" name="USB  with USB Type C Connector" type="USB"/>
+			<feature n="34" u="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32H753I-EVAL2" orderForm="https://www.st.com/en/evaluation-tools/stm32h753i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32H753I Evaluation Board Support and Examples</description>
+			<image large="images/stm32h753ieval_big.jpg" small="images/stm32h753ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h753i-eval.html" title="Evaluation board with STM32H753XI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00385071.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H753XIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32H753" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB, user USB (HS,FS1,FS2) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V3" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (LAN8742A-CZ-TR)" type="ETH"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="1 Gbit twin QuadSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="TFT color LCD 5&quot;7 (640 x 480 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32H747I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32h747i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32H747I Evaluation Board Support and Examples</description>
+			<image large="images/stm32h747ieval_big.jpg" small="images/stm32h747iEVAL_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h747i-eval.html" title="Evaluation board with STM32H747XI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00569152.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H747XIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32H747" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB, user USB (HS,FS1,FS2) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V3" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (LAN8742A-CZ-TR)" type="ETH"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="1 Gbit twin QuadSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="TFT color LCD 5&quot;7 (640 x 480 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32H757I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32h757i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32H757I Evaluation Board Support and Examples</description>
+			<image large="images/stm32h757ieval_big.jpg" small="images/stm32h757iEVAL_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h757i-eval.html" title="Evaluation board with STM32H757XI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00569152.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H757XIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32H757" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB, user USB (HS,FS1,FS2) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V3" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (LAN8742A-CZ-TR)" type="ETH"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="1 Gbit twin QuadSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="TFT color LCD 5&quot;7 (640 x 480 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<!--
+		<board name="STM32H757I-EVAL2" orderForm="https://www.st.com/en/evaluation-tools/stm32h757i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32H757I Evaluation Board Support and Examples</description>
+			<image large="images/stm32h757ieval_big.jpg" small="images/stm32h757ieval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32h757i-eval.html" title="Evaluation board with STM32H757XI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00569152.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32H757XIHx" Dvendor="STMicroelectronics:13" Dfamily="STM32H7" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32H757" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="6" name="Six 5V power supply options: power jack, ST-Link USB, user USB (HS,FS1,FS2) connector, daughterboard" type="PWR"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V3" type="ODbg"/>
+			<feature n="25000000" type="XTAL"/>
+			<feature n="1" name="10M/100M Ethernet interface with external PHY (LAN8742A-CZ-TR)" type="ETH"/>
+			<feature n="1" name="8M x 16 bits NOR Flash" type="ROM"/>
+			<feature n="1" name="8M x 32 bits SDRAM" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="1 Gbit twin QuadSPI NOR Flash" type="ROM"/>
+			<feature n="1" name="TFT color LCD 5&quot;7 (640 x 480 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="1" name="USB FS (Full speed) and HS (High speed with micro-AB Connector" type="USB"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+		-->
+
+		<board name="STM32L4R9I-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32l4r9i-eval.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32L4R9I Evaluation Board Support and Examples</description>
+			<image large="images/stm32l4r9aievalboard_large.jpg" small="images/stm32l4r9aievalboard_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32l4r9i-eval.html" title="Evaluation board with STM32L4R9AI MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00407907.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32L4R9AIIx" Dvendor="STMicroelectronics:13" Dfamily="STM32L4+" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32L4R9" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="1&quot;2 390x390 pixels MIPI DSI round LCD" type="GLCD"/>
+			<feature n="1" name="TFT color LCD 4&quot;3 (480 x 272 pixels) resistive touch screen" type="GLCD"/>
+			<feature n="2" name="ST MEMS digital microphone (MP34DT01TR)" type="MIC"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="16 Mbit (1M x 16 bits) SDRAM" type="RAM"/>
+			<feature n="1" name="128 Mbit (8M x 16 bits) NOR Flash" type="ROM"/>
+			<feature n="1" name="512 Mbit Octo-SPI Flash memory device with double transfer rate (DTR)" type="ROM"/>
+			<feature n="1" name="64 Mbit Octo-SPI SRAM memory device with HyperBus interface support" type="RAM"/>
+			<feature n="1" name="EEPROM supporting 1MHZ I2C-bus communication speed" type="Memory"/>
+			<feature n="2" u="1" name="Push-buttons: Wake-Up/Tamper and Reset" type="Button"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="1" name="Touch-sensing button" type="Button"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="1" name="Multi-Channel Audio Codec (WM8994) 4 DAC with integrated class D/AB speaker driver" type="LineOut"/>
+			<feature n="2" name="Digital microphone connected to the Mems (MP34DT01TR)" type="MIC"/>
+			<feature n="4" name="Four Flexible power supply options : power jack, ST-Link USB, user USB OTG FS connector, daughterboard" type="PWR"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="1" name="USB FS (Full speed) with micro-AB Connector" type="USB"/>
+			<feature n="7" u="4" name="Seven LEDs: Low-Power range (Red/Orange/Green), user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32MP157C-EV1" orderForm="https://www.st.com/en/evaluation-tools/stm32mp157c-ev1.html#sample-buy" revision="Rev.B"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32MP157C-EV1 Evaluation Board Support and Examples</description>
+			<image large="images/stm32mp157-ev1_large.jpg" small="images/stm32mp157-ev1_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32mp157c-ev1.html" title="STM32MP1 Evaluation board with STM32MP157C MPU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00591370.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32MP157CAAx" Dvendor="STMicroelectronics:13" Dfamily="STM32MP1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32MP157" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="2" name="2 x DDR3L 16 bits (8GB)" type="RAM"/>
+			<feature n="1" name="4 GByte eMMC" type="MemCard"/>
+			<feature n="1" name="MicroSD card" type="MemCard"/>
+			<feature n="4" name="4 x USB type-A (host)" type="USB"/>
+			<feature n="1" name="USB micro-AB (OTG)" type="USB"/>
+			<feature n="1" name="10M/100M/1G Ethernet interface" type="ETH"/>
+			<feature n="1" name="Speaker / Headset" type="Speaker"/>
+			<feature n="1" name="SPDIF RX" type="LineIn"/>
+			<feature n="1" name="SPDIF TX" type="LineOut"/>
+			<feature n="1" name="4&quot; TFT LCD (800 x 400 pixels) display with MIPI DSI interface" type="GLCD"/>
+			<feature n="1" name="Camera module : 5 MPixel" type="Camera"/>
+			<feature n="6" name="Connectors set (RGB LTDC, Motor control, SmartCard, GPIO expansion, ...)" type="ConnOther"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="1" name="JTAG connector" type="ODbg"/>
+			<feature n="1" name="Trace connector" type="ODbg"/>
+
+			<debugInterface adapter="ST-Link" connector="Micro-USB (ST-LINK/V2-1)"/>
+			<debugInterface adapter="JTAG/SW" connector="20-pin ARM Standard JTAG Connector"/>
+		</board>
+
+		<board name="STM32MP157A-EV1" orderForm="https://www.st.com/en/evaluation-tools/stm32mp157a-ev1.html#sample-buy" revision="Rev.B"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32MP157A-EV1 Evaluation Board Support and Examples</description>
+			<image large="images/stm32mp157-ev1_large.jpg" small="images/stm32mp157-ev1_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32mp157a-ev1.html" title="STM32MP1 Evaluation board with STM32MP157A MPU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00591370.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32MP157AAAx" Dvendor="STMicroelectronics:13" Dfamily="STM32MP1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32MP157" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="2" name="2 x DDR3L 16 bits (8GB)" type="RAM"/>
+			<feature n="1" name="4 GByte eMMC" type="MemCard"/>
+			<feature n="1" name="MicroSD card" type="MemCard"/>
+			<feature n="4" name="4 x USB type-A (host)" type="USB"/>
+			<feature n="1" name="USB micro-AB (OTG)" type="USB"/>
+			<feature n="1" name="10M/100M/1G Ethernet interface" type="ETH"/>
+			<feature n="1" name="Speaker / Headset" type="Speaker"/>
+			<feature n="1" name="SPDIF RX" type="LineIn"/>
+			<feature n="1" name="SPDIF TX" type="LineOut"/>
+			<feature n="1" name="4&quot; TFT LCD (800 x 400 pixels) display with MIPI DSI interface" type="GLCD"/>
+			<feature n="1" name="Camera module : 5 MPixel" type="Camera"/>
+			<feature n="6" name="Connectors set (RGB LTDC, Motor control, SmartCard, GPIO expansion, ...)" type="ConnOther"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="1" name="JTAG connector" type="ODbg"/>
+			<feature n="1" name="Trace connector" type="ODbg"/>
+
+			<debugInterface adapter="ST-Link" connector="Micro-USB (ST-LINK/V2-1)"/>
+			<debugInterface adapter="JTAG/SW" connector="20-pin ARM Standard JTAG Connector"/>
+		</board>
+
+		<board name="STM32MP157F-EV1" orderForm="https://www.st.com/en/evaluation-tools/stm32mp157f-ev1.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32MP157F-EV1 Evaluation Board Support and Examples</description>
+			<image large="images/stm32mp157-ev1_large.jpg" small="images/stm32mp157-ev1_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32mp157f-ev1.html" title="STM32MP1 Evaluation board with STM32MP157F MPU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00591370.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32MP157FAAx" Dvendor="STMicroelectronics:13" Dfamily="STM32MP1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32MP157" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="2" name="2 x DDR3L 16 bits (8GB)" type="RAM"/>
+			<feature n="1" name="4 GByte eMMC" type="MemCard"/>
+			<feature n="1" name="MicroSD card" type="MemCard"/>
+			<feature n="4" name="4 x USB type-A (host)" type="USB"/>
+			<feature n="1" name="USB micro-AB (OTG)" type="USB"/>
+			<feature n="1" name="10M/100M/1G Ethernet interface" type="ETH"/>
+			<feature n="1" name="Speaker / Headset" type="Speaker"/>
+			<feature n="1" name="SPDIF RX" type="LineIn"/>
+			<feature n="1" name="SPDIF TX" type="LineOut"/>
+			<feature n="1" name="4&quot; TFT LCD (800 x 400 pixels) display with MIPI DSI interface" type="GLCD"/>
+			<feature n="1" name="Camera module : 5 MPixel" type="Camera"/>
+			<feature n="6" name="Connectors set (RGB LTDC, Motor control, SmartCard, GPIO expansion, ...)" type="ConnOther"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="1" name="JTAG connector" type="ODbg"/>
+			<feature n="1" name="Trace connector" type="ODbg"/>
+
+			<debugInterface adapter="ST-Link" connector="Micro-USB (ST-LINK/V2-1)"/>
+			<debugInterface adapter="JTAG/SW" connector="20-pin ARM Standard JTAG Connector"/>
+		</board>
+
+		<!--board name="STM32MP157D-EV1" orderForm="https://www.st.com/en/evaluation-tools/stm32mp157d-ev1.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32MP157D-EV1 Evaluation Board Support and Examples</description>
+			<image large="images/stm32mp157-ev1_large.jpg" small="images/stm32mp157-ev1_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32mp157d-ev1.html" title="STM32MP1 Evaluation board with STM32MP157D MPU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00591370.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32MP157DAAx" Dvendor="STMicroelectronics:13" Dfamily="STM32MP1" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32MP157" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="2" name="2 x DDR3L 16 bits (8GB)" type="RAM"/>
+			<feature n="1" name="4 GByte eMMC" type="MemCard"/>
+			<feature n="1" name="MicroSD card" type="MemCard"/>
+			<feature n="4" name="4 x USB type-A (host)" type="USB"/>
+			<feature n="1" name="USB micro-AB (OTG)" type="USB"/>
+			<feature n="1" name="10M/100M/1G Ethernet interface" type="ETH"/>
+			<feature n="1" name="Speaker / Headset" type="Speaker"/>
+			<feature n="1" name="SPDIF RX" type="LineIn"/>
+			<feature n="1" name="SPDIF TX" type="LineOut"/>
+			<feature n="1" name="4&quot; TFT LCD (800 x 400 pixels) display with MIPI DSI interface" type="GLCD"/>
+			<feature n="1" name="Camera module : 5 MPixel" type="Camera"/>
+			<feature n="6" name="Connectors set (RGB LTDC, Motor control, SmartCard, GPIO expansion, ...)" type="ConnOther"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<feature n="1" name="JTAG connector" type="ODbg"/>
+			<feature n="1" name="Trace connector" type="ODbg"/>
+
+			<debugInterface adapter="ST-Link" connector="Micro-USB (ST-LINK/V2-1)"/>
+			<debugInterface adapter="JTAG/SW" connector="20-pin ARM Standard JTAG Connector"/>
+		</board-->
+
+		<board name="STM32G474E-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32g474e-eval.html#sample-buy" revision="Rev.A"
+            salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+            ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32G474E Evaluation Board Support and Examples</description>
+			<image large="" small="images/stm32474eeval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32g474e-eval.html" title="Evaluation board with STM32G474QE MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00564162.pdf" title="User Manual"/>
+
+            <mountedDevice Dname="STM32G474QETx" Dvendor="STMicroelectronics:13" Dfamily="STM32G4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32G474" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V3" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+			<feature n="5" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+			<feature n="1" name="TFT color LCD 240 x 320 pixels resistive touch screen" type="GLCD"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Temperature sensor" type="TempSens"/>
+			<feature n="5" u="4" name="Five LEDs: MCU Low-Power alarm, user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="3" u="1" name="Push-buttons: Wake-Up/Tamper, Reset and User" type="Button"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="Stereo audio jack including analog microphone input" type="LineIn"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB  with USB Type C Connector" type="USB"/>
+			<feature n="34" u="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32G474E-EVAL1" orderForm="https://www.st.com/en/evaluation-tools/stm32g474e-eval.html#sample-buy" revision="Rev.A"
+            salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+            ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32G474E Evaluation Board Support and Examples</description>
+			<image large="" small="images/stm32474eeval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32g474e-eval.html" title="Evaluation board with STM32G474QE MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00564162.pdf" title="User Manual"/>
+
+            <mountedDevice Dname="STM32G474QETx" Dvendor="STMicroelectronics:13" Dfamily="STM32G4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32G474" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V3" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+			<feature n="5" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+			<feature n="1" name="TFT color LCD 240 x 320 pixels resistive touch screen" type="GLCD"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Temperature sensor" type="TempSens"/>
+			<feature n="5" u="4" name="Five LEDs: MCU Low-Power alarm, user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="3" u="1" name="Push-buttons: Wake-Up/Tamper, Reset and User" type="Button"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="Stereo audio jack including analog microphone input" type="LineIn"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB  with USB Type C Connector" type="USB"/>
+			<feature n="34" u="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32G484E-EVAL" orderForm="https://www.st.com/en/evaluation-tools/stm32g484e-eval.html#sample-buy" revision="Rev.A"
+            salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+            ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32G484E Evaluation Board Support and Examples</description>
+			<image large="" small="images/stm32474eeval_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32g484e-eval.html" title="Evaluation board with STM32G484QE MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00564162.pdf" title="User Manual"/>
+
+            <mountedDevice Dname="STM32G484QETx" Dvendor="STMicroelectronics:13" Dfamily="STM32G4" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32G484" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="On-board ST-LINK/V2" type="ODbg"/>
+			<feature n="8000000" type="XTAL"/>
+			<feature n="5" name="Four 5V power supply options : power jack, ST-Link USB, user USB connector or daughterboard" type="PWR"/>
+			<feature n="1" name="TFT color LCD 240 x 320 pixels resistive touch screen" type="GLCD"/>
+			<feature n="1" name="8 GByte (or more) MicroSD card" type="MemCard"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Temperature sensor" type="TempSens"/>
+			<feature n="5" u="4" name="Five LEDs: MCU Low-Power alarm, user (Orange/Green/Red/Blue)" type="LED"/>
+			<feature n="3" u="1" name="Push-buttons: Wake-Up/Tamper, Reset and User" type="Button"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="1" name="RS-232 serial interface" type="RS232"/>
+			<feature n="1" name="Stereo audio jack including analog microphone input" type="LineIn"/>
+			<feature n="1" name="IrDA transceiver" type="IrDA"/>
+			<feature n="1" name="USB  with USB Type C Connector" type="USB"/>
+			<feature n="34" u="34" name="Motor control connector: (2 x 17) with 2.54 mm Pitch" type="ConnOther"/>
+			<debugInterface adapter="ST-Link" connector="Mini-USB"/>
+		</board>
+
+		<board name="STM32L552E-EV" orderForm="https://www.st.com/en/evaluation-tools/stm32l552e-ev.html#sample-buy" revision="Rev.A"
+			salesContact="https://www.st.com/content/st_com/en/contact-us.html" vendor="STMicroelectronics"
+			ARMmbed=""
+			type="Evaluation Board">
+			<description>STMicroelectronics STM32L552ZE Evaluation Board Support and Examples</description>
+			<image large="" small="images/stm32l552e-ev_small.jpg"/>
+			<book category="overview" name="https://www.st.com/en/evaluation-tools/stm32l552e-ev.html" title="Evaluation board with STM32L552ZE MCU"/>
+			<book category="manual" name="https://www.st.com/resource/en/user_manual/dm00623588.pdf" title="User Manual"/>
+
+			<mountedDevice Dname="STM32L552ZETxQ" Dvendor="STMicroelectronics:13" Dfamily="STM32L5" deviceIndex="0"/>
+			<compatibleDevice DsubFamily="STM32L552" Dvendor="STMicroelectronics:13" deviceIndex="0"/>
+
+			<feature n="1" name="256 Kbytes of SRAM" type="RAM"/>
+			<feature n="1" name="2.8&quot; 240 x 320 pixels 262K-color TFT LCD module with parallel interface and touch control panel" type="GLCD"/>
+			<feature n="1" name="USB Type-C Sink device FS" type="USB"/>
+			<feature n="1" name="SAI Audio Codec" type="Other"/>
+			<feature n="1" name="ST MEMS digital microphones" type="MIC"/>
+			<feature n="1" name="512 Mbit Octo-SPI Flash memory" type="ROM"/>
+			<feature n="1" name="64 Mbit Octo-SPI SRAM memory device with HyperBus interface support" type="RAM"/>
+			<feature n="1" name="1M x 16 bits SRAM" type="RAM"/>
+			<feature n="1" name="Bluetooth V4.1 low energy module" type="Other"/>
+			<feature n="1" name="iNEMO 3D accelerometer and 3D gyroscope" type="Accelerometer"/>
+			<feature n="1" name="Joystick with 4-direction control and selector" type="Joystick"/>
+			<feature n="1" name="One Touch-sensing button" type="Touch"/>
+			<feature n="1" name="Light Dependent Resistor (LDR)" type="LightSens"/>
+			<feature n="1" name="Potentiometer" type="Poti"/>
+			<feature n="3" u="1" name="User, Tamper and Reset push-buttons" type="Button"/>
+			<feature n="1" name="On-board ST-LINK/V2-1" type="ODbg"/>
+			<debugInterface adapter="ST-Link" connector="Micro-USB (ST-LINK/V2-1)"/>
+		</board>
+	</boards>
+</package>

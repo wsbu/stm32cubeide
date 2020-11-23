@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.linux.toolchain
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.linux.toolchain;singleto
+ n:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.ui.workbench,org.eclipse.swt,org.eclipse.c
+ ore.runtime,org.eclipse.cdt.managedbuilder.core,com.st.stm32cube.ide.
+ mcu.toolchain,com.st.stm32cube.common.logger,org.eclipse.cdt.core,com
+ .st.stm32cube.common.ecosystemintegration,com.st.stm32cube.ide.mcu.pr
+ oductdb,org.eclipse.core.resources,com.st.stm32cube.ide.mcu.build,org
+ .eclipse.core.variables,com.st.stm32cube.ide.mcu.externaltools
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.ide.mpu.toolchain.setup
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.linux.toolchain.Activator
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

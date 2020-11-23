@@ -1,0 +1,31 @@
+instructions.install.import = \
+  org.eclipse.equinox.p2.touchpoint.natives.chmod
+instructions.install = chmod(targetDir:${artifact.location},targetFile:META-INF/MANIFEST.MF,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:STM32CubeIDE_icon_32px.png,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.html,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.ini,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.mappings,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:fragment.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:fragment.xml,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/openocd,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/COPYING,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/hidapi/LICENSE-bsd.txt,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/hidapi/LICENSE-gpl3.txt,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/hidapi/LICENSE-orig.txt,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/hidapi/LICENSE.txt,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/libjaylink/COPYING,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/libusb/COPYING,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/doc/st-openocd.pdf,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libhidapi-hidraw.so,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libhidapi-hidraw.so.0,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libhidapi-hidraw.so.0.0.0,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libhidapi-libusb.so,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libhidapi-libusb.so.0,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libhidapi-libusb.so.0.0.0,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libjaylink.so,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libjaylink.so.0,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libjaylink.so.0.0.0,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libusb-1.0.so,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libusb-1.0.so.0,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/lib/libusb-1.0.so.0.2.0,permissions:775);

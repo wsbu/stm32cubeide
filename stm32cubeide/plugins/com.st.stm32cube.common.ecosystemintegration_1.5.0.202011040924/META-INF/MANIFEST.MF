@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.common.ecosystemintegration
+Bundle-SymbolicName: com.st.stm32cube.common.ecosystemintegration;sing
+ leton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,com.st.stm32cube.common.logge
+ r,org.eclipse.core.resources
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Eclipse-ExtensibleAPI: true
+Export-Package: com.st.stm32cube.common.ecosystemintegration.core,com.
+ st.stm32cube.common.ecosystemintegration.registry
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.common.ecosystemintegration.MCUEcoS
+ ystemIntegrationPlugIn
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

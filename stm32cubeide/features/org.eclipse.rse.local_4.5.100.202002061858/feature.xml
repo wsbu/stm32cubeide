@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (c) 2005, 2018 IBM Corporation and others.
+     All rights reserved. This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License 2.0
+     which accompanies this distribution, and is available at
+     https://www.eclipse.org/legal/epl-2.0/
+
+    SPDX-License-Identifier: EPL-2.0
+    
+     Contributors:
+         IBM Corporation - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.rse.local"
+      label="%featureName"
+      version="4.5.100.202002061858"
+      provider-name="%providerName"
+      plugin="org.eclipse.rse.services.local">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.rse.services"/>
+      <import plugin="org.eclipse.rse.subsystems.files.core"/>
+      <import plugin="org.eclipse.rse.ui"/>
+      <import plugin="org.eclipse.rse.subsystems.processes.core"/>
+      <import plugin="org.eclipse.rse.subsystems.shells.core"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.rse.services.local"
+         download-size="61"
+         install-size="116"
+         version="4.5.100.201901312252"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rse.subsystems.files.local"
+         download-size="27"
+         install-size="49"
+         version="4.5.100.201901312252"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rse.subsystems.processes.local"
+         download-size="18"
+         install-size="27"
+         version="4.5.100.201901312252"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rse.subsystems.shells.local"
+         download-size="19"
+         install-size="28"
+         version="4.5.100.201901312252"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.rse.connectorservice.local"
+         download-size="15"
+         install-size="22"
+         version="4.5.100.201901312252"
+         unpack="false"/>
+
+</feature>

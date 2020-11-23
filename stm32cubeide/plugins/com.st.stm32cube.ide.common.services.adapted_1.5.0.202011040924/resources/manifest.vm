@@ -1,0 +1,4 @@
+MANIFEST_VERSION = $manifestVersion.toString()
+KERNEL_DT = $kernel.toString()
+UBOOT_DT = $uboot.toString()
+TFA_DT = $tfa.toString()

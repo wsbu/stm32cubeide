@@ -1,0 +1,52 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.ide
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.ide;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.resources,org.eclipse.cdt.managedbuil
+ der.core,com.st.stm32cube.ide.mcu.productdb,org.eclipse.core.runtime,
+ org.eclipse.ui,org.eclipse.cdt.core,org.eclipse.ui.ide,org.eclipse.ui
+ .workbench,org.eclipse.core.expressions,com.st.stm32cube.ide.mcu.buil
+ d,com.st.stm32cube.common.projectcreation,com.st.stm32cube.ide.mcu.ex
+ ternaltools,com.st.stm32cube.common.preferences,com.st.stm32cube.comm
+ on.logger,com.st.stm32cube.ide.common.services,com.st.stm32cube.ide.m
+ cu.projectnatures,com.st.stm32cube.ide.mcu.linker,com.st.stm32cube.id
+ e.mcu.externaltools.openocd,com.st.stm32cube.common.ecosystemintegrat
+ ion,com.st.stm32cube.ide.common.utils,com.st.stm32cube.common.utils,c
+ om.st.stm32cube.ide.common.services.mx,com.st.stm32cube.common.mx,com
+ .st.stm32cube.ide.mcu.startup,com.st.stm32cube.ide.mcu.projecttree,co
+ m.st.stm32cube.ide.mcu.projecttree,org.apache.log4j,com.st.stm32cube.
+ ide.mcu.resources,com.st.stm32cube.common.ecosystemintegration.ui,com
+ .st.stm32cube.ide.mcu.toolchain,com.st.stm32cube.ide.mcu.converters,c
+ om.st.stm32cube.ide.common.services.adapted,com.st.stm32cube.ide.mcu.
+ targetadapter,com.st.stm32cube.ide.common.ui.oss,com.st.stm32cube.ide
+ .common.ui,org.eclipse.jface,com.st.stm32cube.ide.mcu.analytics,com.s
+ t.stm32cube.ide.mcu.rcp
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Import-Package: com.st.stm32cube.common.projectcreation.ui.registry,co
+ m.st.stm32cube.common.projectcreation.ui.utils,com.st.stm32cube.commo
+ n.projectcreation.ui.wizard,com.st.stm32cube.ide.mcu.productdb.debug,
+ com.st.stm32cube.ide.mcu.productdb.debug.svd.core,org.eclipse.jsch.in
+ ternal.core
+Export-Package: com.st.stm32cube.ide.mcu.ide; uses:="org.eclipse.swt.w
+ idgets,  com.st.stm32cube.ide.mcu.productdb.core,  org.eclipse.ui.plu
+ gin,  org.osgi.framework,  org.eclipse.ui,  org.eclipse.core.runtime,
+   org.eclipse.jface.resource,  org.eclipse.core.resources",com.st.stm
+ 32cube.ide.mcu.ide.core; uses:="com.st.stm32cube.common.projectcreati
+ on.registry,  com.st.stm32cube.ide.mcu.productdb.core,  org.eclipse.s
+ wt.widgets,  org.eclipse.core.resources,  org.eclipse.cdt.managedbuil
+ der.core",com.st.stm32cube.ide.mcu.ide.engine,com.st.stm32cube.ide.mc
+ u.ide.process,com.st.stm32cube.ide.mcu.ide.registry;uses:="com.st.stm
+ 32cube.ide.mcu.ide.engine,com.st.stm32cube.ide.mcu.productdb.core,org
+ .eclipse.core.resources",com.st.stm32cube.ide.mcu.ide.ui.project.inte
+ rnal,com.st.stm32cube.ide.mcu.ide.ui.wizard
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mcu.ide.MCUIdePlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

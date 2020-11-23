@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openOcdTraceReferences xmlns="http://openstm32.org/openOcdTraceReferences"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openstm32.org/openOcdTraceReferences openOcdTraceReferences.xsd" >
+  <trace isEndUserVisible="false" severity="Info" shortComment="Debug session ended by end user">
+    <keyStrings>
+    <keyString>dropped 'gdb' connection</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Error" shortComment="Unplugged target or STLink already in use or STLink USB driver not installed">
+    <keyStrings>
+    <keyString>open failed</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Error" shortComment="Check that the STlink is not used by another application">
+    <keyStrings>
+    <keyString>libusb_open() failed with LIBUSB_ERROR_ACCESS</keyString>
+    <keyString>open failed</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Error" shortComment="Unplugged target during debug session">
+    <keyStrings>
+    <keyString>jtag status contains invalid mode value - communication failure</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Warning" shortComment="Wrong device detected, check your project and the board(s) connected">
+    <keyStrings>
+    <keyString>UNEXPECTED idcode:</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Debug" shortComment="Wrong device detected in JTAG">
+    <keyStrings>
+    <keyString>UNKNOWN_JTAG_CHAIN</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Error" shortComment="Wrong device detected">
+    <keyStrings>
+    <keyString>unable to connect to the target</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Warning" shortComment="Wrong device detected, check the board connected">
+    <keyStrings>
+    <keyString>Cannot identify target as a STM32L family</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Warning" shortComment="Wrong device detected, check the board connected">
+    <keyStrings>
+    <keyString>Cannot identify target as a STM32 family</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Warning" shortComment="Wrong device detected, check the board connected">
+    <keyStrings>
+    <keyString>Cannot identify target as a STM32L4xx or STM32G0xx family</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Warning" shortComment="Wrong device detected, check the board connected">
+    <keyStrings>
+    <keyString>Cannot identify target as a STM32F7xx family</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Warning" shortComment="Wrong device detected, check the board connected">
+    <keyStrings>
+    <keyString>Cannot identify target as a STM32H7xx family</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Debug" shortComment="Wrong board detected, check serial number">
+    <keyStrings>
+    <keyString>doesn't match requested serial</keyString>
+    <keyString>open failed</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Info" shortComment="Write Protection error detected, check RDP and WRP Protections options bytes">
+    <keyStrings>
+    <keyString>wait_status_busy, WRPERR</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Error" shortComment="Write Protection error detected, check RDP and WRP Protections options bytes">
+    <keyStrings>
+    <keyString>access denied / write protected</keyString>
+    </keyStrings>
+  </trace>
+  <trace isEndUserVisible="true" severity="Error" shortComment="Write Protection error detected, check RDP and WRP Protections options bytes">
+    <keyStrings>
+    <keyString>stm32x device protected</keyString>
+    </keyStrings>
+  </trace>
+</openOcdTraceReferences>

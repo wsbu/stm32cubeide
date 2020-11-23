@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.linkerdb"
+      label="%pluginName"
+      version="1.5.0.202011051335"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.linkerdb"
+         download-size="130"
+         install-size="345"
+         version="1.5.0.202011051335"/>
+
+</feature>

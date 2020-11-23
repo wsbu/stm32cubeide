@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.externaltools.gnu-tool
+ s-for-stm32.7-2018-q2-update.linux64
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.externaltools.gnu-tools-
+ for-stm32.7-2018-q2-update.linux64;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,com.st.stm32cu
+ be.ide.mcu.informationcenter
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86_64))
+Bundle-Vendor: %providerName
+Fragment-Host: com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-st
+ m32.7-2018-q2-update
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: fragment
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

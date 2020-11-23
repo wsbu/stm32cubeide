@@ -1,0 +1,10 @@
+#!/bin/bash
+
+BASEDIR=$(cd `dirname "$0"` && pwd)
+JARNAME="cproject_importer.jar"
+JARPATH=${BASEDIR}/../app/${JARNAME}
+JAVA=${BASEDIR}/../../../../../jre/bin/java
+
+[ -e ${JAVA} ] || JAVA="java"
+
+"${JAVA}" -jar "${JARPATH}" --debug $1

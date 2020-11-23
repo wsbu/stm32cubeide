@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mpu.linux.debug"
+      label="%featureName"
+      version="1.5.0.202011161402"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="com.st.stm32cube.ide.feature.mpu.ide" version="1.0.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mpu.linux.debug"
+         os="linux"
+         download-size="68"
+         install-size="144"
+         version="1.5.0.202011161402"/>
+
+</feature>

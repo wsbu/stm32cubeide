@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.common.ui"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.ide.common.ui"
+         download-size="16"
+         install-size="32"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.common.ui.oss"
+         download-size="9"
+         install-size="16"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

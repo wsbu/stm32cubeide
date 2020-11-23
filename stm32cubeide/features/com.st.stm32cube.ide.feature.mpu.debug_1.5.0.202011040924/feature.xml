@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mpu.debug"
+      label="%featureName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.rse"
+         version="4.5.100.202002061858"/>
+
+   <includes
+         id="org.eclipse.rse.core"
+         version="4.5.100.202002061858"/>
+
+   <includes
+         id="org.eclipse.rse.telnet"
+         version="4.5.100.202002061858"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mpu.debug"
+         os="linux,win32"
+         download-size="39"
+         install-size="78"
+         version="1.5.0.202011040924"/>
+
+</feature>

@@ -3,7 +3,7 @@
 # Full directory name of the script no matter where it is being called from.
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# ===== ARGUMENTS ===== 
+# ===== ARGUMENTS =====
 nbParam=$#
 while [[ $# -gt 0 ]]
 do
@@ -46,14 +46,15 @@ then
   echo "-data         [path_to_workspace]     Workspace location (required)"
   echo "-build        [project_name | all]    Build the project"
   echo "-clean        [project_name | all]    Clean and build the project"
-  echo 
+  echo
   echo "-v|-verbose   Display arguments and command line executed (displayed at the end of the trace)"
   echo "-h|-help      Display this help and exit"
   exit 0;
 fi
 
-# ===== COMAND LINE ===== 
+# ===== COMAND LINE =====
 ${DIR}/stm32cubeide --launcher.suppressErrors -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild ${BUILD_OPTION} ${IMPORT_LOC} ${WORKSPACE_LOC}
+status=$?
 echo
 echo
 
@@ -67,12 +68,12 @@ then
   echo "    BUILD_OPTION  = ${BUILD_OPTION}"
   echo "    WORKSPACE_LOC = ${WORKSPACE_LOC}"
   echo "    IMPORT_LOC    = ${IMPORT_LOC}"
-  echo 
+  echo
   echo "=== COMMAND_LINE"
   echo "    ${DIR}/stm32cubeide --launcher.suppressErrors -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild ${BUILD_OPTION} ${IMPORT_LOC} ${WORKSPACE_LOC} ${PARALLEL_BUILD}"
   echo "=================================="
   echo
-  echo; 
+  echo;
 fi
 
-exit 0
+exit $status

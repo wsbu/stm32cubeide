@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.freertos"
+      label="%pluginName"
+      version="1.5.0.202011161802"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.freertos"
+         download-size="71"
+         install-size="143"
+         version="1.5.0.202011131105"
+         unpack="false"/>
+
+</feature>

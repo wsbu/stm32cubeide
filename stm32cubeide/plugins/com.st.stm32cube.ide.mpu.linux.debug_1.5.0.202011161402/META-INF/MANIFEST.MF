@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.linux.debug
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.linux.debug;singleton:=t
+ rue
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.ui.workbench,org.eclipse.swt,org.eclipse.u
+ i.console,org.eclipse.core.runtime,org.eclipse.debug.core,org.eclipse
+ .cdt.launch.remote,org.eclipse.remote.core,org.eclipse.core.filesyste
+ m,com.st.stm32cube.common.logger,com.google.gson,org.eclipse.debug.ui
+ ,org.eclipse.cdt.debug.core,org.eclipse.jface,org.eclipse.cdt.dsf.gdb
+ ,org.eclipse.cdt.dsf.gdb.ui,org.eclipse.cdt.launch,org.eclipse.ui.ide
+ ,org.eclipse.remote.ui,com.st.stm32cube.ide.mpu.ide
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011161402
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.linux.debug.MPUDebugPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

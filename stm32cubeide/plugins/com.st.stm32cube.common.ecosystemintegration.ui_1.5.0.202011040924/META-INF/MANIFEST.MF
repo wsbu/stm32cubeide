@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.common.ecosystemintegration.ui
+Bundle-SymbolicName: com.st.stm32cube.common.ecosystemintegration.ui;s
+ ingleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,com.st.stm32cube.common.logge
+ r,org.eclipse.core.resources,com.st.stm32cube.common.ecosystemintegra
+ tion,org.eclipse.jface,org.eclipse.ui.ide
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.common.ecosystemintegration.ui.core,c
+ om.st.stm32cube.common.ecosystemintegration.ui.registry
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-ClassPath: .
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

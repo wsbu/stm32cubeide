@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:stm32="http://st.com/stm32TargetDefinitions"
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   targetNamespace="http://st.com/stm32TargetDefinitions"
+		   xsi:schemaLocation="http://www.w3.org/2001/XMLSchema XMLSchema.xsd"
+		   elementFormDefault="qualified"
+		   attributeFormDefault="unqualified"
+		   version="1.0">
+	<xs:simpleType name="addrValue">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[+]?(0x|0X|#)?[0-9a-fA-F]+[kmgtKMGT]?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="addrAliasIdType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="secure" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="addrAliasValue">
+		<xs:simpleContent>
+			<xs:extension base="stm32:addrValue">
+				<xs:attribute name="id" type="stm32:addrAliasIdType" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:simpleType name="alignValue">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(4|8|16|32|0x4|0x04|0x8|0x08|0x10|0x20|0X4|0X04|0X8|0X08|0X10|0X20)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="debugInterfaceEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="SWD"/>
+			<xs:enumeration value="JTAG"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="dbgDEVType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="ST-LinkV2"/>
+			<xs:enumeration value="ST-LinkV2-1"/>
+			<xs:enumeration value="ST-LinkV3"/>
+			<xs:enumeration value="ST-Link"/>
+			<xs:enumeration value="st-linkv1"/>
+			<xs:enumeration value="st-linkv2"/>
+			<xs:enumeration value="st-linkv2-1"/>
+			<xs:enumeration value="st-linkv3"/>
+			<xs:enumeration value="st-link"/>
+			<xs:enumeration value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="memoryType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="RAM"/>		<!-- Name for internal SRAM: 				RAM -->
+			<xs:enumeration value="ram"/>		<!-- Name for internal SRAM: 				RAM -->
+			<xs:enumeration value="DataRAM"/>	<!-- Name for Core Coupled RAM: 			CCMRAM -->
+			<xs:enumeration value="ROM"/>		<!-- Name for internal ROM (not yet used): 	ROM -->
+			<xs:enumeration value="Flash"/>		<!-- Name for internal Flash: 				FLASH -->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="cpuCoreEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="arm7tdmi" />
+			<xs:enumeration value="sc100" />
+			<xs:enumeration value="arm7tdmi-s" />
+			<xs:enumeration value="arm9" />
+			<xs:enumeration value="arm920t" />
+			<xs:enumeration value="arm922t" />
+			<xs:enumeration value="arm926ej-s" />
+			<xs:enumeration value="arm946e-s" />
+			<xs:enumeration value="arm966e-s" />
+			<xs:enumeration value="arm968e-s" />
+			<xs:enumeration value="cortex-a5" />
+			<xs:enumeration value="arm cortex-a7" />
+			<xs:enumeration value="cortex-a7" />
+			<xs:enumeration value="cortex-a8" />
+			<xs:enumeration value="cortex-a9" />
+			<xs:enumeration value="cortex-a12" />
+			<xs:enumeration value="cortex-a15" />
+			<xs:enumeration value="cortex-a17" />
+			<xs:enumeration value="arm cortex-a35" />
+			<xs:enumeration value="cortex-a35" />
+			<xs:enumeration value="cortex-a53" />
+			<xs:enumeration value="cortex-a57" />
+			<xs:enumeration value="cortex-a72" />
+			<xs:enumeration value="cortex-m0" />
+			<xs:enumeration value="arm cortex-m0" />
+			<xs:enumeration value="sc000" />
+			<xs:enumeration value="arm cortex-m0+" />
+			<xs:enumeration value="cortex-m0+" />
+			<xs:enumeration value="cortex-m0plus" />
+			<xs:enumeration value="arm cortex-m1" />
+			<xs:enumeration value="cortex-m1" />
+			<xs:enumeration value="arm cortex-m3" />
+			<xs:enumeration value="cortex-m3" />
+			<xs:enumeration value="sc300" />
+			<xs:enumeration value="arm cortex-m4" />
+			<xs:enumeration value="cortex-m4" />
+			<xs:enumeration value="arm cortex-m7" />
+			<xs:enumeration value="cortex-m7" />
+			<xs:enumeration value="cortex-m23" />
+			<xs:enumeration value="cortex-m33" />
+			<xs:enumeration value="arm cortex-m33" />
+			<xs:enumeration value="cortex-r4" />
+			<xs:enumeration value="cortex-r5" />
+			<xs:enumeration value="cortex-r7" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="fpuCoreEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="None" />
+			<xs:enumeration value="fpv4-sp-d16" />
+			<xs:enumeration value="fpv5-sp-d16" />
+			<xs:enumeration value="vfpv3-d32" />
+			<xs:enumeration value="vfpv3-d16" />
+			<xs:enumeration value="vfpv4-d32" />
+			<xs:enumeration value="vfpv4-d16" />
+			<xs:enumeration value="fpv5-d16" />
+			<xs:enumeration value="neon-vfpv3" />
+			<xs:enumeration value="neon-vfpv4" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="svdType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="version" type="xs:string" minOccurs="0"/>
+			<xs:element name="url" type="xs:anyURI"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="firmwareType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="StdPeriph"/>
+			<xs:enumeration value="HAL"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="memoryElement">
+		<xs:sequence>
+			<xs:element name="type" type="stm32:memoryType"/>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="address" type="stm32:addrValue"/>
+			<xs:element name="alias" type="stm32:addrAliasValue" minOccurs="0"/>
+			<xs:element name="size" type="xs:string"/>
+			<xs:element name="algo" type="xs:string" minOccurs="0"/>
+			<xs:element name="minalign" type="stm32:alignValue" minOccurs="0"/>
+			<xs:element name="bussize" type="xs:nonNegativeInteger" minOccurs="0"/>
+			<xs:element name="nbchips" type="xs:nonNegativeInteger" minOccurs="0"/>
+			<xs:element name="pagesize" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="memoriesElement">
+		<xs:sequence>
+			<xs:element name="memory" type="stm32:memoryElement" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CDefinesElement">
+		<xs:sequence>
+			<xs:element name="CDefine" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="marketingStatusEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="preview" />
+			<xs:enumeration value="Preview" />
+			<xs:enumeration value="proposal" />
+			<xs:enumeration value="Proposal" />
+			<xs:enumeration value="new" />
+			<xs:enumeration value="New" />
+			<xs:enumeration value="active" />
+			<xs:enumeration value="Active" />
+			<xs:enumeration value="deprecated" />
+			<xs:enumeration value="Deprecated" />
+			<xs:enumeration value="nrnd" />
+			<xs:enumeration value="Nrnd" />
+			<xs:enumeration value="obsolete" />
+			<xs:enumeration value="Obsolete" />
+			<xs:enumeration value="st insider"/>
+			<xs:enumeration value="ST Insider"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="boardInfo">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="status" type="stm32:marketingStatusEnum" minOccurs="0"/>
+			<xs:element name="parent" type="xs:string"/>
+			<xs:element name="dbgIF" type="stm32:debugInterfaceEnum" minOccurs="0"/>
+			<xs:element name="dbgDEV" type="stm32:dbgDEVType" minOccurs="0"/>
+			<xs:element name="memories" type="stm32:memoriesElement" minOccurs="0"/>
+			<xs:element name="CDefines" type="stm32:CDefinesElement" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string" use="optional"/> <!-- TODO can this be removed? -->
+	</xs:complexType>
+	<xs:complexType name="mcuInfo">
+		<xs:all>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="status" type="stm32:marketingStatusEnum" minOccurs="0"/>
+			<xs:element name="dieId" type="xs:hexBinary" minOccurs="0"/> <!-- TODO can this be removed? -->
+			<xs:element name="parent" type="xs:string"/>
+			<xs:element name="cpus" type="stm32:cpusElement" minOccurs="1"/>
+			<xs:element name="package" type="xs:string" minOccurs="0"/> <!-- TODO can this be removed? -->
+			<xs:element name="memories" type="stm32:memoriesElement" minOccurs="0"/>
+			<xs:element name="svd" type="stm32:svdType" minOccurs="0"/>
+			<xs:element name="CDefines" type="stm32:CDefinesElement" minOccurs="0"/>
+			<xs:element name="dbgIF" type="stm32:debugInterfaceEnum" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="coreElement">
+		<xs:all>
+			<xs:element name="type" type="stm32:cpuCoreEnum" />
+			<xs:element name="fpu" type="stm32:fpuCoreEnum" />
+			<xs:element name="id" type="xs:integer" />
+			<xs:element name="apnum" type="xs:integer" />
+			<xs:element name="memories" type="stm32:memoriesElement" minOccurs="0" />
+			<xs:element name="CDefines" type="stm32:CDefinesElement" minOccurs="0" />
+			<xs:element name="maxFrequency" type="xs:integer" minOccurs="0" />
+			<xs:element name="svd" type="stm32:svdType" minOccurs="0" />
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="coresElement">
+		<xs:sequence>
+			<xs:element name="core" type="stm32:coreElement" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="cpuElement">
+		<xs:all>
+			<xs:element name="name" type="xs:string" minOccurs="0"/>	<!-- TODO can this be removed? -->
+			<xs:element name="shortname" type="xs:string" minOccurs="0"/>	<!-- TODO can this be removed? -->
+			<xs:element name="id" type="xs:integer" />
+			<xs:element name="memories" type="stm32:memoriesElement" minOccurs="0" />
+			<xs:element name="CDefines" type="stm32:CDefinesElement" minOccurs="0" />
+			<xs:element name="cores" type="stm32:coresElement" />
+			<xs:element name="svd" type="stm32:svdType" minOccurs="0" />
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="cpusElement">
+		<xs:sequence>
+			<xs:element name="cpu" type="stm32:cpuElement"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="serieElement">
+		<xs:all>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="parent" type="xs:string"  minOccurs="0"/>
+			<xs:element name="status" type="stm32:marketingStatusEnum" minOccurs="0" />
+			<xs:element name="svd" type="stm32:svdType" minOccurs="0" />
+			<xs:element name="CDefines" type="stm32:CDefinesElement" minOccurs="0" />
+			<xs:element name="dbgIF" type="stm32:debugInterfaceEnum" minOccurs="0" />
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="serverDefinitions">
+		<xs:sequence>
+			<xs:element name="url" type="xs:anyURI" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="targetParts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="servers" type="stm32:serverDefinitions" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="board" type="stm32:boardInfo" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="mcu" type="stm32:mcuInfo" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="serie" type="stm32:serieElement" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="boards">
+			<xs:selector xpath="stm32:board"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="mcus">
+			<xs:selector xpath="stm32:mcu"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="families">
+			<xs:selector xpath="stm32:family"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="mcusandfamilies">
+			<xs:selector xpath="stm32:mcu|stm32:family"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="targetDefinitions">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="servers" type="stm32:serverDefinitions" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="board" type="stm32:boardInfo" maxOccurs="unbounded"/>
+				<xs:element name="mcu" type="stm32:mcuInfo" maxOccurs="unbounded"/>
+				<xs:element name="serie" type="stm32:serieElement" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="boardId">
+			<xs:selector xpath="stm32:board"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="allmcusandfamilies">
+			<xs:selector xpath="stm32:mcu|stm32:family"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:key name="mcuId">
+			<xs:selector xpath="stm32:mcu"/>
+			<xs:field xpath="stm32:name"/>
+		</xs:key>
+		<xs:key name="familyId">
+			<xs:selector xpath="stm32:family"/>
+			<xs:field xpath="@id"/>
+		</xs:key>
+		<xs:keyref name="boardMcu" refer="stm32:mcuId">
+			<xs:selector xpath="stm32:board"/>
+			<xs:field xpath="stm32:mcuId"/>
+		</xs:keyref>
+		<xs:keyref name="mcuFamily" refer="stm32:familyId">
+			<xs:selector xpath="stm32:mcu"/>
+			<xs:field xpath="stm32:familyId"/>
+		</xs:keyref>
+		<xs:keyref name="subFamily" refer="stm32:familyId">
+			<xs:selector xpath="stm32:family"/>
+			<xs:field xpath="stm32:familyId"/>
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,205 @@
+This is make.info, produced by makeinfo version 6.1 from make.texi.
+
+This file documents the GNU 'make' utility, which determines
+automatically which pieces of a large program need to be recompiled, and
+issues the commands to recompile them.
+
+   This is Edition 0.74, last updated 24 January 2019, of 'The GNU Make
+Manual', for GNU 'make' version 4.2.1_st_20200221-0903.
+
+   Copyright (C) 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996,
+1997, 1998, 1999, 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009,
+2010, 2011, 2012, 2013, 2014, 2015, 2016 Free Software Foundation, Inc.
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover Texts
+     being "A GNU Manual," and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     "GNU Free Documentation License."
+
+     (a) The FSF's Back-Cover Text is: "You have the freedom to copy and
+     modify this GNU manual.  Buying copies from the FSF supports it in
+     developing GNU and promoting software freedom."
+INFO-DIR-SECTION Software development
+START-INFO-DIR-ENTRY
+* Make: (make).            Remake files automatically.
+END-INFO-DIR-ENTRY
+
+
+Indirect:
+make.info-1: 1374
+make.info-2: 307203
+
+Tag Table:
+(Indirect)
+Node: Top1374
+Node: Overview16577
+Node: Preparing17590
+Node: Reading18558
+Node: Bugs19485
+Node: Introduction21314
+Node: Rule Introduction22907
+Node: Simple Makefile24840
+Node: How Make Works28576
+Node: Variables Simplify31225
+Node: make Deduces33431
+Node: Combine By Prerequisite35164
+Node: Cleanup36193
+Node: Makefiles37611
+Node: Makefile Contents38447
+Node: Splitting Lines41620
+Node: Makefile Names43380
+Node: Include44987
+Ref: Include-Footnote-148731
+Node: MAKEFILES Variable48865
+Node: Remaking Makefiles50406
+Node: Overriding Makefiles54631
+Node: Reading Makefiles56659
+Node: Secondary Expansion60121
+Node: Rules67582
+Node: Rule Example70255
+Node: Rule Syntax71108
+Node: Prerequisite Types73703
+Node: Wildcards76570
+Node: Wildcard Examples78289
+Node: Wildcard Pitfall79639
+Node: Wildcard Function81428
+Node: Directory Search83212
+Node: General Search84347
+Node: Selective Search86054
+Node: Search Algorithm89044
+Node: Recipes/Search91562
+Node: Implicit/Search92885
+Node: Libraries/Search93827
+Node: Phony Targets95798
+Node: Force Targets100635
+Node: Empty Targets101672
+Node: Special Targets102974
+Node: Multiple Targets110847
+Node: Multiple Rules112707
+Node: Static Pattern114925
+Node: Static Usage115577
+Node: Static versus Implicit119296
+Node: Double-Colon121036
+Node: Automatic Prerequisites122796
+Node: Recipes127057
+Node: Recipe Syntax128229
+Node: Splitting Recipe Lines130344
+Node: Variables in Recipes133497
+Node: Echoing134823
+Node: Execution136098
+Ref: Execution-Footnote-1137511
+Node: One Shell137656
+Node: Choosing the Shell140971
+Node: Parallel145115
+Node: Parallel Output147784
+Node: Parallel Input152211
+Node: Errors153330
+Node: Interrupts156994
+Node: Recursion158577
+Node: MAKE Variable160674
+Node: Variables/Recursion162917
+Node: Options/Recursion168362
+Node: -w Option174368
+Node: Canned Recipes175363
+Node: Empty Recipes178346
+Node: Using Variables179786
+Node: Reference183214
+Node: Flavors184772
+Node: Advanced190751
+Node: Substitution Refs191256
+Node: Computed Names192809
+Node: Values197357
+Node: Setting198274
+Node: Appending201313
+Node: Override Directive205257
+Node: Multi-Line206884
+Node: Undefine Directive209708
+Node: Environment210797
+Node: Target-specific213049
+Node: Pattern-specific216076
+Node: Suppressing Inheritance217923
+Node: Special Variables219376
+Node: Conditionals225785
+Node: Conditional Example226498
+Node: Conditional Syntax229061
+Node: Testing Flags234821
+Node: Functions235922
+Node: Syntax of Functions237482
+Node: Text Functions239816
+Node: File Name Functions248381
+Node: Conditional Functions253607
+Node: Foreach Function255982
+Node: File Function259195
+Node: Call Function261752
+Node: Value Function264637
+Node: Eval Function266074
+Node: Origin Function268350
+Node: Flavor Function271576
+Node: Make Control Functions272620
+Node: Shell Function274306
+Node: Guile Function276065
+Node: Running276815
+Node: Makefile Arguments278796
+Node: Goals279512
+Node: Instead of Execution284251
+Node: Avoiding Compilation287966
+Node: Overriding289941
+Node: Testing292253
+Node: Options Summary294137
+Node: Implicit Rules307203
+Node: Using Implicit309340
+Node: Catalogue of Rules312859
+Node: Implicit Variables322203
+Node: Chained Rules327276
+Node: Pattern Rules331286
+Node: Pattern Intro332820
+Node: Pattern Examples335402
+Node: Automatic Variables337209
+Node: Pattern Match344561
+Node: Match-Anything Rules347884
+Node: Canceling Rules351763
+Node: Last Resort352477
+Node: Suffix Rules354306
+Node: Implicit Rule Search358031
+Node: Archives361530
+Node: Archive Members362235
+Node: Archive Update363845
+Node: Archive Symbols365756
+Node: Archive Pitfalls366989
+Node: Archive Suffix Rules367711
+Node: Extending make369259
+Node: Guile Integration370404
+Node: Guile Types371632
+Node: Guile Interface374052
+Node: Guile Example375338
+Node: Loading Objects377529
+Node: load Directive379019
+Node: Remaking Loaded Objects381773
+Node: Loaded Object API382407
+Node: Loaded Object Example389169
+Node: Integrating make391416
+Node: Job Slots392167
+Node: POSIX Jobserver395599
+Node: Windows Jobserver397993
+Node: Terminal Output399346
+Node: Features401735
+Node: Missing410904
+Node: Makefile Conventions414629
+Node: Makefile Basics415608
+Node: Utilities in Makefiles418775
+Node: Command Variables421274
+Node: DESTDIR424514
+Node: Directory Variables426681
+Node: Standard Targets442038
+Node: Install Command Categories456144
+Node: Quick Reference460670
+Node: Error Messages473384
+Node: Complex Makefile481280
+Node: GNU Free Documentation License489898
+Node: Concept Index515042
+Node: Name Index586550
+
+End Tag Table

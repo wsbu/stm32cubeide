@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.startup
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.startup;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,com.st.stm32cube.ide.mcu.prod
+ uctdb,org.eclipse.core.resources,com.st.stm32cube.common.logger,com.s
+ t.stm32cube.common.ecosystemintegration,com.st.stm32cube.ide.common.u
+ tils,com.st.stm32cube.ide.mcu.projecttree,com.st.stm32cube.ide.mcu.st
+ artup,com.st.stm32cube.common.utils,com.st.stm32cube.ide.mpu.projectt
+ ree,org.eclipse.cdt.core,com.st.stm32cube.ide.mcu.startup,com.st.stm3
+ 2cube.ide.mpu.projectnatures,com.st.stm32cube.ide.common.services,com
+ .st.stm32cube.common.utils,com.st.stm32cube.ide.mcu.targetadapter
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Import-Package: com.st.stm32cube.ide.mcu.productdb.debug,com.st.stm32c
+ ube.ide.mcu.productdb.debug.svd.core
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.startup.MPUStartupPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+
