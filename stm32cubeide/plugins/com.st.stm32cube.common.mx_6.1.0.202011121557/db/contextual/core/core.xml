@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+ File Name          : core.xml
+ Description        : Contextual documentation of the MCUs cores
+                      present in all MCU series
+
+ COPYRIGHT(c) 2016 STMicroelectronics
+
+====================================================================
+| version 0.1  |  A.Morin          | Creation                      |
+====================================================================
+| version 0.2  |  A.Morin          | Reduce tooltips length        |
+====================================================================
+
+Contextual help database for MCUs core, it contains:
+    - Core generic information
+    - more detailed information
+    - Links to some documentation
+
+-->
+
+<ctx_core_help xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../doc/V4/Development/Specifications/contextualDocumentation/core.xsd">
+    <!-- Core reference you want to document -->
+    <core ref="Arm Cortex-M0">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M0</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-M0 processor is a very<br/>
+            low gate count, highly energy efficient<br/>
+            processor that is intended for microcontroller<br/>
+            and deeply embedded applications that require<br/>
+            an area optimized processor.]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable -->
+        <help_text>
+            <![CDATA[The Cortex-M0 core is optimized for small silicon die size and<br/>
+            use in the lowest price chips. Key features of the Cortex-M0 core are:
+            <p style="text-indent:20px;">- ARMv6-M architecture</p>
+            <p style="text-indent:20px;">- 3-stage pipeline.</p><br/>
+            <b>Instruction sets:</b><br/>
+            <p style="text-indent:20px;">- Thumb (most), missing CBZ, CBNZ, IT.</p>
+            <p style="text-indent:20px;">- Thumb-2 (some), only BL, DMB, DSB, ISB, MRS, MSR.</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit result.</p>
+            <p style="text-indent:20px;">- 1 to 32 interrupts, plus NMI.</p>]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website" type="html" reference="https://www.arm.com/products/processors/cortex-m/cortex-m0.php" index=""/>
+        <link display="STM32F0 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32f0-series.html" index=""/>
+    </core>
+    <!-- Core reference you want to document -->
+    <core ref="Arm Cortex-M0+">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M0 +</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-M0+ is an optimized<br/>
+            superset of the Cortex-M0. The Cortex-M0+<br/>
+            has complete instruction set compatibility<br/>
+            with the Cortex-M0 thus allowing the use of<br/>
+            the same compiler and debug tools.]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable -->
+        <help_text>
+            <![CDATA[The Cortex-M0+ pipeline was reduced from 3 to 2 stages, which lowers the<br/>
+            power usage. In addition to debug features in the existing Cortex-M0, a silicon option<br/>
+            can be added to the Cortex-M0+ called the Micro Trace Buffer (MTB) which provides a simple<br/>
+            instruction trace buffer. The Cortex-M0+ also received Cortex-M3 and Cortex-M4 features, which<br/>
+            can be added as silicon options, such as the memory protection unit (MPU) and the vector table relocation.<br/><br/>
+            <b>Key features of the Cortex-M0+ core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv6-M architecture</p>
+            <p style="text-indent:20px;">- 2-stage pipeline (one fewer than Cortex-M0).</p>
+            <p style="text-indent:20px;">- Instruction sets: (same as Cortex-M0)</p>
+            <p style="text-indent:20px;">- Thumb (most), missing CBZ, CBNZ, IT.</p>
+            <p style="text-indent:20px;">- Thumb-2 (some), only BL, DMB, DSB, ISB, MRS, MSR.</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit result.</p>
+            <p style="text-indent:20px;">- 1 to 32 interrupts, plus NMI.</p>]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website" type="html" reference="https://www.arm.com/products/processors/cortex-m/cortex-m0plus.php" index=""/>
+        <link display="STM32L0 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32l0-series.html" index=""/>
+    </core>
+    <!-- Core reference you want to document -->
+    <core ref="Arm Cortex-M3">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M3</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-M3 is a low-power processor<br/>
+            that features low gate count, low interrupt<br/>
+            latency, and low-cost debug. It is intended<br/>
+            for deeply embedded applications that require<br/>
+            optimal interrupt response features.]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable panel -->
+        <help_text>
+            <![CDATA[<b>Key features of the Cortex-M3 core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7-M architecture</p>
+            <p style="text-indent:20px;">- 3-stage pipeline with branch speculation.</p><br/>
+            <b>Instruction sets:</b><br/>
+            <p style="text-indent:20px;">- Thumb (entire).</p>
+            <p style="text-indent:20px;">- Thumb-2 (entire).</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit or 64-bit result, signed or unsigned, add or subtract after the multiply.</p>
+            <p style="text-indent:20px;">- 32-bit hardware divide (2-12 cycles).</p>
+            <p style="text-indent:20px;">- saturation arithmetic support.</p>
+            <p style="text-indent:20px;">- 1 to 240 interrupts, plus NMI.</p>
+            <p style="text-indent:20px;">- 12 cycle interrupt latency.</p>
+            <p style="text-indent:20px;">- Integrated sleep modes.</p>]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website" type="html" reference="https://www.arm.com/products/processors/cortex-m/cortex-m3.php" index=""/>
+        <link display="STM32L1 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32l1-series.html" index=""/>
+        <link display="STM32F1 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32f1-series.html" index=""/>
+        <link display="STM32F2 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32f2-series.html" index=""/>
+    </core>
+    <!-- Core reference you want to document -->
+    <core ref="Arm Cortex-M4">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M4</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[Conceptually the Cortex-M4 is a<br/>
+            Cortex-M3 plus DSP Instructions, and a<br/>
+            floating-point unit (FPU).]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable -->
+        <help_text>
+            <![CDATA[<b>Key features of the Cortex-M4 core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7E-M architecture</p>
+            <p style="text-indent:20px;">- 3-stage pipeline with branch speculation.</p><br/>
+            <b>Instruction sets:</b><br/>
+            <p style="text-indent:20px;">- Thumb (entire).</p>
+            <p style="text-indent:20px;">- Thumb-2 (entire).</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit or 64-bit result, signed or unsigned, add or subtract after the multiply.</p>
+            <p style="text-indent:20px;">- 32-bit hardware divide (2-12 cycles).</p>
+            <p style="text-indent:20px;">- Saturation arithmetic support.</p>
+            <p style="text-indent:20px;">- DSP extension: Single cycle 16/32-bit MAC, single cycle dual 16-bit MAC, 8/16-bit SIMD arithmetic.</p>
+            <p style="text-indent:20px;">- 1 to 240 interrupts, plus NMI.</p>
+            <p style="text-indent:20px;">- 12 cycle interrupt latency.</p>
+            <p style="text-indent:20px;">- Integrated sleep modes.]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website" type="html" reference="https://www.arm.com/products/processors/cortex-m/cortex-m4-processor.php" index=""/>
+        <link display="STM32L4 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32l4-series.html" index=""/>
+        <link display="STM32L4+ series" type="html" reference="https://www.st.com/en/microcontrollers/stm32l4-plus-series.html" index=""/>
+        <link display="STM32F3 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32f3-series.html" index=""/>
+        <link display="STM32F4 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32f4-series.html" index=""/>
+        <link display="STM32WB series" type="html" reference="https://www.st.com/en/microcontrollers/stm32wb-series.html" index=""/>
+        <link display="STM32WL series" type="html" reference="https://www.st.com/en/microcontrollers/stm32wl-series.html" index=""/>
+    </core>
+    <core ref="Arm Cortex-M7">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M7</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-M7 is a high-performance<br/>
+            core with almost double the power<br/>
+            efficiency of the older Cortex-M4.<br/>
+            It features a 6-stage superscalar<br/>
+            pipeline with branch prediction and<br/>
+            an optional floating-point unit capable<br/>
+            of single-precision and optionally<br/>
+            double-precision operations. The<br/>
+            instruction and data buses have<br/>
+            been enlarged to 64-bit wide over<br/>
+            the previous<br/>
+            32-bit buses.]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable panel -->
+        <help_text>
+            <![CDATA[<b>Key features of the Cortex-M7 core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7E-M architecture.</p>
+            <p style="text-indent:20px;">- 6-stage pipeline with branch speculation.</p>
+            <b>Instruction sets:</b></br>
+            <p style="text-indent:20px;">- Thumb (entire).</p>
+            <p style="text-indent:20px;">- Thumb-2 (entire).</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit or 64-bit result,</p>
+            <p style="text-indent:20px;">- Signed or unsigned, add or subtract after the multiply.</p>
+            <p style="text-indent:20px;">- 32-bit hardware divide (2-12 cycles).</p>
+            <p style="text-indent:20px;">- Saturation arithmetic support.</p>
+            <p style="text-indent:20px;">- DSP extension: Single cycle 16/32-bit MAC, single cycle dual 16-bit MAC, 8/16-bit SIMD arithmetic.</p>
+            <p style="text-indent:20px;">- 1 to 240 interrupts, plus NMI.</p>
+            <p style="text-indent:20px;">- 12 cycle interrupt latency.</p>
+            <p style="text-indent:20px;">- Integrated sleep modes.</p>]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website" type="html" reference="https://www.arm.com/products/processors/cortex-m/cortex-m7-processor.php" index=""/>
+        <link display="STM32F7 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32f7-series.html" index=""/>
+        <link display="STM32H7 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32h7-series.html" index=""/>
+    </core>
+    <core ref="Arm Cortex-M7 + Arm Cortex-M4">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M7 + Arm Cortex-M4</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-M7 is a high-performance<br/>
+            core with almost double the power<br/>
+            efficiency of the Cortex-M4, which is <br/>
+            conceptually a Cortex-M3 plus DSP Instructions<br/>
+            and a floating-point unit (FPU).<br/>]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable panel -->
+        <help_text>
+            <![CDATA[<b>Key features of the Cortex-M7 core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7E-M architecture.</p>
+            <p style="text-indent:20px;">- 6-stage pipeline with branch speculation.</p>
+            <b>Cortex-M7 Instruction sets:</b></br>
+            <p style="text-indent:20px;">- Thumb (entire).</p>
+            <p style="text-indent:20px;">- Thumb-2 (entire).</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit or 64-bit result,</p>
+            <p style="text-indent:20px;">- Signed or unsigned, add or subtract after the multiply.</p>
+            <p style="text-indent:20px;">- 32-bit hardware divide (2-12 cycles).</p>
+            <p style="text-indent:20px;">- Saturation arithmetic support.</p>
+            <p style="text-indent:20px;">- DSP extension: Single cycle 16/32-bit MAC, single cycle dual 16-bit MAC, 8/16-bit SIMD arithmetic.</p>
+            <p style="text-indent:20px;">- 1 to 240 interrupts, plus NMI.</p>
+            <p style="text-indent:20px;">- 12 cycle interrupt latency.</p>
+            <p style="text-indent:20px;">- Integrated sleep modes.</p><br/>
+			<b>Key features of the Cortex-M4 core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7E-M architecture</p>
+            <p style="text-indent:20px;">- 3-stage pipeline with branch speculation.</p><br/>
+            <b>Cortex-M4 Instruction sets:</b><br/>
+            <p style="text-indent:20px;">- Thumb (entire).</p>
+            <p style="text-indent:20px;">- Thumb-2 (entire).</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit or 64-bit result, signed or unsigned, add or subtract after the multiply.</p>
+            <p style="text-indent:20px;">- 32-bit hardware divide (2-12 cycles).</p>
+            <p style="text-indent:20px;">- Saturation arithmetic support.</p>
+            <p style="text-indent:20px;">- DSP extension: Single cycle 16/32-bit MAC, single cycle dual 16-bit MAC, 8/16-bit SIMD arithmetic.</p>
+            <p style="text-indent:20px;">- 1 to 240 interrupts, plus NMI.</p>
+            <p style="text-indent:20px;">- 12 cycle interrupt latency.</p>
+            <p style="text-indent:20px;">- Integrated sleep modes.]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="Arm Cortex M7" type="html" reference="https://www.arm.com/products/processors/cortex-m/cortex-m7-processor.php" index=""/>
+        <link display="Arm Cortex M4" type="html" reference="https://www.arm.com/products/processors/cortex-m/cortex-m4-processor.php" index=""/>
+        <link display="STM32H7 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32h7-series.html" index=""/>
+    </core>
+    <core ref="Arm Cortex-A7 + Arm Cortex-M4">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-A7 + Arm Cortex-M4</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-A7 MPCore processor is a high-performance,<br/>
+            low-power processor.<br/>
+            The Cortex-M4 is conceptually a Cortex-M3<br/>
+            plus DSP Instructions and a floating-point unit (FPU).<br/>]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable panel -->
+        <help_text>
+            <![CDATA[<b>Key features of the Cortex-A7 MPcore are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7-A architecture</p>
+            <p style="text-indent:20px;">- 8-stage pipeline with branch speculation.</p>
+            <b>Cortex-A7 Instruction sets:</b><br/>
+            <p style="text-indent:20px;">- 32-bit ARM instruction set.</p>
+            <p style="text-indent:20px;">- Thumb instruction set that has both 16-bit and 32-bit instructions.</p>
+            <p style="text-indent:20px;">- ThumbEE instruction set.</p>
+            <p style="text-indent:20px;">- Trivial implementation of the Jazelle Extension.</p>
+            <p style="text-indent:20px;">- Advanced SIMD and VFP Extensions.</p>
+            <p style="text-indent:20px;">- Security Extensions.</p>
+            <p style="text-indent:20px;">- Virtualization Extensions.</p>
+            <p style="text-indent:20px;">- Large Physical Address Extension.</p>
+            <p style="text-indent:20px;">- Multiprocessing Extensions.</p><br/>
+            <b>Key features of the Cortex-M4 core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7E-M architecture</p>
+            <p style="text-indent:20px;">- 3-stage pipeline with branch speculation.</p>
+            <b>Cortex-M4 Instruction sets:</b><br/>
+            <p style="text-indent:20px;">- Thumb (entire).</p>
+            <p style="text-indent:20px;">- Thumb-2 (entire).</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit or 64-bit result, signed or unsigned, add or subtract after the multiply.</p>
+            <p style="text-indent:20px;">- 32-bit hardware divide (2-12 cycles).</p>
+            <p style="text-indent:20px;">- Saturation arithmetic support.</p>
+            <p style="text-indent:20px;">- DSP extension: Single cycle 16/32-bit MAC, single cycle dual 16-bit MAC, 8/16-bit SIMD arithmetic.</p>
+            <p style="text-indent:20px;">- 1 to 240 interrupts, plus NMI.</p>
+            <p style="text-indent:20px;">- 12 cycle interrupt latency.</p>
+            <p style="text-indent:20px;">- Integrated sleep modes.]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website - Cortex A7" type="html" reference="https://developer.arm.com/products/processors/cortex-a/cortex-a7" index=""/>
+        <link display="ARM website - Cortex M4" type="html" reference="https://developer.arm.com/products/processors/cortex-m/cortex-m4" index=""/>
+        <link display="STM32MP1 series" type="html" reference="https://www.st.com/en/microcontrollers/stm32mp1-series.html" index=""/>
+    </core>
+
+    <core ref="Arm Cortex-M4 + Arm Cortex-M0+">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M4 + Arm Cortex-M0+</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-M4 is conceptually a Cortex-M3<br/>
+            plus DSP Instructions and a floating-point unit (FPU).<br/>
+			The Cortex-M0+ is an optimized<br/>
+            superset of the Cortex-M0. The Cortex-M0+<br/>
+            has complete instruction set compatibility<br/>
+            with the Cortex-M0 thus allowing the use of<br/>
+            the same compiler and debug tools.]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable panel -->
+        <help_text>
+            <![CDATA[<b>Key features of the Cortex-M4 core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv7E-M architecture</p>
+            <p style="text-indent:20px;">- 3-stage pipeline with branch speculation.</p>
+            <b>Cortex-M4 Instruction sets:</b><br/>
+            <p style="text-indent:20px;">- Thumb (entire).</p>
+            <p style="text-indent:20px;">- Thumb-2 (entire).</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit or 64-bit result, signed or unsigned, add or subtract after the multiply.</p>
+            <p style="text-indent:20px;">- 32-bit hardware divide (2-12 cycles).</p>
+            <p style="text-indent:20px;">- Saturation arithmetic support.</p>
+            <p style="text-indent:20px;">- DSP extension: Single cycle 16/32-bit MAC, single cycle dual 16-bit MAC, 8/16-bit SIMD arithmetic.</p>
+            <p style="text-indent:20px;">- 1 to 240 interrupts, plus NMI.</p>
+            <p style="text-indent:20px;">- 12 cycle interrupt latency.</p>
+            <p style="text-indent:20px;">- Integrated sleep modes.<br/>
+            <b>Key features of the Cortex-M0+ core are:</b><br/>
+            <p style="text-indent:20px;">- ARMv6-M architecture</p>
+            <p style="text-indent:20px;">- 2-stage pipeline (one fewer than Cortex-M0).</p>
+            <p style="text-indent:20px;">- Instruction sets: (same as Cortex-M0)</p>
+            <p style="text-indent:20px;">- Thumb (most), missing CBZ, CBNZ, IT.</p>
+            <p style="text-indent:20px;">- Thumb-2 (some), only BL, DMB, DSB, ISB, MRS, MSR.</p>
+            <p style="text-indent:20px;">- 32-bit hardware multiply with 32-bit result.</p>
+            <p style="text-indent:20px;">- 1 to 32 interrupts, plus NMI.</p>]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website - Cortex M4" type="html" reference="https://developer.arm.com/products/processors/cortex-m/cortex-m4" index=""/>
+        <link display="ARM website - Cortex M0+" type="html" reference="https://developer.arm.com/products/processors/cortex-m/cortex-m0-plus" index=""/>
+        <link display="STM32WL series" type="html" reference="https://www.st.com/en/microcontrollers/stm32wl-series.html" index=""/>
+    </core>
+
+	<core ref="Arm Cortex-M33">
+        <!-- Title of the contextual widget -->
+        <title>Arm Cortex-M33</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[The Cortex-M33 was developed to address all embedded and IoT markets especially those that require efficient security <br/>
+			or digital signal control. TrustZone for Armv8-M is the foundation of security for all embedded applications. <br/>
+			The processor has many optional features including DSP, a co-processor interface, memory protection units and a floating-point unit.<br/>
+			The optional co-processor interface opens the door for customisation and extensibility to further decrease the power consumption of the system <br/>
+			in the presence of frequent compute intensive operations. <br/>
+			The Cortex-M33 achieves an optimal blend between real time determinism, energy efficiency, software productivity and system security <br/>
+			which opens the door for many new applications and opportunities across diverse markets.]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable panel -->
+        <help_text>
+            <![CDATA[<b>Key features of the Cortex-M33 core are:</b><br/>
+            <p style="text-indent:20px;">- Armv8-M Mainline (Harvard).</p>
+            <p style="text-indent:20px;">- 3-stage pipeline.</p>
+            <p style="text-indent:20px;">- Thumb/Thumb-2 ISA support.</p>
+            <p style="text-indent:20px;">- Optional Trustzone for Armv8-M</p>
+            <p style="text-indent:20px;">- Optional DSP/SIMD instructions.</p>
+            <p style="text-indent:20px;">- 3Single cycle 16/32-bit MAC.</p>
+            <p style="text-indent:20px;">- 8/16-bit SIMD arithmetic. </p>
+            <p style="text-indent:20px;">- Optional single precision floating point unit IEEE 754 compliant.</p>
+            <p style="text-indent:20px;">- Optional Memory Protection Unit (MPU) with up to 16 regions per security state.</p>
+            <p style="text-indent:20px;">- Optional dedicated co-processor bus interface for up to 8 co-processor units for custom compute.</p>
+            <p style="text-indent:20px;">- Non-maskable Interrupt (NMI) and up to 480 physical interrupts with 8 to 256 priority levels.</p>
+            <p style="text-indent:20px;">- Optional for waking up the processor from state retention power gating or when all clocks are stopped.]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="ARM website - Cortex M33" type="html" reference="https://developer.arm.com/products/processors/cortex-m/cortex-m33" index=""/>
+        <link display="STM32L5 series" type="html" reference="https://www.st.com/content/st_com/en/products/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus/stm32-ultra-low-power-mcus/stm32l5-series.html" index=""/>
+    </core>
+    <core ref="STM8">
+        <!-- Title of the contextual widget -->
+        <title>STM8</title>
+        <!-- Generic description displayed in the first panel of the tooltip -->
+        <extract>
+            <![CDATA[ST's 8-bit microcontroller platform<br/>
+            is implemented around a high-performance<br/>
+            8-bit core and a state-of-the-art set of peripherals.<br/>
+            This platform is manufactured using an ST-proprietary<br/>
+            130 nm embedded non-volatile memory technology.]]>
+        </extract>
+        <!-- Detailed information displayed in the expandable panel -->
+        <help_text>
+            <![CDATA[The 8-bit STM8 Core is designed for high code efficiency.<br/>
+            It contains 6 internal registers, 20 addressing modes and 80 instructions.<br/>
+            The 6 internal registers include two 16-bit Index registers, an 8-bit Accumulator,<br/>
+            a 24-bit Program Counter, a 16-bit Stack Pointer and an 8-bit Condition Code register.<br/>
+            The two Index registers X and Y enable Indexed Addressing modes with or without offset,<br/>
+            along with read-modify-write type data manipulation. These registers simplify branching<br/>
+            routines and data/arrays modifications.<br/><br/>
+            <b>The STM8 platform supports four product series:</b>
+            <p style="text-indent:20px;">- STM8S, mainstream MCUs</p>
+            <p style="text-indent:20px;">- STM8L, ultra-low-power MCUs</p>
+            <p style="text-indent:20px;">- STM8AF and STM8AL, automotive MCUs</p>]]>
+        </help_text>
+        <!-- Links that will be displayed on the help widgets:
+        - display: string that will be displayed in front of the hyperlink
+        - type: the type of file you want to display ("txt" "pdf", "chm", "html", "dynamic")
+        dynamic stands for the document that have to be retrieved from the JSON database
+        - reference: path to the document to be displayed (http or local path)
+          If the file is dynamic, indicate the kind of file you want to display:
+            * dataSheet => for datasheet document type
+            * appNote => for application note document type
+            * refMan => for reference manual document type
+            * usrMan => for user Manual document type
+            * prgMan => for Programming Manual document type
+            * errSheet => for Errata Sheet document type
+        - index: for pdf,html and chm type it specifies the chapter where the viewer will point
+        for dynamic file it can specify a chapter except for application notes where it specifies
+        the document display name (e.g. AN1015). This field may be left blank, then the full document
+        is displayed -->
+        <link display="STM8 8-bit MCUs" type="html" reference="https://www.st.com/en/microcontrollers/stm8-8-bit-mcus.html" index=""/>
+        <link display="STM8S serie" type="html" reference="https://www.st.com/en/microcontrollers/stm8s-series.html" index=""/>
+        <link display="STM8L serie" type="html" reference="https://www.st.com/en/microcontrollers/stm8l-series.html" index=""/>
+        <link display="STM8AF serie" type="html" reference="https://www.st.com/en/microcontrollers/stm8af-series.html" index=""/>
+        <link display="STM8AL serie" type="html" reference="https://www.st.com/en/microcontrollers/stm8al-series.html" index=""/>
+    </core>
+</ctx_core_help>

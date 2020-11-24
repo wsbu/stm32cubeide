@@ -1,0 +1,14 @@
+instructions.install.import = \
+  org.eclipse.equinox.p2.touchpoint.natives.chmod
+instructions.install = chmod(targetDir:${artifact.location},targetFile:META-INF/MANIFEST.MF,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.html,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:plugin.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:plugin.xml,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/cmake,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/g++,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/gcc,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/make,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/openstlinux_specdetector_wrapper.sh,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/openstlinux_wrapper.sh,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/specsdetector-org.eclipse.cdt.core.g++,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:tools/bin/specsdetector-org.eclipse.cdt.core.gcc,permissions:775);

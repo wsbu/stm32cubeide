@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.livewatch"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.cdt.dsf.gdb"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.debug.ui" version="3.8.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.8.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf" version="2.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf.gdb" version="4.0.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf.ui"/>
+      <import plugin="org.eclipse.cdt.core.native"/>
+      <import plugin="com.st.stm32cube.ide.mcu.debug"/>
+      <import plugin="com.st.stm32cube.ide.common.ui.oss" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.mcu.debug.launch" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.debug.core"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.livewatch"
+         download-size="53"
+         install-size="92"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

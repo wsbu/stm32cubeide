@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.productdb
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.productdb;singleton:=tru
+ e
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.equinox.registry,com.st.stm32cube.common.u
+ tils,org.eclipse.osgi,org.eclipse.core.runtime,com.st.stm32cube.commo
+ n.logger,com.st.stm32cube.common.ecosystemintegration,org.eclipse.equ
+ inox.common
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Eclipse-ExtensibleAPI: true
+Export-Package: com.st.stm32cube.ide.mcu.productdb,com.st.stm32cube.id
+ e.mcu.productdb.core,com.st.stm32cube.ide.mcu.productdb.core.svd,com.
+ st.stm32cube.ide.mcu.productdb.registry
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011051456
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mcu.productdb.MCUProductDbPlugi
+ n
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

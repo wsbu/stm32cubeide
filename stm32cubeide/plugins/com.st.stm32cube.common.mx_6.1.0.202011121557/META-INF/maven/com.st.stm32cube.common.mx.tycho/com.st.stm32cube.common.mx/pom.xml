@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>com.st.stm32cube.common.mx</artifactId>
+	
+	<packaging>eclipse-plugin</packaging>
+
+	<parent>
+		<groupId>com.st.stm32cube.common.mx.tycho</groupId>
+		<artifactId>com.st.stm32cube.common.mx.tycho.bundles</artifactId>
+		<version>${pomversion}</version>
+	</parent>
+
+	<build>
+		<plugins>
+			<!-- Process about.mapping to replace ${productVersion} and ${buildId} 
+				with this build values -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>process-about.mappings</id>
+						<phase>prepare-package</phase>
+						<configuration>
+							<outputDirectory>${project.build.directory}</outputDirectory>
+							<overwrite>true</overwrite>
+							<resources>
+								<resource>
+									<directory>${basedir}</directory>
+									<includes>
+										<include>about.mappings</include>
+									</includes>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+						</configuration>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-packaging-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<additionalFileSets>
+						<fileSet>
+							<directory>${project.build.directory}</directory>
+							<includes>
+								<include>about.mappings</include>
+							</includes>
+						</fileSet>
+					</additionalFileSets>
+				</configuration>
+			</plugin>
+
+			<!-- Get Mx jars -->
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.1</version>
+				<inherited>false</inherited>
+				<executions>
+					<execution>
+						<id>get-mx-jars</id>
+						<phase>validate</phase>
+						<configuration>
+							<tasks>
+								<mkdir dir="plugins" />
+								<mkdir dir="db" />
+								<mkdir dir="help" />
+								<mkdir dir="utilities" />
+								<copy
+									file="../../../microxplorer/install/target/izpack/STM32CubeMX.jar"
+									todir="./" />
+								<copy todir="plugins">
+									<fileset
+										dir="../../../microxplorer/install/target/izpack/plugins" />
+								</copy>
+								<delete file="plugins/editor.jar" />
+								<delete file="plugins/libextractor.jar" />
+								<copy todir="db">
+									<fileset
+										dir="../../../microxplorer/src/main/resources/db" />
+								</copy>
+								<copy todir="db">
+									<fileset
+										dir="../../../microxplorer/mcufinder/src/main/resources/db" />
+								</copy>
+								<copy todir="help">
+									<fileset
+										dir="../../../microxplorer/src/main/resources/help" />
+								</copy>
+<!-- 								<copy todir="utilities"> -->
+<!-- 									<fileset -->
+<!-- 										dir="../../../microxplorer/install/target/izpack/utilities" /> -->
+<!-- 								</copy> -->
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>clean-mx-jars</id>
+						<phase>clean</phase>
+						<configuration>
+							<tasks>
+								<delete file="STM32CubeMX.jar" />
+								<delete dir="plugins" />
+								<delete dir="db" />
+								<delete dir="help" />
+								<delete dir="utilities" />
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-antrun-plugin</artifactId>
+										<versionRange>[1.1,)</versionRange>
+										<goals>
+											<goal>run</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<execute />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.st.stm32cube.common.mx.stinsider;singleton:=t
+ rue
+Built-By: jenkins
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Fragment-Host: com.st.stm32cube.common.mx
+Bundle-Name: %pluginName
+Bundle-Version: 6.1.0.202011121557
+Bundle-Localization: fragment
+Bundle-ClassPath: .
+Created-By: Apache Maven 3.6.3
+Build-Jdk: 1.8.0_265
+Eclipse-BundleShape: dir
+

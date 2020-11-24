@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.common.feature.mx"
+      label="%pluginName"
+      version="6.1.0.202011121557"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.common.mx">
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.common.mx"
+         download-size="162608"
+         install-size="379505"
+         version="6.1.0.202011121557"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.common.mx.oss"
+         download-size="51"
+         install-size="91"
+         version="6.1.0.202011121557"/>
+
+</feature>

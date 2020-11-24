@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+   <extension
+         point="com.st.stm32cube.ide.mcu.externaltools.tools">
+         <Tool_GdbServer
+            binary-name="JLinkGDBServerCLExe"
+            identifier="com.st.stm32cube.ide.mcu.externaltools.jlink.EXECUTABLE"
+            install="false"
+            name="JLink GDB Server (Linux 64bit)"
+            resource="tools">
+            <!-- Resource resolved at build time		-->
+            <!-- Such folder is created during build	-->
+      </Tool_GdbServer>
+      <Local_Env
+            resolver="com.st.stm32cube.ide.mcu.externaltools.jlink.linux64.MCUJLinkGdbServerLocalEnvResolver">
+      </Local_Env>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.mcu.informationcenter.docs">
+      <DocumentGroup
+            prio="2000"
+            title="DEBUGGER DOCUMENTATION">
+         <Document
+               description="Manual for the SEGGER J-Link GDB server"
+               filetype="PDF"
+               path="tools/bin/Doc/Manuals/UM08001_JLink.pdf"
+               prio="100"
+               title="SEGGER J-Link manual">
+         </Document>
+      </DocumentGroup>
+   </extension>
+
+</fragment>

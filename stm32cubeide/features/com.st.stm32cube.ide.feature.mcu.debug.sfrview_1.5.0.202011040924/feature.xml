@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.debug.sfrview"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.cdt.debug.core" version="6.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.core" version="3.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="3.5.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf.gdb" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf.ui" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf.gdb.ui" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.core" version="5.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.launch" version="6.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.8.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.8.1" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.common.ui.oss"/>
+      <import plugin="com.st.stm32cube.ide.mcu.ide"/>
+      <import plugin="com.st.stm32cube.ide.mcu.productdb"/>
+      <import plugin="org.eclipse.cdt.managedbuilder.core" version="8.6.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.mcu.debug"/>
+      <import plugin="com.st.stm32cube.ide.common.utils"/>
+      <import plugin="com.st.stm32cube.common.logger"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.sfrview"
+         download-size="186"
+         install-size="1341"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

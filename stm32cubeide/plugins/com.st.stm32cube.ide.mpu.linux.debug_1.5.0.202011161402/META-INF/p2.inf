@@ -1,0 +1,8 @@
+instructions.install.import = \
+  org.eclipse.equinox.p2.touchpoint.natives.chmod
+instructions.install = chmod(targetDir:${artifact.location},targetFile:META-INF/MANIFEST.MF,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:about.html,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:icons/obj16/STM32CubeIDE_icon_16px.png,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:plugin.properties,permissions:664);\
+  chmod(targetDir:${artifact.location},targetFile:plugin.xml,permissions:775);\
+  chmod(targetDir:${artifact.location},targetFile:scripts/uboot_dt_prompt_update.sh,permissions:775);

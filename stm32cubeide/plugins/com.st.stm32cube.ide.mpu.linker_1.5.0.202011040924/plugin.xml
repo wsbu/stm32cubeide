@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension
+         point="com.st.stm32cube.ide.mcu.linker.linkscriptgenerator">
+      <LinkScriptGenerator
+            provider="com.st.stm32cube.ide.mpu.linker.engine.MPUIdeLinkScriptGeneratorProvider">
+      </LinkScriptGenerator>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.mcu.linker.linkscriptanalyzer">
+      <LinkScriptAnalyzer
+            provider="com.st.stm32cube.ide.mpu.linker.engine.MPUIdeLinkScriptAnalyzerProvider">
+      </LinkScriptAnalyzer>
+   </extension>
+   <extension
+         point="com.st.stm32cube.ide.common.services.defaultbuildconfig">
+      <DefaultBuildConfigurationDesc
+            provider="com.st.stm32cube.ide.mpu.linker.core.MPUDefaultBuildConfigDescProvider">
+      </DefaultBuildConfigurationDesc>
+   </extension>
+</plugin>

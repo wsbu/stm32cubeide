@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.debug.openocd"
+      label="%pluginName"
+      version="1.5.0.202011091203"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.debug.openocd"
+         download-size="631"
+         install-size="1506"
+         version="1.5.0.202011091203"
+         unpack="false"/>
+
+</feature>

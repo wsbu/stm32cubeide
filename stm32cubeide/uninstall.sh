@@ -14,7 +14,7 @@ if [ -f segger-jlink-udev-rules.uninstall.sh ]; then
 	fi
 fi
 
-if [ -f stlink-server.uninstall.sh ]; then
+if [ -f st-stlink-udev-rules.uninstall.sh ]; then
 	read -p "Uninstall ST-LINK udev rules? [N/y] " answer
 	if [ "$answer" = "y" ]; then
 		sudo ./st-stlink-udev-rules.uninstall.sh

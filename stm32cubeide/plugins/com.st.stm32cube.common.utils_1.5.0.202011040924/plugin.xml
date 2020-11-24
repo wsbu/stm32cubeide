@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="com.st.stm32cube.common.utils.ide.descriptor" name="com.st.stm32cube.common.utils.ide.descriptor" schema="schema/com.st.stm32cube.common.utils.ide.descriptor.exsd"/>
+
+</plugin>

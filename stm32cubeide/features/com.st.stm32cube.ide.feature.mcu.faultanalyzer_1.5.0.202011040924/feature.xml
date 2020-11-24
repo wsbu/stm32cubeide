@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.faultanalyzer"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.debug.core" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.debug.core" version="7.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt" version="8.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.core" version="5.3.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.debug.ui" version="7.1.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.dsf.ui" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.variables" version="3.2.700" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.cdt.managedbuilder.core" version="8.2.1" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.common.ui"/>
+      <import plugin="com.st.stm32cube.ide.mcu.productdb"/>
+      <import plugin="com.st.stm32cube.ide.common.ui.oss"/>
+      <import plugin="com.st.stm32cube.ide.mcu.ide"/>
+      <import plugin="com.st.stm32cube.ide.mcu.debug"/>
+      <import plugin="com.st.stm32cube.common.logger"/>
+      <import plugin="com.st.stm32cube.ide.common.utils"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.faultanalyzer"
+         download-size="64"
+         install-size="128"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

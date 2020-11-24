@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.externaltools.gnu_tools_for_stm32.7_2018_q2_update.bin"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="com.st.stm32cube.ide.feature.mcu.externaltools.gnu_tools_for_stm32.7_2018_q2_update" version="1.0.0.qualifier"/>
+      <import feature="com.st.stm32cube.ide.feature.mcu.externaltools" version="1.0.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.linux64"
+         os="linux"
+         arch="x86_64"
+         download-size="184624"
+         install-size="662815"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32"
+         os="win32"
+         arch="x86_64"
+         download-size="185418"
+         install-size="643300"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.macos64"
+         os="macosx"
+         ws="cocoa"
+         arch="x86_64"
+         download-size="188903"
+         install-size="688957"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+</feature>

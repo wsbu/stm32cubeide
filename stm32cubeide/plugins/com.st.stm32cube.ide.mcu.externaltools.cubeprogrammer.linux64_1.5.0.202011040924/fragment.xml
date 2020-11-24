@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE fragment>
+<fragment>
+
+<!-- =================================================================================== -->
+<!-- Startup			                                                             	 -->
+<!-- =================================================================================== -->
+
+   <extension
+         point="com.st.stm32cube.ide.mcu.externaltools.tools">
+      <Tool_CubeProgrammer
+            binary-name="STM32_Programmer_CLI"
+            identifier="com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.EXECUTABLE"
+            install="false"
+            name="STM32CubeProgrammer (Linux 64bit)"
+            resource="tools">
+            <!-- Resource resolved at build time		-->
+            <!-- Such folder is created during build	-->
+      </Tool_CubeProgrammer>
+   </extension>
+
+</fragment>

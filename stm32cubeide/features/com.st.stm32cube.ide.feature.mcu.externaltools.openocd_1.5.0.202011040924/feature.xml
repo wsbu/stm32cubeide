@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.externaltools.openocd"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.openocd.linux64"
+         os="linux"
+         arch="x86_64"
+         download-size="3111"
+         install-size="7896"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.openocd.macos64"
+         os="macosx"
+         ws="cocoa"
+         arch="x86_64"
+         download-size="3975"
+         install-size="7625"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.openocd.win32"
+         os="win32"
+         download-size="2870"
+         install-size="7268"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.openocd"
+         download-size="7"
+         install-size="11"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

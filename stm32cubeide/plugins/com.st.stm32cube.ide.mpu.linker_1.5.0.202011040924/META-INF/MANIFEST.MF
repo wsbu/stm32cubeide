@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.linker
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.linker;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,com.st.stm32cube.ide.mcu.prod
+ uctdb,org.eclipse.core.resources,com.st.stm32cube.common.logger,org.e
+ clipse.cdt.core,com.st.stm32cube.ide.mcu.linker,com.st.stm32cube.ide.
+ mpu.projectnatures,com.st.stm32cube.ide.common.services,com.st.stm32c
+ ube.common.utils,com.st.stm32cube.ide.mcu.targetadapter
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.linker.MPULinkerPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

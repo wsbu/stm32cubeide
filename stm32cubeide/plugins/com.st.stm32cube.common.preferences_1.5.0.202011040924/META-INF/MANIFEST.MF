@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.common.preferences
+Bundle-SymbolicName: com.st.stm32cube.common.preferences;singleton:=tr
+ ue
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.osgi,org.eclipse.core.runtime,org.eclipse.
+ core.resources,org.eclipse.jface,org.eclipse.ui.workbench,com.st.stm3
+ 2cube.common.logger
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.common.preferences,com.st.stm32cube.c
+ ommon.preferences.registry
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.common.preferences.MCUPreferencesPl
+ ugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.externaltools.make"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.make"
+         download-size="5"
+         install-size="8"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.make.linux64"
+         os="linux"
+         arch="x86_64"
+         download-size="1427"
+         install-size="2855"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.make.macos64"
+         os="macosx"
+         ws="cocoa"
+         arch="x86_64"
+         download-size="1230"
+         install-size="2301"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.make.win32"
+         os="win32"
+         arch="x86_64"
+         download-size="3803"
+         install-size="7157"
+         version="1.5.0.202011040924"
+         fragment="true"/>
+
+</feature>

@@ -1,0 +1,10 @@
+properties.0.name	= stm32cubeide_toolchain
+properties.0.value	= true
+properties.1.name	= stm32cubeide_toolchain_type
+properties.1.value	= gnu-tools-for-stm32
+properties.2.name	= stm32cubeide_toolchain_version
+properties.2.value	= 7-2018-q2-update
+properties.3.name	= stm32cubeide_toolchain_id
+properties.3.value	= com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.base.gnu-tools-for-stm32.7-2018-q2-update
+properties.4.name	= stm32cubeide_toolchain_name
+properties.4.value	= GNU Tools for STM32

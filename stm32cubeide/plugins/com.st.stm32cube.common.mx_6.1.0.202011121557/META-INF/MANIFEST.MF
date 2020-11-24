@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.st.stm32cube.common.mx;singleton:=true
+Built-By: jenkins
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.co
+ re.resources,org.eclipse.ui.editors,org.eclipse.ui.ide,org.eclipse.sw
+ t,org.eclipse.ui.workbench,org.eclipse.ui.navigator,org.eclipse.core.
+ net,org.eclipse.ui.console,com.st.stm32cube.common.logger,com.st.stm3
+ 2cube.common.ecosystemintegration,com.st.stm32cube.common.preferences
+ ,com.st.stm32cube.common.ecosystemintegration.ui,org.eclipse.ui.net,c
+ om.st.stm32cube.common.utils,com.st.stm32cube.common.mx.oss;bundle-ve
+ rsion="6.1.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Eclipse-ExtensibleAPI: true
+Export-Package: com.st.stm32cube.common.mx.firmawreupdater,com.st.stm3
+ 2cube.common.mx.iocgenerator,com.st.stm32cube.common.mx.registry,com.
+ st.stm32cube.common.mx.targetselector
+Bundle-Name: %pluginName
+Bundle-Version: 6.1.0.202011121557
+Bundle-Localization: plugin
+Bundle-ClassPath: .,STM32CubeMX.jar,plugins/ddr.jar,plugins/filemanage
+ r.jar,plugins/projectmanager.jar,plugins/updater.jar,plugins/ipmanage
+ r.jar,plugins/analytics.jar
+Bundle-Activator: com.st.stm32cube.common.mx.MxActivator
+Created-By: Apache Maven 3.6.3
+Build-Jdk: 1.8.0_265
+Eclipse-BundleShape: dir
+

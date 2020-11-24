@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.converters"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui" version="3.108.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.11.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.registry"/>
+      <import plugin="org.eclipse.cdt.managedbuilder.core"/>
+      <import plugin="org.eclipse.cdt.core" version="6.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.12.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.common.logger" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.common.utils"/>
+      <import plugin="com.st.stm32cube.ide.mcu.productdb"/>
+      <import plugin="com.st.stm32cube.ide.mcu.build"/>
+      <import plugin="com.st.stm32cube.ide.common.utils"/>
+      <import plugin="org.eclipse.swt"/>
+      <import plugin="org.eclipse.jface"/>
+      <import plugin="org.eclipse.cdt.managedbuilder.core" version="8.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.12.2" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.mcu.converters" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.st.stm32cube.ide.mcu.ide"/>
+      <import plugin="com.st.stm32cube.ide.mcu.projectnatures"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.converters"
+         download-size="28"
+         install-size="59"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.converters.sw4stm32"
+         download-size="28"
+         install-size="71"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.converters.truestudio"
+         download-size="26"
+         install-size="68"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

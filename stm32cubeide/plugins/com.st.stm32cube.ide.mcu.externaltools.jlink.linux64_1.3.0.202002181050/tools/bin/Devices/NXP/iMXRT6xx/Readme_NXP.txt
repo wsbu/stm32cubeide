@@ -1,2 +1,0 @@
-The NXP devices support comes without any warranty and support from SEGGER Microcontroller GmbH. Support is provided via NXP only.
-For support, please get in contact with NXP directly: https://www.nxp.com/support/support:SUPPORTHOME

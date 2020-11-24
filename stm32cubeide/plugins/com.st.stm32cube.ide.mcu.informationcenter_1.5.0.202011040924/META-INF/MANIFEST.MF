@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.informationcenter
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.informationcenter;single
+ ton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.ui
+ .intro,org.eclipse.core.filesystem,org.eclipse.ui.ide,org.eclipse.osg
+ i,org.eclipse.cdt.core,org.eclipse.ui.workbench,org.eclipse.swt,com.s
+ t.stm32cube.ide.common.ui,com.st.stm32cube.common.utils,com.st.stm32c
+ ube.common.logger,org.apache.log4j
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mcu.informationcenter.Activator
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

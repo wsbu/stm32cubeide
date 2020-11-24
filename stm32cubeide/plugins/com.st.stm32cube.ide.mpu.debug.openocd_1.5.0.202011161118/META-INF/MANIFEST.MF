@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.debug.openocd
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.debug.openocd;singleton:
+ =true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.debug.core,com.st
+ .stm32cube.ide.mcu.debug.openocd,com.st.stm32cube.common.logger,com.s
+ t.stm32cube.ide.mpu.projectnatures,com.st.stm32cube.ide.mcu.debug,org
+ .eclipse.core.variables,com.st.stm32cube.ide.mcu.productdb
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011161118
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.debug.openocd.MPUDebugOpenO
+ CDPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

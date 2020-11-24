@@ -1,0 +1,39 @@
+## Apache Velocity template
+## Please see http://velocity.apache.org/engine/2.0/translations/user-guide_fr.html
+File.Version=6
+#if (!$board)
+MxCube.Version=$mxCubeVersion
+MxDb.Version=$cubeMxDBVersion
+#end
+KeepUserPlacement=false
+Mcu.Name=$mcu
+#if ($context)
+Mcu.ContextProject=$context
+#end
+#if ($board)
+board=$board
+#else
+board=
+#end
+#set ($fileExtension = ".ioc")
+ProjectManager.ProjectFileName=$projectName$fileExtension
+ProjectManager.ProjectName=$projectName
+ProjectManager.PreviousToolchain=
+ProjectManager.TargetToolchain=$ideName
+ProjectManager.DeletePrevious=true
+ProjectManager.UnderRoot=$isUnderRoot
+ProjectManager.MainLocation=$mainLocation
+ProjectManager.ToolChainLocation=
+ProjectManager.LibraryCopy=$libraryCopyMode
+#if (!$board)
+ProjectManager.FirmwarePackage=$firmware
+#end
+ProjectManager.CustomerFirmwarePackage=$customFirmwareRepository
+ProjectManager.DefaultFWLocation=$isCustomFirmware
+ProjectManager.DeviceId=$mcu
+ProjectManager.isStatic=$mxCubeStaticGeneration
+ProjectManager.isCPP=$mxCubeCPP
+isbadioc=$isbadioc
+#if ($boardConfigFile)
+$boardConfigFile
+#end

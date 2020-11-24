@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.externaltools.gnu_tools_for_stm32"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="com.st.stm32cube.ide.feature.mcu.externaltools" version="1.0.0.qualifier"/>
+      <import feature="com.st.stm32cube.ide.feature.mcu.toolchain" version="1.0.0.qualifier"/>
+      <import feature="com.st.stm32cube.ide.feature.mcu.toolchain.arm_none" version="1.0.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32"
+         download-size="5"
+         install-size="8"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

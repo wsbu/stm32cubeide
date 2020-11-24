@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.ide
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.ide;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.2.0",org.ec
+ lipse.rse.core;bundle-version="3.3.100",org.eclipse.rse.ui;bundle-ver
+ sion="3.3.100",org.eclipse.rse.services;bundle-version="3.3.0",org.ec
+ lipse.core.resources,org.eclipse.cdt.core,org.eclipse.swt,org.eclipse
+ .core.runtime,org.eclipse.ui.workbench,org.eclipse.jface,org.eclipse.
+ remote.serial.core,com.st.stm32cube.ide.mcu.ide,com.st.stm32cube.ide.
+ mpu.productdb,com.st.stm32cube.ide.mcu.build,com.st.stm32cube.common.
+ logger,com.st.stm32cube.ide.mpu.projectnatures,com.st.stm32cube.commo
+ n.ecosystemintegration,com.st.stm32cube.ide.common.utils,com.st.stm32
+ cube.common.utils,com.st.stm32cube.ide.mcu.productdb,org.eclipse.ui,c
+ om.st.stm32cube.ide.mpu.remote.serial,org.eclipse.ui.console,org.ecli
+ pse.remote.core,com.st.stm32cube.ide.mpu.remote.ssh,com.st.stm32cube.
+ ide.mpu.linker;bundle-version="1.0.0",com.st.stm32cube.ide.mpu.remote
+ .serial.oss,com.st.stm32cube.ide.mcu.projectnatures,com.st.stm32cube.
+ common.preferences
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.ide.mpu.ide.properties,com.st.stm32cu
+ be.ide.mpu.ide.services
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.ide.MPUIdePlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

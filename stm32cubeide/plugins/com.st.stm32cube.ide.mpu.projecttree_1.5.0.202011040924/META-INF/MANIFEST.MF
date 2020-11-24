@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.projecttree
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.projecttree;singleton:=t
+ rue
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,co
+ m.st.stm32cube.common.logger,com.st.stm32cube.ide.mcu.productdb,com.s
+ t.stm32cube.ide.mpu.projectnatures,com.st.stm32cube.ide.mcu.projecttr
+ ee,com.st.stm32cube.ide.mcu.build,com.st.stm32cube.common.projectcrea
+ tion,com.st.stm32cube.ide.mcu.projectnatures,com.st.stm32cube.ide.com
+ mon.services,com.st.stm32cube.ide.mcu.targetadapter
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.ide.mpu.projecttree.core
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.projecttree.MPUProjectTreeP
+ lugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

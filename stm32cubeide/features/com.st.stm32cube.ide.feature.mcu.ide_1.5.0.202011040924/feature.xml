@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.ide"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.cdt.managedbuilder.core"/>
+      <import plugin="com.st.stm32cube.ide.mcu.productdb"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.cdt.core"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.workbench"/>
+      <import plugin="org.eclipse.core.expressions"/>
+      <import plugin="com.st.stm32cube.ide.common.utils"/>
+      <import plugin="com.st.stm32cube.ide.mcu.build"/>
+      <import plugin="com.st.stm32cube.common.projectcreation"/>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools"/>
+      <import plugin="com.st.stm32cube.common.preferences"/>
+      <import plugin="com.st.stm32cube.common.logger"/>
+      <import plugin="com.st.stm32cube.ide.common.services"/>
+      <import plugin="com.st.stm32cube.ide.mcu.projectnatures"/>
+      <import plugin="org.eclipse.cdt.codan.core"/>
+      <import plugin="org.eclipse.cdt.codan.core.cxx"/>
+      <import plugin="com.st.stm32cube.ide.mcu.linker"/>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools.openocd"/>
+      <import plugin="com.st.stm32cube.common.ecosystemintegration"/>
+      <import plugin="com.st.stm32cube.ide.mcu.externaltools.oss" version="1.0.0" match="greaterOrEqual"/>
+      <import feature="org.eclipse.cdt"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.ide"
+         download-size="336"
+         install-size="909"
+         version="1.5.0.202011040924"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.toolchain.utils"
+         download-size="15"
+         install-size="27"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.ide.oss"
+         download-size="19"
+         install-size="37"
+         version="1.5.0.202011040924"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,9 @@
+instructions.configure=\
+  addRepository(type:0,location:http${#58}//sw-center.st.com/stm32cubeide/updatesite1);\
+  addRepository(type:1,location:http${#58}//sw-center.st.com/stm32cubeide/updatesite1);\
+  addRepository(type:0,location:http${#58}//sw-center.st.com/stm32cubeide/openstlinux/updatesite1);\
+  addRepository(type:1,location:http${#58}//sw-center.st.com/stm32cubeide/openstlinux/updatesite1);
+instructions.install = \
+   chmod(targetDir:${artifact.location},targetFile:resources/project_importer/linux/STM32CubeIDE (project importer),permissions:755);
+instructions.install.import= \
+   org.eclipse.equinox.p2.touchpoint.natives.chmod

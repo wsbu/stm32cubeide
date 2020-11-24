@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.st.stm32cube.ide.feature.mcu.linker.ui"
+      label="%pluginName"
+      version="1.5.0.202011040924"
+      provider-name="%providerName"
+      plugin="com.st.stm32cube.ide.mcu.ide">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="com.st.stm32cube.ide.mcu.linker"/>
+   </requires>
+
+   <plugin
+         id="com.st.stm32cube.ide.mcu.linker.ui"
+         download-size="27"
+         install-size="47"
+         version="1.5.0.202011040924"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

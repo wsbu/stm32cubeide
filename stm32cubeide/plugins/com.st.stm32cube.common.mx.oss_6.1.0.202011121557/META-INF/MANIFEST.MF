@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.st.stm32cube.common.mx.oss;singleton:=true
+Built-By: jenkins
+Require-Bundle: org.eclipse.osgi,org.eclipse.core.resources,org.eclips
+ e.core.runtime,org.eclipse.swt,org.eclipse.ui.workbench,org.eclipse.j
+ face
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.common.mx.oss.core.awtswtbridge,com.s
+ t.stm32cube.common.mx.oss.core.legacysupport
+Bundle-Name: %pluginName
+Bundle-Version: 6.1.0.202011121557
+Bundle-Localization: plugin
+Bundle-ClassPath: .
+Bundle-Activator: com.st.stm32cube.common.mx.oss.MxOssActivator
+Created-By: Apache Maven 3.6.3
+Build-Jdk: 1.8.0_265
+Eclipse-BundleShape: dir
+

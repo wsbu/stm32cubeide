@@ -1,0 +1,131 @@
+[#ftl]
+[#assign nbThreads = 0]
+[#assign defaultTaskFunction = "defaultName"]
+[#assign inMain = 0]
+[#assign defaultTaskOption = "Default"]
+
+[#list SWIPdatas as SWIP]
+    [#if SWIP.variables??]
+      [#list SWIP.variables as variable]
+        [#if variable.name=="HALCompliant"]
+           [#assign inMain = 1]
+        [/#if]
+      [/#list]
+    [/#if]
+[/#list]
+
+[#list SWIPdatas as SWIP]
+  [#if SWIP.variables??]  
+    [#list SWIP.variables as variable]
+      [#if variable.name=="Threads"]
+        [#assign s = variable.valueList]
+        [#assign index = 0]
+        [#list s as i]
+          [#if index == 0]
+            [#assign threadName = i]
+          [/#if]   
+          [#if index == 3]
+            [#assign threadFunction = i]
+          [/#if]
+          [#if index == 5] 
+            [#assign option = i] 
+          [/#if]
+          [#assign index = index + 1]
+        [/#list]
+        [#assign nbThreads = nbThreads + 1]
+        [#if nbThreads == 1]
+          [#assign defaultTaskFunction = threadFunction]
+          [#assign defaultTaskOption = option]
+          [#assign defaultTaskName = threadName]
+        [/#if]
+      [/#if]
+    [/#list]
+  [/#if]
+[/#list]
+[#assign mw = "empty"]
+#n#n
+/* USER CODE BEGIN Header_${defaultTaskFunction} */
+/**
+  * @brief  Function implementing the ${defaultTaskName} thread.
+  * @param  argument: Not used 
+  * @retval None
+  */
+/* USER CODE END Header_${defaultTaskFunction} */
+[#if defaultTaskOption == "Default"]
+void ${defaultTaskFunction}(void *argument)
+[#else]
+__weak void ${defaultTaskFunction}(void *argument)
+[/#if]
+{
+[#compress] [#-- To avoid blank lines at the beginning --]
+[#-- Start Detection of middlewares used --]
+[#assign USE_MBEDTLS = false] 
+[#list SWIPdatas as SWIP]
+  [#if SWIP.variables??]
+    [#list SWIP.variables as variable]
+      [#if variable.name=="MiddlewareInUse"]
+        [#assign s = variable.valueList]
+        [#assign index = 0] 
+        [#list s as i] 
+          [#if index == 0]
+            [#assign mw = i]
+          [/#if]
+          [#assign index = index + 1]
+        [/#list]
+        [#if mw == "MBEDTLS"]
+          [#assign USE_MBEDTLS = true]
+        [/#if]
+	  [/#if]
+    [/#list]
+  [/#if]
+[/#list]
+[#-- End of middlewares used detection --]
+[#list SWIPdatas as SWIP]
+  [#if SWIP.variables??]
+    [#list SWIP.variables as variable]
+      [#if variable.name=="MiddlewareInUse"]
+        [#assign s = variable.valueList]
+        [#assign index = 0] 
+        [#list s as i] 
+          [#if index == 0]
+            [#assign mw = i]
+          [/#if]
+          [#assign index = index + 1]
+        [/#list]
+        [#-- specific cases to be handled --]  
+        [#if mw == "USB_HOST" || mw == "USB_DEVICE" || ((mw = "LWIP") && (USE_MBEDTLS == false)) || mw == "LoRaWAN" || mw == "Sigfox" || mw == "SubGHz_Phy"]
+#t/* init code for ${mw} */
+#tMX_${mw}_Init();#n[#--  could be replaced by the call to the start function here! --]
+        [#else]
+          [#-- nothing generated in the default task --]  
+        [/#if]
+      [/#if]  [#-- end if variable.name=="MiddlewareInUse"--]  
+    [/#list]
+  [/#if]
+[/#list]
+[/#compress]
+[#if inMain == 1]
+#t/* USER CODE BEGIN 5 */
+[#else]
+ [#if defaultTaskFunction == "Application"]
+#t/* USER CODE BEGIN DEFAULT_TASK_FUNCTION */  [#-- There is already a User section named "Application" in freertos.c --]
+ [#else]
+#t/* USER CODE BEGIN ${defaultTaskFunction} */
+ [/#if]
+[/#if]
+#t/* Infinite loop */
+#tfor(;;)
+#t{
+#t#tosDelay(1);
+#t}
+[#if inMain == 1]
+#t/* USER CODE END 5 */ 
+[#else]
+ [#if defaultTaskFunction == "Application"]
+#t/* USER CODE END DEFAULT_TASK_FUNCTION */  [#-- There is already a User section named "Application" in freertos.c --]
+ [#else]
+#t/* USER CODE END ${defaultTaskFunction} */
+ [/#if]
+[/#if]
+}
+#n

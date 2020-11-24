@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.analytics
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.analytics;singleton:=tru
+ e
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,co
+ m.st.stm32cube.common.logger,org.eclipse.ui,org.apache.log4j,com.st.s
+ tm32cube.common.preferences,org.eclipse.core.net,com.st.stm32cube.ide
+ .common.services,com.st.stm32cube.ide.mcu.productdb,org.eclipse.cdt.m
+ anagedbuilder.core,com.st.stm32cube.ide.common.utils,com.st.stm32cube
+ .ide.mcu.rcp,com.st.stm32cube.ide.mcu.projectnatures,com.st.stm32cube
+ .common.projectcreation,com.st.stm32cube.common.utils
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.library.analyticscore,com.st.stm32cube.ide.mcu.
+ analytics,com.st.stm32cube.ide.mcu.analytics.core
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-ClassPath: .,third-party-libs/third/party/libs/cubeanalytics/1.
+ 6.0-RC1/cubeanalytics-1.6.0-RC1.jar,third-party-libs/third/party/libs
+ /xstream/1.4.11.1/xstream-1.4.11.1.jar,third-party-libs/third/party/l
+ ibs/java-uuid-generator/3.1.4/java-uuid-generator-3.1.4.jar,third-par
+ ty-libs/third/party/libs/joda-time/2.10.5/joda-time-2.10.5.jar
+Bundle-Activator: com.st.stm32cube.ide.mcu.analytics.MCUAnalyticsPlugi
+ n
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

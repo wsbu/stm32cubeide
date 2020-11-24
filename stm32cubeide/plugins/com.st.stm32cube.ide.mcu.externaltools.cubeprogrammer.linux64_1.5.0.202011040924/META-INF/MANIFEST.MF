@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mcu.externaltools.cubeprog
+ rammer.linux64
+Bundle-SymbolicName: com.st.stm32cube.ide.mcu.externaltools.cubeprogra
+ mmer.linux64;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86_64))
+Bundle-Vendor: %providerName
+Fragment-Host: com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer
+Bundle-Version: 1.5.0.202011040924
+Bundle-Name: %pluginName
+Bundle-Localization: fragment
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

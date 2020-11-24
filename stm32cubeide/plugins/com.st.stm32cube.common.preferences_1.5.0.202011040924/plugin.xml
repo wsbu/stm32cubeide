@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="4.7"?>
+<!DOCTYPE plugin>
+<plugin>
+   <extension-point id="com.st.stm32cube.common.preferences.page" name="com.st.stm32cube.common.preferences.page" schema="schema/com.st.stm32cube.common.preferences.page.exsd"/>
+ <!-- =================================================================================== -->
+<!-- MCU Preference page				                                                 -->
+<!-- =================================================================================== -->
+	<extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="com.st.stm32cube.common.preferences.properties.MCUPreferenceInitializer"/>
+    </extension>
+	<extension
+			point="org.eclipse.ui.preferencePages">
+		<page
+			id="com.st.stm32cube.common.preferences.properties.preferenceCategoryPage"
+			class="com.st.stm32cube.common.preferences.properties.MCUPreferenceCategoryPage"
+            name="%preferencePage.category.name">
+		</page>
+	</extension>
+</plugin>

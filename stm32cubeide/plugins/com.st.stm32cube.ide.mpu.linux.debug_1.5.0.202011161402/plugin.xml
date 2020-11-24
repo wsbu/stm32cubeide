@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="com.st.stm32cube.ide.mpu.linux.debug.deployment.LinuxDeploymentLaunchDelegate"
+            id="com.st.stm32cube.ide.mpu.linux.debug.deployment.launchConfigurationType"
+            modes="run"
+            name="STM32 Cortex-A Linux Deployment">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="com.st.stm32cube.ide.mpu.linux.debug.deployment.ui.LinuxDeploymentTabGroup"
+            id="com.st.stm32cube.ide.mpu.linux.debug.deployment.launchConfigurationTabGroup"
+            type="com.st.stm32cube.ide.mpu.linux.debug.deployment.launchConfigurationType">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="com.st.stm32cube.ide.mpu.linux.debug.deployment.launchConfigurationType"
+            icon="icons/obj16/STM32CubeIDE_icon_16px.png"
+            id="com.st.stm32cube.ide.mpu.linux.debug.deployment.launchConfigurationTypeImage">
+      </launchConfigurationTypeImage>
+   </extension>
+    <extension
+          point="org.eclipse.debug.ui.launchShortcuts">
+       <shortcut
+             class="com.st.stm32cube.ide.mpu.linux.debug.deployment.LinuxDeploymentLaunchShortcut"
+             description="STM32 Cortex-A Linux Deployment"
+             icon="icons/obj16/STM32CubeIDE_icon_16px.png"
+             id="com.st.stm32cube.ide.mpu.linux.debug.deployment.launchShortcut"
+             label="STM32 Cortex-A Linux Deployment"
+             modes="run">
+          <configurationType
+                id="com.st.stm32cube.ide.mpu.linux.debug.deployment.launchConfigurationType">
+          </configurationType>
+         <contextualLaunch>
+            <enablement>
+             <with variable="selection">
+               <count value="1"/>
+               <iterate>
+               <adapt
+                     type="org.eclipse.core.resources.IProject">
+                  <test
+                        property="org.eclipse.core.resources.projectNature"
+                        value="com.st.stm32cube.ide.mpu.linux.OSTL_LinuxProjectNature">
+                  </test>
+               </adapt>
+               </iterate>
+             </with>
+           </enablement>
+         </contextualLaunch>
+          <enablement>
+            <iterate>
+               <adapt
+                     type="org.eclipse.core.resources.IProject">
+                  <test
+                        property="org.eclipse.core.resources.projectNature"
+                        value="com.st.stm32cube.ide.mpu.linux.OSTL_LinuxProjectNature">
+                  </test>
+               </adapt>
+            </iterate>
+         </enablement>
+       </shortcut>
+    </extension>
+</plugin>

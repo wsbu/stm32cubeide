@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.common.projectcreation
+Bundle-SymbolicName: com.st.stm32cube.common.projectcreation;singleton
+ :=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.equinox.registry,org.eclipse.osgi,org.ecli
+ pse.core.runtime,org.eclipse.core.resources,org.eclipse.cdt.core.nati
+ ve,org.eclipse.cdt.core,org.eclipse.cdt.managedbuilder.core,com.st.st
+ m32cube.common.logger,org.eclipse.core.filesystem,com.st.stm32cube.co
+ mmon.utils
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Eclipse-ExtensibleAPI: true
+Export-Package: com.st.stm32cube.common.projectcreation,com.st.stm32cu
+ be.common.projectcreation.core,com.st.stm32cube.common.projectcreatio
+ n.registry
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.common.projectcreation.MCUProjectCr
+ eationPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+

@@ -8,6 +8,9 @@ sun/awt
 ! jce.jar
 javax/crypto
 sun/security
+# jfr.jar
+jdk/jfr
+jdk/management
 ! jsse.jar
 sun/security
 com/sun/net/

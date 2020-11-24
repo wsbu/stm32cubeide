@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.st.stm32cube.ide.mpu.debug
+Bundle-SymbolicName: com.st.stm32cube.ide.mpu.debug;singleton:=true
+Built-By: acitlsqa
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.cd
+ t.launch,org.eclipse.cdt.debug.gdbjtag.ui,org.eclipse.cdt.debug.gdbjt
+ ag,org.eclipse.cdt.debug.gdbjtag.core,org.eclipse.cdt.core,org.eclips
+ e.cdt.ui,org.eclipse.core.resources,org.eclipse.debug.core,org.eclips
+ e.cdt.debug.core,org.eclipse.cdt.debug.ui,org.eclipse.debug.ui,org.ec
+ lipse.cdt.dsf.gdb,org.eclipse.cdt.managedbuilder.core,org.eclipse.cor
+ e.variables,org.eclipse.ui.workbench.texteditor,org.eclipse.cdt.dsf.g
+ db.ui,org.eclipse.cdt.dsf,org.eclipse.cdt.dsf.ui,org.eclipse.swt,org.
+ eclipse.ui.navigator,org.eclipse.core.jobs,com.st.stm32cube.ide.mpu.p
+ rojectnatures,com.st.stm32cube.common.ecosystemintegration,com.st.stm
+ 32cube.common.projectcreation,com.st.stm32cube.ide.mcu.build,com.st.s
+ tm32cube.ide.mpu.remote.serial,com.st.stm32cube.ide.mpu.remote.serial
+ .oss,com.st.stm32cube.ide.mpu.remote.ssh,com.st.stm32cube.ide.mcu.deb
+ ug,com.st.stm32cube.common.logger,com.st.stm32cube.ide.mcu.productdb,
+ com.st.stm32cube.ide.common.utils,com.st.stm32cube.ide.mcu.debug.dsf,
+ com.st.stm32cube.ide.mpu.ide,com.st.stm32cube.ide.mcu.debug.launch,co
+ m.st.stm32cube.ide.mcu.debug.launch.oss,com.st.stm32cube.ide.mcu.anal
+ ytics
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Export-Package: com.st.stm32cube.ide.mpu.debug
+Bundle-Name: %pluginName
+Bundle-Version: 1.5.0.202011040924
+Bundle-Localization: plugin
+Bundle-Activator: com.st.stm32cube.ide.mpu.debug.MPUDebugPlugin
+Created-By: Apache Maven 3.5.0
+Build-Jdk: 1.8.0_192
+Eclipse-BundleShape: dir
+
